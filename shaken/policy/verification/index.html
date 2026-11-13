@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>数値目安の算出基準・出典確認フロー｜車検費用ナビ</title>
+<meta name="description" content="車検費用ナビおよび車検費用シミュレーターで使用している法定費用データ・総額目安レンジの算出前提、未確定項目の非捏造ルール、公開前の一次情報照合フローを説明します。">
+<link rel="stylesheet" href="../../assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "数値目安の算出基準・出典確認フロー",
+  "description": "車検費用ナビおよび車検費用シミュレーターで使用している法定費用データ・総額目安レンジの算出前提、未確定項目の非捏造ルール、公開前の一次情報照合フローを説明します。",
+  "inLanguage": "ja",
+  "datePublished": "2026-11-12",
+  "dateModified": "2026-11-12",
+  "author": {
+    "@type": "Organization",
+    "name": "車検費用ナビ編集部"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "車検費用ナビ編集部"
+  },
+  "image": [
+    "../../assets/img/hero.webp"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "車検費用ナビ"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "車検費用ナビ トップ",
+      "item": "../../index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "数値目安の算出基準・出典確認フロー"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "車検基本料そのものの金額を単一で断定せず、総額目安との差額幅として示しているのはなぜですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "24か月定期点検料・測定料・検査代行手数料をどのようにパッケージ化するかは事業者ごとに大きく異なるためです。誤解を防ぐため、当サイトでは確定基準額である法定費用合計を差し引いた「車検基本料＋整備・部品交換費の目安幅」として構造を可視化しています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "普通車の一部重量帯やバイク・商用貨物車で具体的な金額レンジを表示していない箇所があるのはなぜですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "基準データに定型レンジがない区分や、用途・仕様による変動が大きい区分について架空の数値を生成・推測することを厳禁としているためです。該当区分については公的機関の照会サービスや個別見積もりでの確認手順を案内しています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "税制改正や自賠責保険料率の改定があった場合はどのように更新されますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "各記事末尾の「出典・参考情報メモ」に基づき、国土交通省・損害保険料率算出機構・軽自動車検査協会の一次情報と照合を行い、基準データおよびシミュレーターの計算テーブルを一括点検・更新します。"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<div class="reading-progress" aria-hidden="true" data-design-added="true"><div class="reading-progress-bar" id="reading-progress-bar"></div></div>
+<a class="skip-link" href="#main-content">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand-row">
+      <a class="site-brand" href="../../index.html">
+        <span class="site-brand-title">車検費用ナビ <span class="site-brand-badge">実用情報ガイド</span></span>
+        <span class="site-brand-sub">法定費用と基本料・整備費の目安を切り分けて比較できる車検マネー設計メディア</span>
+      </a>
+      <a class="header-cta" href="../../simulator/index.html">車検費用を試算する →</a>
+    </div>
+    <nav class="global-nav" aria-label="メインナビゲーション">
+      <ul>
+        <li><a href="../../index.html">総まとめ</a></li>
+        <li><a href="../../simulator/index.html">シミュレーター</a></li>
+        <li><a href="../../kei/index.html">軽自動車</a></li>
+        <li><a href="../../kei-yasuku/index.html">軽の車検を抑える</a></li>
+        <li><a href="../../hotei/index.html">法定費用の内訳</a></li>
+        <li><a href="../../hikaku/index.html">依頼先5種別の比較</a></li>
+        <li><a href="../../mitsumori-yomikata/index.html">見積もり書の見方</a></li>
+        <li><a href="../../tsuika/index.html">追加整備の判断</a></li>
+        <li><a href="../../yasuku/index.html">費用を抑える視点</a></li>
+        <li><a href="../../keinen/index.html">13年・18年重課</a></li>
+        <li><a href="../../norikae/index.html">車検か乗り換えか</a></li>
+        <li><a href="../../models/index.html">車種別（重量帯）</a></li>
+        <li><a href="../../period/index.html">時期・満了日</a></li>
+        <li><a href="../../yoyaku-jiki/index.html">予約時期・繁忙期</a></li>
+        <li><a href="../../kire/index.html">車検切れの手続き</a></li>
+        <li><a href="../../user-shaken/index.html">ユーザー車検</a></li>
+        <li><a href="../../bike/index.html">バイク車検</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="site-main" id="main-content">
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <ol>
+      <li><a href="../../index.html">車検費用ナビ トップ</a></li>
+      <li aria-current="page">数値目安の算出基準・出典確認フロー</li>
+    </ol>
+  </nav>
+
+  <article class="article-shell">
+    <header class="article-header">
+      <h1>数値目安の算出基準・出典確認フロー</h1>
+      <div class="article-meta">
+        <span>最終更新日：<time datetime="2026-11-12">2026年11月12日</time></span>
+        <span>管理責任：車検費用ナビ編集部</span>
+      </div>
+    </header>
+
+    <div class="article-body numbered-headings">
+      <p>当サイト（車検費用ナビ）では、車検見積もりの比較検討において誤解が生じないよう、全記事および<a href="../../simulator/index.html">車検費用シミュレーター</a>で使用する数値の根拠と算出前提を統一ルールのもとで管理しています。</p>
+
+      <h2>1. 法定費用の基準データと算出前提</h2>
+      <p>記事内の早見表およびシミュレーターで表示する「法定費用合計」は、<strong>自家用乗用車の継続検査（車検2年分）・エコカー減税の適用なし</strong>を基本前提とし、以下の3項目を合算して算出しています。</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>項目</th>
+              <th>採用している基準値</th>
+              <th>前提条件と変動要因</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>① 自動車重量税<br>（2年分）</strong></td>
+              <td>軽自動車：6,600円（13年経過8,200円／18年経過8,800円）<br>普通車（0.5t刻み・13年未満）：〜0.5t 8,200円／〜1.0t 16,400円／〜1.5t 24,600円／〜2.0t 32,800円／〜2.5t 41,000円（13年経過・18年経過時は各重課額）</td>
+              <td>エコカー減税対象車は減税・免税になる場合があります。なお普通車「〜0.5t」の13年経過・18年経過額は<code>要出典確認</code>項目として管理し、推測計算を行わず注記を表示します。</td>
+            </tr>
+            <tr>
+              <td><strong>② 自賠責保険料</strong></td>
+              <td>24か月契約：普通自動車 17,650円／軽自動車 17,540円<br>（参考併記・25か月契約：普通自動車 18,160円／軽自動車 18,040円）</td>
+              <td>本土基準の料率です。沖縄県・離島等の一部地域では異なる料率区分が適用される場合があります。</td>
+            </tr>
+            <tr>
+              <td><strong>③ 検査手数料<br>（印紙・証紙代）</strong></td>
+              <td>記事では「1,800円前後（工場の種別で変わる）」と表記<br>シミュレーター計算では指定整備工場経由の目安 <strong>1,800円</strong> を採用</td>
+              <td>認証工場経由やユーザー車検（持ち込み検査）では2,200円前後になる場合があるほか、車両区分や電子申請（OSS）の有無によって異なります（<code>要出典確認</code>）。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>2. 車検総額の目安レンジと「基本料＋整備費」の扱い</h2>
+      <ul>
+        <li><strong>二次情報ベースの相場目安</strong>：記事およびシミュレーターに掲載している車検総額の目安（軽自動車 6万〜9万円／普通車〜1.0t 8万〜12万円／〜1.5t 9万〜14万円／〜2.0t 10万〜16万円）は、一般的な二次情報ベースの目安レンジであり、確定料金ではありません（公開前に最新の業界統計等との照合を行う<code>要出典確認</code>項目として明記しています）。</li>
+        <li><strong>差額分解の考え方</strong>：車検基本料そのものの断定額は記載せず、「車検総額の目安 − 法定費用合計 ＝ 車検基本料＋整備・部品交換費の目安幅」として構造を示す方針を採っています。</li>
+        <li><strong>未確定データの非捏造原則</strong>：基準データに定型レンジのない区分（普通車〜0.5t・〜2.5tの総額目安、バイク251cc以上の具体額、商用貨物車の具体額など）については架空の数値を生成せず、公的機関の確認先や個別見積もりでの確認を案内しています。</li>
+      </ul>
+
+      <h2>3. 公開前の一次情報照合フローと改定時の更新方針</h2>
+      <p>各記事の末尾には「更新日・数値の確認方法について」および「出典・参考情報メモ（公開前差し替え用プレースホルダ）」を設置しています。CMS公開時および税制・保険料率の改定時には、以下の一次情報機関の公表資料と照合を実施します。</p>
+      <ol>
+        <li><strong>国土交通省</strong>：自動車重量税額表、次回自動車重量税額照会サービス、検査・登録手数料一覧、自動車検査登録総合ポータルサイト、電子車検証案内</li>
+        <li><strong>損害保険料率算出機構／国土交通省自賠責ポータル</strong>：自動車損害賠償責任保険基準料率表</li>
+        <li><strong>軽自動車検査協会</strong>：軽自動車の重量税・継続検査手数料・軽自動車検査予約システム案内</li>
+      </ol>
+
+      <h2>関連ページ</h2>
+      <ul>
+        <li><a href="../../about/index.html">運営者情報・編集部体制・制作ポリシー</a></li>
+        <li><a href="../advertising/index.html">広告掲載ポリシー（#PR表記方針）</a></li>
+        <li><a href="../../hotei/index.html">車検の法定費用の詳しい内訳と早見表</a></li>
+        <li><a href="../../simulator/index.html">車検費用シミュレーター</a></li>
+      </ul>
+
+      <div class="context-link-box">
+        <p class="context-link-title">試算ツール・法定費用ガイド・関連ポリシーのご案内</p>
+        <p>本基準に基づく法定費用と総額目安の試算は「<a href="../../simulator/index.html">車検費用シミュレーター</a>」、法定費用3項目の詳細解説は「<a href="../../hotei/index.html">車検の法定費用の内訳詳細</a>」でご確認いただけます。広告表記ルールは「<a href="../advertising/index.html">広告掲載ポリシー（#PR表記方針）</a>」をご参照ください。</p>
+      </div>
+
+      <h2 id="sec-faq">4. 数値算出基準・出典確認に関するよくある質問（FAQ）</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>Q1. 車検基本料そのものの金額を単一で断定せず、総額目安との差額幅として示しているのはなぜですか？</h3>
+          <p><strong>A.</strong> 24か月定期点検料・測定料・検査代行手数料をどのようにパッケージ化するかは事業者ごとに大きく異なるためです。誤解を防ぐため、当サイトでは確定基準額である法定費用合計を差し引いた「車検基本料＋整備・部品交換費の目安幅」として構造を可視化しています。</p>
+        </div>
+        <div class="faq-item">
+          <h3>Q2. 普通車の一部重量帯やバイク・商用貨物車で具体的な金額レンジを表示していない箇所があるのはなぜですか？</h3>
+          <p><strong>A.</strong> 基準データに定型レンジがない区分や、用途・仕様による変動が大きい区分について架空の数値を生成・推測することを厳禁としているためです。該当区分については公的機関の照会サービスや個別見積もりでの確認手順を案内しています。</p>
+        </div>
+        <div class="faq-item">
+          <h3>Q3. 税制改正や自賠責保険料率の改定があった場合はどのように更新されますか？</h3>
+          <p><strong>A.</strong> 各記事末尾の「出典・参考情報メモ」に基づき、国土交通省・損害保険料率算出機構・軽自動車検査協会の一次情報と照合を行い、基準データおよびシミュレーターの計算テーブルを一括点検・更新します。</p>
+        </div>
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand-title">車検費用ナビ</p>
+        <p class="footer-brand-desc">どこで受けても同額の「法定費用」と、依頼先や整備内容で変わる「車検基本料・整備費（目安）」を切り分けて整理する実用情報メディアです。掲載の総額目安は二次情報ベースであり、受検時は必ず車検証および各事業者の個別見積書をご確認ください。</p>
+      </div>
+      <div class="footer-col">
+        <h3>コンテンツ一覧</h3>
+        <ul>
+          <li><a href="../../index.html">車検費用の全体像（総まとめ）</a></li>
+          <li><a href="../../simulator/index.html">車検費用シミュレーター</a></li>
+          <li><a href="../../kei/index.html">軽自動車の車検費用</a></li>
+          <li><a href="../../kei-yasuku/index.html">軽自動車の車検を安くする考え方</a></li>
+          <li><a href="../../hotei/index.html">法定費用の内訳詳細</a></li>
+          <li><a href="../../hikaku/index.html">依頼先5種別の違いと比較</a></li>
+          <li><a href="../../mitsumori-yomikata/index.html">車検見積もり書の読み方と比較手順</a></li>
+          <li><a href="../../tsuika/index.html">追加整備は断れる？必須と推奨の判断</a></li>
+          <li><a href="../../yasuku/index.html">車検費用を抑えるポイント</a></li>
+          <li><a href="../../keinen/index.html">13年・18年経過の重量税</a></li>
+          <li><a href="../../norikae/index.html">車検を通すか乗り換えるかの判断基準</a></li>
+          <li><a href="../../models/index.html">車種別の車検費用（重量帯）</a></li>
+          <li><a href="../../period/index.html">車検の時期・有効期間・満了日</a></li>
+          <li><a href="../../yoyaku-jiki/index.html">車検の予約時期と繁忙期スケジュール</a></li>
+          <li><a href="../../kire/index.html">車検切れに気づいたときの対処と手続き</a></li>
+          <li><a href="../../user-shaken/index.html">ユーザー車検の手順と注意点</a></li>
+          <li><a href="../../bike/index.html">バイク（251cc以上）の車検費用</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>サイト情報・運営ポリシー</h3>
+        <ul>
+          <li><a href="../../about/index.html">運営者情報・編集部体制・制作ポリシー</a></li>
+          <li><a href="index.html" aria-current="page">数値目安の算出基準・出典確認フロー</a></li>
+          <li><a href="../advertising/index.html">広告掲載ポリシー（#PR表記方針）</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 車検費用ナビ編集部</p>
+      <p>※当サイトの記事にはプロモーション（#PR）が含まれます。</p>
+    </div>
+  </div>
+</footer>
+<button type="button" class="back-to-top" id="back-to-top" aria-label="ページ上部へ戻る" data-design-added="true">
+  <span class="back-to-top-arrow" aria-hidden="true">↑</span>
+  <span>TOP</span>
+</button>
+<script data-design-added="true">
+(function(){
+  var bar = document.getElementById("reading-progress-bar");
+  var btn = document.getElementById("back-to-top");
+  function onScroll(){
+    var s = window.scrollY || document.documentElement.scrollTop || 0;
+    var h = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    if(bar) bar.style.width = (h > 0 ? Math.min(100, Math.max(0, s / h * 100)) : 0) + "%";
+    if(btn) btn.classList.toggle("is-visible", s > 280);
+  }
+  window.addEventListener("scroll", onScroll, {passive: true});
+  if(btn) btn.addEventListener("click", function(){ window.scrollTo({top: 0, behavior: "smooth"}); });
+  onScroll();
+})();
+</script>
+</body>
+</html>
