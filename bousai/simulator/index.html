@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>備蓄量カリキュレーター｜世帯人数（1〜6人）×日数（3日／7日）で必要量を試算｜くらしの防災備蓄ナビ</title>
+<meta name="description" content="世帯人数（1〜6人）と備蓄日数（最低3日分／推奨7日分）を選ぶだけで、水（リットル数・2Lペットボトル換算本数）・食料・携帯トイレ目安・カセットボンベ目安を即時算出する備蓄量カリキュレーターです。">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "備蓄量カリキュレーター（人数×日数別シミュレーション）",
+  "description": "世帯人数（1〜6人）と備蓄日数（最低3日分／推奨7日分）を選ぶだけで、水（リットル数・2Lペットボトル換算本数）・食料・携帯トイレ目安・カセットボンベ目安を即時算出する備蓄量カリキュレーターです。",
+  "inLanguage": "ja",
+  "datePublished": "2026-11-12",
+  "dateModified": "2026-11-12",
+  "author": {
+    "@type": "Organization",
+    "name": "くらしの防災備蓄ナビ編集部"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "くらしの防災備蓄ナビ編集部"
+  },
+  "image": [
+    "../assets/img/hero.webp"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "くらしの防災備蓄ナビ"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "トップ（防災備蓄の全体像）",
+      "item": "../index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "備蓄量カリキュレーター"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "世帯人数が7人以上の大家族や二世帯住宅の場合はどう計算すればよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "本カリキュレーターは1人あたりの基準量に人数を掛ける比例計算となっているため、7人以上の場合は人数を2回に分けて合算してください（たとえば7人世帯なら「4人」の結果と「3人」の結果を足し合わせます。2Lペットボトル本数は合計リットル数を2で割って端数を切り上げると正確です）。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "乳幼児や小学生の子供がいる場合も、世帯人数に1人として含めてよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "調乳や離乳食の湯煎、手口まわりの清拭、成長に伴う食事量の増加などを考慮すると、乳幼児や子供も1人分として数えて基準量を確保しておくとゆとりを持てます。内訳の品目（液体ミルク・軟水・食べ慣れた甘口レトルト等）は年齢に合わせて調整しましょう（詳細は家族・子供がいる家庭の備蓄を参照）。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "試算結果にある「公的基準」と「目安・要出典確認」のラベルはどう違うのですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "備蓄期間（最低3日分・できれば1週間分）および水（1人1日3L）・食料（1人1日3食）は防災庁・政府の防災情報で示されている「公的基準」です。一方、携帯トイレとカセットボンベの数量は自治体ガイド等で用いられる一般的な「目安」として区別表示しています（詳細は数値目安の算出基準・出典確認フローを参照）。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "選択した世帯人数などの情報が外部へ送信されることはありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "いいえ、選択された人数・日数の計算処理はすべてお使いのブラウザ内だけで完結しており、外部サーバーへ送信・保存されることは一切ありません。"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<div class="reading-progress" aria-hidden="true"><div class="reading-progress-bar" id="reading-progress-bar"></div></div>
+<a class="skip-link" href="#main-content">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand-row">
+      <a class="site-brand" href="../index.html">
+        <span class="site-brand-title">くらしの防災備蓄ナビ <span class="site-brand-badge">防災備蓄ガイド</span></span>
+        <span class="site-brand-sub">公的基準と人数別シミュレーションで水・食料・トイレの備蓄量がわかる実用ガイド</span>
+      </a>
+      <a class="header-cta" href="../simulator/index.html" aria-current="page">備蓄量を試算する →</a>
+    </div>
+    <nav class="global-nav" aria-label="メインナビゲーション">
+      <ul>
+        <li><a href="../index.html">全体像・総まとめ</a></li>
+        <li><a href="../simulator/index.html" aria-current="page">カリキュレーター</a></li>
+        <li><a href="../checklist/index.html">チェックリスト</a></li>
+        <li><a href="../bousai-set/index.html">防災セットの選び方</a></li>
+        <li><a href="../yosan/index.html">予算別プラン</a></li>
+        <li><a href="../water/index.html">保存水の量</a></li>
+        <li><a href="../food/index.html">非常食の量</a></li>
+        <li><a href="../rolling/index.html">ローリングストック</a></li>
+        <li><a href="../toilet/index.html">携帯トイレ個数</a></li>
+        <li><a href="../toilet-set/index.html">凝固剤と袋の違い</a></li>
+        <li><a href="../dansui/index.html">断水時のトイレ</a></li>
+        <li><a href="../hitori/index.html">一人暮らし</a></li>
+        <li><a href="../family/index.html">家族・子供</a></li>
+        <li><a href="../mansion/index.html">マンション備蓄</a></li>
+        <li><a href="../car/index.html">車載・車中泊</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="site-main sim-wrap" id="main-content">
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <ol>
+      <li><a href="../index.html">トップ（防災備蓄の全体像）</a></li>
+      <li aria-current="page">備蓄量カリキュレーター</li>
+    </ol>
+  </nav>
+
+  <section class="sim-hero-panel" aria-label="備蓄量カリキュレーター概要">
+    <header class="top">
+      <p class="pr-notice-top">※本ページにはプロモーション（#PR）が含まれます。広告リンクを含む場合があります。</p>
+      <h1>備蓄量カリキュレーター（人数×日数別シミュレーション）</h1>
+      <p class="lead">世帯人数（1〜6人）と目標備蓄日数（最低限の目安：3日分／できれば1週間分：7日分）を選択するだけで、基本4品目（水・食料・携帯トイレ・カセットボンベ）の必要量と2Lペットボトル換算本数を即座に算出します。</p>
+    </header>
+    <div class="sim-hero-banner">
+      <img src="../assets/img/hero.webp" alt="室内の木製棚に整然と並べられた保存水・缶詰・レトルト食品・備蓄ボックスの水彩イラスト" width="2736" height="912">
+    </div>
+  </section>
+
+  <!-- 入力カード -->
+  <section class="card" aria-label="入力条件">
+    <h2>1. 世帯人数と目標備蓄日数を選択</h2>
+
+    <div class="field">
+      <label class="lab" for="people-select">世帯人数（1〜6人）</label>
+      <div class="seg-people" role="group" aria-label="世帯人数の選択ボタン" id="people-seg">
+        <button type="button" class="seg-btn" data-people="1" aria-pressed="false">1人<span class="sub-lbl">単身</span></button>
+        <button type="button" class="seg-btn active" data-people="2" aria-pressed="true">2人<span class="sub-lbl">2人世帯</span></button>
+        <button type="button" class="seg-btn" data-people="3" aria-pressed="false">3人<span class="sub-lbl">3人世帯</span></button>
+        <button type="button" class="seg-btn" data-people="4" aria-pressed="false">4人<span class="sub-lbl">4人世帯</span></button>
+        <button type="button" class="seg-btn" data-people="5" aria-pressed="false">5人<span class="sub-lbl">5人世帯</span></button>
+        <button type="button" class="seg-btn" data-people="6" aria-pressed="false">6人<span class="sub-lbl">6人世帯</span></button>
+      </div>
+      <select id="people-select" name="people" aria-label="世帯人数セレクトボックス">
+        <option value="1">1人（単身世帯）</option>
+        <option value="2" selected>2人（夫婦・2人世帯）</option>
+        <option value="3">3人（3人家族）</option>
+        <option value="4">4人（4人家族）</option>
+        <option value="5">5人（5人家族）</option>
+        <option value="6">6人（6人家族）</option>
+      </select>
+      <p class="hint" id="people-hint">※7人以上の場合は人数を分けて合算してください（例：4人＋3人）。乳幼児・子供も1人分として数えておくとゆとりを持てます。</p>
+      <p class="badge-note" id="fallback-note" role="status">※入力値が許容範囲（1〜6人／3日または7日）外のため、初期値（2人・3日分）で表示しています。</p>
+    </div>
+
+    <div class="field">
+      <span class="lab" id="days-label">備蓄日数（3日分 ／ 7日分）</span>
+      <div class="seg-days" role="group" aria-labelledby="days-label" id="days-seg">
+        <button type="button" class="seg-btn active" data-days="3" id="btn-days-3" aria-pressed="true">
+          3日分（最低限の目安）
+          <span class="sub-lbl">まずは定位置に確保したい基礎ライン</span>
+        </button>
+        <button type="button" class="seg-btn" data-days="7" id="btn-days-7" aria-pressed="false">
+          7日分（できれば1週間分）
+          <span class="sub-lbl">ローリングストックも併用した推奨ライン</span>
+        </button>
+      </div>
+    </div>
+
+    <p class="privacy">※計算はすべてお使いのブラウザ内で完結します。入力内容が外部へ送信・保存されることはありません。</p>
+  </section>
+
+  <!-- 結果表示カード（PR導線は一切混在させない） -->
+  <section class="card" aria-label="計算結果" aria-live="polite">
+    <h2>2. 基本4品目の備蓄量シミュレーション結果</h2>
+
+    <div class="result-head">
+      <p class="cap">選択中の世帯条件と目標期間</p>
+      <p class="cond-title" id="sim-condition-heading">【試算条件：2人世帯・3日分（最低限の目安）】</p>
+      <span class="mid" id="sim-summary-pill">水 18L（2L×9本）／ 食料 18食 ／ 携帯トイレ 30個目安 ／ ボンベ 6本目安</span>
+    </div>
+
+    <div class="sim-result-grid">
+      <!-- 1. 水 -->
+      <div class="bd-item item-water" id="card-water">
+        <div>
+          <div class="item-head">
+            <span class="name">① 飲料水・調理用水</span>
+            <span class="basis-tag is-official">公的基準</span>
+          </div>
+          <p class="amt-main" id="out-water-liters">18 L</p>
+          <p class="amt-sub" id="out-water-bottles">（2Lペットボトル換算：9 本）</p>
+          <p class="basis">公的基準：1人1日3L（飲料水＋調理用水の目安）※2L換算は総L数÷2の切り上げ本数</p>
+        </div>
+        <div class="card-links">
+          <a href="../water/index.html">保存水の人数別本数と保管方法を見る →</a>
+        </div>
+      </div>
+
+      <!-- 2. 食料 -->
+      <div class="bd-item item-food" id="card-food">
+        <div>
+          <div class="item-head">
+            <span class="name">② 食料（主食・おかず等）</span>
+            <span class="basis-tag is-official">公的基準</span>
+          </div>
+          <p class="amt-main" id="out-food-meals">18 食分</p>
+          <p class="basis">公的基準：1人1日3食を目安（日常食品を使い回すローリングストック推奨）</p>
+        </div>
+        <div class="card-links">
+          <a href="../food/index.html">非常食の選び方を見る →</a>
+          <a href="../rolling/index.html">ローリングストックのやり方を見る →</a>
+        </div>
+      </div>
+
+      <!-- 3. 携帯トイレ -->
+      <div class="bd-item item-toilet" id="card-toilet">
+        <div>
+          <div class="item-head">
+            <span class="name">③ 携帯トイレ（目安）</span>
+            <span class="basis-tag is-guide">目安・要出典確認</span>
+          </div>
+          <p class="amt-main" id="out-toilet-count">30 個（回分・目安）</p>
+          <p class="req-note" id="out-toilet-note">※1人1日5回を目安に計算した参考値です（体調や水分摂取量により個人差があります）。</p>
+        </div>
+        <div class="card-links">
+          <a href="../toilet/index.html">携帯トイレの必要個数とマンション対策を見る →</a>
+        </div>
+      </div>
+
+      <!-- 4. カセットボンベ -->
+      <div class="bd-item item-gas" id="card-gas">
+        <div>
+          <div class="item-head">
+            <span class="name">④ カセットボンベ（目安）</span>
+            <span class="basis-tag is-guide">目安・要出典確認</span>
+          </div>
+          <p class="amt-main" id="out-gas-canisters">6 本程度（目安）</p>
+          <p class="req-note" id="out-gas-note">※1人あたり7日分で6本・3日分で3本を目安とした参考値です（気温や湯沸かし・調理頻度により変動します／要出典確認項目）。</p>
+        </div>
+        <div class="card-links">
+          <a href="../checklist/index.html">最低限の備えチェックリストを見る →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 同一人数での3日分・7日分比較カード -->
+    <div class="compare-grid" aria-label="3日分と7日分の段階比較">
+      <div class="cmp is-active-plan" id="cmp-3d">
+        <p class="t" id="cmp-3d-title">ステップ1：2人世帯の「3日分（最低限の目安）」</p>
+        <p class="n" id="cmp-3d-body">水 18L（2L×9本）／ 食料 18食 ／ 携帯トイレ 30個目安 ／ ボンベ 6本目安</p>
+      </div>
+      <div class="cmp" id="cmp-7d">
+        <p class="t" id="cmp-7d-title">ステップ2：2人世帯の「7日分（できれば1週間分）」</p>
+        <p class="n" id="cmp-7d-body">水 42L（2L×21本）／ 食料 42食 ／ 携帯トイレ 70個目安 ／ ボンベ 12本目安</p>
+      </div>
+    </div>
+
+    <!-- 結果エリア下部の常時表示ディスクレーマー（折りたたみなし必須表示） -->
+    <div class="disclaimer" role="note" aria-label="試算結果の見方とご注意">
+      <h3>試算結果の見方とご注意</h3>
+      <ul>
+        <li>水（1人1日3L）および食料（1人1日3食、最低3日分・できれば1週間分）は、防災庁・政府の防災情報で示されている基準をもとに算出しています。</li>
+        <li><strong>携帯トイレ（1人1日5回目安）</strong>および<strong>カセットボンベ（1人7日6本・3日3本目安）</strong>は、自治体ガイド等で用いられる一般的な目安に基づく試算値です（本サイトの管理基準上「要出典確認」の目安項目を含みます）。</li>
+        <li>乳幼児・高齢者のいるご家庭、季節（夏場の水分補給や冬場の温かい食事頻度）、持病・アレルギーの有無によって必要な品目や量は異なります。お住まいの自治体の防災ガイドや各製品の表示もあわせてご確認ください。</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- JS無効環境・印刷利用対応の全12パターン早見表＆選び方ガイド -->
+  <article class="article-shell" style="margin-top: 22px;">
+    <div class="article-body numbered-headings">
+      <h2 id="sec-master-table">全12パターン早見表（1〜6人世帯 × 3日分／7日分｜印刷・一覧確認用）</h2>
+      <p>JavaScriptを無効にしている環境や、紙に印刷してご家族の点検メモとして使いたい場合のために、本カリキュレーターと同一の計算式で算出した1〜6人×3日分・7日分の全組み合わせ一覧を掲載しています。</p>
+
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th class="num-col">世帯人数</th>
+              <th class="num-col">備蓄日数</th>
+              <th class="num-col">水：総量<br>（公的基準）</th>
+              <th class="num-col">水：2L換算<br>（切り上げ）</th>
+              <th class="num-col">食料<br>（公的基準）</th>
+              <th class="num-col">携帯トイレ目安<br>（※1日5回目安）</th>
+              <th class="num-col">カセットボンベ目安<br>（※要出典確認）</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="num-col"><strong>1人</strong></td>
+              <td class="num-col">3日分</td>
+              <td class="num-col"><strong>9 L</strong></td>
+              <td class="num-col"><strong>5 本</strong></td>
+              <td class="num-col"><strong>9 食</strong></td>
+              <td class="num-col"><strong>15 個</strong></td>
+              <td class="num-col"><strong>3 本</strong></td>
+            </tr>
+            <tr>
+              <td class="num-col"><strong>1人</strong></td>
+              <td class="num-col">7日分</td>
+              <td class="num-col"><strong>21 L</strong></td>
+              <td class="num-col"><strong>11 本</strong></td>
+              <td class="num-col"><strong>21 食</strong></td>
+              <td class="num-col"><strong>35 個</strong></td>
+              <td class="num-col"><strong>6 本</strong></td>
+            </tr>
+            <tr>
+              <td class="num-col"><strong>2人</strong></td>
+              <td class="num-col">3日分</td>
+              <td class="num-col"><strong>18 L</strong></td>
+              <td class="num-col"><strong>9 本</strong></td>
+              <td class="num-col"><strong>18 食</strong></td>
+              <td class="num-col"><strong>30 個</strong></td>
+              <td class="num-col"><strong>6 本</strong></td>
+            </tr>
+            <tr>
+              <td class="num-col"><strong>2人</strong></td>
+              <td class="num-col">7日分</td>
+              <td class="num-col"><strong>42 L</strong></td>
+              <td class="num-col"><strong>21 本</strong></td>
+              <td class="num-col"><strong>42 食</strong></td>
+              <td class="num-col"><strong>70 個</strong></td>
+              <td class="num-col"><strong>12 本</strong></td>
+            </tr>
+            <tr>
+              <td class="num-col"><strong>3人</strong></td>
+              <td class="num-col">3日分</td>
+              <td class="num-col"><strong>27 L</strong></td>
+              <td class="num-col"><strong>14 本</strong></td>
+              <td class="num-col"><strong>27 食</strong></td>
+              <td class="num-col"><strong>45 個</strong></td>
+              <td class="num-col"><strong>9 本</strong></td>
+            </tr>
+            <tr>
+              <td class="num-col"><strong>3人</strong></td>
+              <td class="num-col">7日分</td>
+              <td class="num-col"><strong>63 L</strong></td>
+              <td class="num-col"><strong>32 本</strong></td>
+              <td class="num-col"><strong>63 食</strong></td>
+              <td class="num-col"><strong>105 個</strong></td>
+              <td class="num-col"><strong>18 本</strong></td>
+            </tr>
+            <tr>
+              <td class="num-col"><strong>4人</strong></td>
+              <td class="num-col">3日分</td>
+              <td class="num-col"><strong>36 L</strong></td>
+              <td class="num-col"><strong>18 本</strong></td>
+              <td class="num-col"><strong>36 食</strong></td>
+              <td class="num-col"><strong>60 個</strong></td>
+              <td class="num-col"><strong>12 本</strong></td>
+            </tr>
+            <tr>
+              <td class="num-col"><strong>4人</strong></td>
+              <td class="num-col">7日分</td>
+              <td class="num-col"><strong>84 L</strong></td>
+              <td class="num-col"><strong>42 本</strong></td>
+              <td class="num-col"><strong>84 食</strong></td>
+              <td class="num-col"><strong>140 個</strong></td>
+              <td class="num-col"><strong>24 本</strong></td>
+            </tr>
+            <tr>
+              <td class="num-col"><strong>5人</strong></td>
+              <td class="num-col">3日分</td>
+              <td class="num-col"><strong>45 L</strong></td>
+              <td class="num-col"><strong>23 本</strong></td>
+              <td class="num-col"><strong>45 食</strong></td>
+              <td class="num-col"><strong>75 個</strong></td>
+              <td class="num-col"><strong>15 本</strong></td>
+            </tr>
+            <tr>
+              <td class="num-col"><strong>5人</strong></td>
+              <td class="num-col">7日分</td>
+              <td class="num-col"><strong>105 L</strong></td>
+              <td class="num-col"><strong>53 本</strong></td>
+              <td class="num-col"><strong>105 食</strong></td>
+              <td class="num-col"><strong>175 個</strong></td>
+              <td class="num-col"><strong>30 本</strong></td>
+            </tr>
+            <tr>
+              <td class="num-col"><strong>6人</strong></td>
+              <td class="num-col">3日分</td>
+              <td class="num-col"><strong>54 L</strong></td>
+              <td class="num-col"><strong>27 本</strong></td>
+              <td class="num-col"><strong>54 食</strong></td>
+              <td class="num-col"><strong>90 個</strong></td>
+              <td class="num-col"><strong>18 本</strong></td>
+            </tr>
+            <tr>
+              <td class="num-col"><strong>6人</strong></td>
+              <td class="num-col">7日分</td>
+              <td class="num-col"><strong>126 L</strong></td>
+              <td class="num-col"><strong>63 本</strong></td>
+              <td class="num-col"><strong>126 食</strong></td>
+              <td class="num-col"><strong>210 個</strong></td>
+              <td class="num-col"><strong>36 本</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="note-text">※奇数リットル（9L・21L・27L・45L・63L・105L）となる条件では、2Lペットボトル換算本数は端数を切り上げて不足が生じない本数を表示しています。</p>
+
+      <h2 id="sec-next-guide">試算した数量を無理なく揃えるためのステップと関連ガイド</h2>
+      <p>試算結果のすべてを一度に購入しようとすると保管場所の確保が負担になりやすいため、まずは<strong>「3日分（最低限の目安）」</strong>を自宅の低い収納やトイレ棚に収め、そのあと普段の食品や飲料水を少し多めに買い置きする<strong>ローリングストック</strong>で<strong>「7日分（1週間分）」</strong>へ広げていく方法が管理しやすくなります。</p>
+
+      <aside class="pr-box" aria-label="プロモーション案内">
+        <div class="pr-box-head"><span class="pr-badge">【#PR】</span>防災・備蓄の基本アイテム仕様比較のご案内</div>
+        <ul>
+          <li>保存水・長期保存食・携帯トイレ・カセットボンベなどを段階的に揃える際は、試算した必要数と収納場所の寸法を照らし合わせ、入り数や保存期間表示を見比べて選ぶと無理なく管理できます。</li>
+          <li>一式セットの構成・明細を確認したい場合や、不足品目を個別に選びたい場合は以下から仕様を見比べられます。<div class="pr-slot-group"><a class="pr-slot" href="https://room.rakuten.co.jp/osusumedougadayo" target="_blank" rel="nofollow sponsored noopener">楽天ROOM「防災・備蓄の基本グッズ」を見る</a> <a class="pr-slot pr-slot-sub" href="https://px.a8.net/svt/ejp?a8mat=4BEMLS+APT1EQ+328C+1HOFWI" target="_blank" rel="nofollow sponsored noopener">防災グッズ39点セットの構成・仕様を確認する</a></div></li>
+        </ul>
+      </aside>
+
+      <div class="hub-grid">
+        <a class="hub-card" href="../index.html">
+          <span class="hub-card-tag">全体基準・総まとめ</span>
+          <span class="hub-card-title">防災備蓄は何日分・何がどれだけ必要？</span>
+          <span class="hub-card-desc">公的基準と目安の考え方、品目別の選び方と点検ルーティンの全体像</span>
+        </a>
+        <a class="hub-card" href="../checklist/index.html">
+          <span class="hub-card-tag">全体点検・持ち出し袋</span>
+          <span class="hub-card-title">最低限の備えチェックリスト</span>
+          <span class="hub-card-desc">在宅備蓄と非常用持ち出し袋（防災リュック）の優先順位リスト</span>
+        </a>
+        <a class="hub-card" href="../water/index.html">
+          <span class="hub-card-tag">水ジャンル中核</span>
+          <span class="hub-card-title">保存水は何リットル必要か（家族人数別）</span>
+          <span class="hub-card-desc">長期保存水と通常水の使い分け、臭い移り・転倒を防ぐ保管ルール</span>
+        </a>
+        <a class="hub-card" href="../food/index.html">
+          <span class="hub-card-tag">食料ジャンル中核</span>
+          <span class="hub-card-title">非常食の量と選び方（5年保存の目安）</span>
+          <span class="hub-card-desc">主食・おかずの組み合わせ方と長期保存食・日常食品の2層備蓄</span>
+        </a>
+        <a class="hub-card" href="../rolling/index.html">
+          <span class="hub-card-tag">実践手順：食・水</span>
+          <span class="hub-card-title">ローリングストックのやり方</span>
+          <span class="hub-card-desc">4ステップで続く日常循環の始め方と一人暮らし・家族別の実践コツ</span>
+        </a>
+        <a class="hub-card" href="../toilet/index.html">
+          <span class="hub-card-tag">トイレジャンル中核</span>
+          <span class="hub-card-title">携帯トイレは何個必要か（マンション・断水）</span>
+          <span class="hub-card-desc">集合住宅で優先度が高い理由と処理袋セット・凝固剤の選び方</span>
+        </a>
+        <a class="hub-card" href="../hitori/index.html">
+          <span class="hub-card-tag">世帯別：単身</span>
+          <span class="hub-card-title">一人暮らしの備蓄（量と置き場所）</span>
+          <span class="hub-card-desc">ワンルーム・1Kでも邪魔にならない5箇所への分散配置アイデア</span>
+        </a>
+        <a class="hub-card" href="../family/index.html">
+          <span class="hub-card-tag">世帯別：ファミリー</span>
+          <span class="hub-card-title">家族・子供がいる家庭の備蓄</span>
+          <span class="hub-card-desc">乳幼児・学齢期別の追加品目と家族全員で共有する部屋別分散収納</span>
+        </a>
+      
+        <a class="hub-card" href="../bousai-set/index.html">
+          <span class="hub-card-tag">持ち出し袋・比較</span>
+          <span class="hub-card-title">防災セット（非常用持ち出し袋）の選び方</span>
+          <span class="hub-card-desc">市販一式セットと単品準備の比較・明細7項目チェックリスト</span>
+        </a>
+        <a class="hub-card" href="../yosan/index.html">
+          <span class="hub-card-tag">予算別プラン</span>
+          <span class="hub-card-title">防災備蓄の予算別プラン（1万・3万・5万円目安）</span>
+          <span class="hub-card-desc">手持ち品の棚卸しから段階的に揃える優先順位ガイド</span>
+        </a>
+        <a class="hub-card" href="../mansion/index.html">
+          <span class="hub-card-tag">集合住宅対策</span>
+          <span class="hub-card-title">マンション・アパートの防災備蓄</span>
+          <span class="hub-card-desc">エレベーター停止・断水排水制限に備える室内備蓄のポイント</span>
+        </a>
+        <a class="hub-card" href="../car/index.html">
+          <span class="hub-card-tag">移動・車載備蓄</span>
+          <span class="hub-card-title">車載防災グッズと車中泊の備え</span>
+          <span class="hub-card-desc">立ち往生や移動時のつなぎを支える車内用コンパクト備蓄</span>
+        </a>
+      </div>
+
+
+      <h2 id="sec-faq">備蓄量カリキュレーターに関するよくある質問（FAQ）</h2>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>Q1. 世帯人数が7人以上の大家族や二世帯住宅の場合はどう計算すればよいですか？</h3>
+          <p><strong>A.</strong> 本カリキュレーターは1人あたりの基準量に人数を掛ける比例計算となっているため、7人以上の場合は人数を2回に分けて合算してください（たとえば7人世帯なら「4人」の結果と「3人」の結果を足し合わせます。2Lペットボトル本数は合計リットル数を2で割って端数を切り上げると正確です）。</p>
+        </div>
+        <div class="faq-item">
+          <h3>Q2. 乳幼児や小学生の子供がいる場合も、世帯人数に1人として含めてよいですか？</h3>
+          <p><strong>A.</strong> 調乳や離乳食の湯煎、手口まわりの清拭、成長に伴う食事量の増加などを考慮すると、乳幼児や子供も1人分として数えて基準量を確保しておくとゆとりを持てます。内訳の品目（液体ミルク・軟水・食べ慣れた甘口レトルト等）は年齢に合わせて調整しましょう（詳細は<a href="../family/index.html">家族・子供がいる家庭の備蓄</a>を参照）。</p>
+        </div>
+        <div class="faq-item">
+          <h3>Q3. 試算結果にある「公的基準」と「目安・要出典確認」のラベルはどう違うのですか？</h3>
+          <p><strong>A.</strong> 備蓄期間（最低3日分・できれば1週間分）および水（1人1日3L）・食料（1人1日3食）は防災庁・政府の防災情報で示されている「公的基準」です。一方、携帯トイレとカセットボンベの数量は自治体ガイド等で用いられる一般的な「目安」として区別表示しています（詳細は<a href="../policy/verification/index.html">数値目安の算出基準・出典確認フロー</a>を参照）。</p>
+        </div>
+        <div class="faq-item">
+          <h3>Q4. 選択した世帯人数などの情報が外部へ送信されることはありますか？</h3>
+          <p><strong>A.</strong> いいえ、選択された人数・日数の計算処理はすべてお使いのブラウザ内だけで完結しており、外部サーバーへ送信・保存されることは一切ありません。</p>
+        </div>
+      </div>
+
+      <div class="context-link-box">
+        <p class="context-link-title">試算した数量を段階的に揃えるための実践ガイド</p>
+        <p>手持ち品の棚卸しから無理なく買い足す優先順位は「<a href="../yosan/index.html">防災備蓄の予算別プラン</a>」、避難移動用のリュックと在宅備蓄の仕分けは「<a href="../bousai-set/index.html">防災セット（非常用持ち出し袋）の選び方</a>」で整理しています。集合住宅での保管方法は「<a href="../mansion/index.html">マンション・アパートの防災備蓄</a>」もご参照ください。</p>
+      </div>
+      <section class="verify-box" aria-label="更新日・数値の確認方法について">
+        <h2>更新日・数値の確認方法について</h2>
+        <ul>
+          <li><strong>最終更新日</strong>：2026年11月12日</li>
+          <li><strong>執筆・編集</strong>：くらしの防災備蓄ナビ編集部</li>
+          <li><strong>計算式の根拠区分</strong>：水（<code>3L × 人数 × 日数</code>、2L換算は <code>÷2</code> の切り上げ）および食料（<code>3食 × 人数 × 日数</code>）、備蓄日数（最低3日分・できれば1週間分）は防災庁・政府の防災情報に基づく公的基準を参照しています。携帯トイレ（<code>5回 × 人数 × 日数</code>）およびカセットボンベ（7日選択時 <code>6本 × 人数</code>、3日選択時 <code>3本 × 人数</code>）は一般的な目安値（要出典確認項目）として算出しています。（詳細：<a href="../policy/verification/index.html">数値目安の算出基準・出典確認フロー</a>）</li>
+        </ul>
+      </section>
+
+      <section class="source-memo" aria-label="出典・参考情報メモ">
+        <h2>出典・参考情報メモ（公開前差し替え用プレースホルダ）</h2>
+        <p>※公開CMS入稿時に以下の公的機関ページの最新URLと照合し、要出典確認項目は一次資料の確認を完了してから公開する。</p>
+        <ul>
+          <li><code>[出典プレースホルダ：首相官邸／防災庁／政府広報オンライン「災害に対するご家庭での備え（最低3日〜1週間分・水1人1日3L・食料1人1日3食基準）」確認用]</code></li>
+          <li><code>[出典プレースホルダ：農林水産省「災害時に備えた食品ストックガイド」（食料備蓄量・ローリングストック推奨の確認用）]</code></li>
+          <li><code>[要出典確認メモ①：携帯トイレ（1人1日5回目安）について、自治体防災ガイド・国の災害時トイレ対策資料における回数目安の記載を確認し出典を明記すること]</code></li>
+          <li><code>[要出典確認メモ②：カセットボンベ（1人7日6本・3日3本目安）について、公的防災情報・業界団体等の目安根拠を確認し目安表記を維持したうえで出典を整理すること]</code></li>
+        </ul>
+      </section>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand-title">くらしの防災備蓄ナビ</p>
+        <p class="footer-brand-desc">防災庁・政府の防災情報等の公的基準と明確な目安に基づき、家庭で無理なく続けられる備蓄量・収納・入れ替え方法を整理する特化ガイドです。避難行動や安全確認はお住まいの自治体・気象庁等の公式情報をご確認ください。</p>
+      </div>
+      <div class="footer-col">
+        <h3>コンテンツ一覧</h3>
+        <ul>
+          <li><a href="../index.html">防災備蓄は何日分・何がどれだけ必要？（全体像）</a></li>
+          <li><a href="../simulator/index.html" aria-current="page">備蓄量カリキュレーター（人数×日数別試算）</a></li>
+          <li><a href="../checklist/index.html">最低限の備えチェックリスト</a></li>
+          <li><a href="../bousai-set/index.html">防災セット（非常用持ち出し袋）の選び方</a></li>
+          <li><a href="../yosan/index.html">防災備蓄の予算別プラン（1万・3万・5万円目安）</a></li>
+          <li><a href="../water/index.html">保存水は何リットル必要か（家族人数別）</a></li>
+          <li><a href="../food/index.html">非常食の量と選び方（5年保存の目安）</a></li>
+          <li><a href="../rolling/index.html">ローリングストックのやり方</a></li>
+          <li><a href="../toilet/index.html">携帯トイレは何個必要か（マンション・断水）</a></li>
+          <li><a href="../toilet-set/index.html">凝固剤のみと処理袋セットの違い</a></li>
+          <li><a href="../dansui/index.html">断水時にトイレをどうするか</a></li>
+          <li><a href="../hitori/index.html">一人暮らしの備蓄（量と置き場所）</a></li>
+          <li><a href="../family/index.html">家族・子供がいる家庭の備蓄</a></li>
+          <li><a href="../mansion/index.html">マンション・アパートの防災備蓄</a></li>
+          <li><a href="../car/index.html">車載防災グッズと車中泊の備え</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>サイト情報・運営ポリシー</h3>
+        <ul>
+          <li><a href="../about/index.html">運営者情報・編集部体制・制作ポリシー</a></li>
+          <li><a href="../policy/verification/index.html">数値目安の算出基準・出典確認フロー</a></li>
+          <li><a href="../policy/advertising/index.html">広告掲載ポリシー（#PR表記方針）</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 くらしの防災備蓄ナビ編集部</p>
+      <p>※当サイトの記事にはプロモーション（#PR）が含まれます。</p>
+    </div>
+  </div>
+</footer>
+
+<button type="button" class="back-to-top" id="back-to-top" aria-label="ページ上部へ戻る">
+  <span class="back-to-top-arrow" aria-hidden="true">↑</span>
+  <span>TOP</span>
+</button>
+
+<script>
+/**
+ * 備蓄量カリキュレーター 計算関数（site/02_simulator-spec.md §4-3 準拠）
+ * @param {number} people - 世帯人数（1〜6の整数）
+ * @param {3 | 7} days - 備蓄日数（3 または 7）
+ */
+function calculateStockpile(people, days) {
+  if (!Number.isInteger(people) || people < 1 || people > 6) {
+    throw new RangeError("people は 1〜6 の整数を指定してください。");
+  }
+  if (days !== 3 && days !== 7) {
+    throw new RangeError("days は 3 または 7 を指定してください。");
+  }
+
+  var waterLiters = 3 * people * days;
+  var waterBottles2L = Math.ceil(waterLiters / 2);
+  var foodMeals = 3 * people * days;
+  var toiletCount = 5 * people * days;
+  var gasCanisters = (days === 7 ? 6 : 3) * people;
+
+  return {
+    people: people,
+    days: days,
+    waterLiters: waterLiters,
+    waterBottles2L: waterBottles2L,
+    foodMeals: foodMeals,
+    toiletCount: toiletCount,
+    gasCanisters: gasCanisters,
+    notes: {
+      toilet: "※1人1日5回を目安に計算した参考値です（体調や水分摂取量により個人差があります）。",
+      gas: "※1人あたり7日分で6本・3日分で3本を目安とした参考値です（気温や湯沸かし・調理頻度により変動します／要出典確認項目）。"
+    }
+  };
+}
+
+window.calculateStockpile = calculateStockpile;
+
+(function() {
+  var DEFAULT_PEOPLE = 2;
+  var DEFAULT_DAYS = 3;
+  var state = { people: DEFAULT_PEOPLE, days: DEFAULT_DAYS };
+
+  var peopleSelect = document.getElementById("people-select");
+  var peopleBtns = Array.prototype.slice.call(document.querySelectorAll("#people-seg [data-people]"));
+  var daysBtns = Array.prototype.slice.call(document.querySelectorAll("#days-seg [data-days]"));
+  var fallbackNote = document.getElementById("fallback-note");
+
+  var condHeading = document.getElementById("sim-condition-heading");
+  var summaryPill = document.getElementById("sim-summary-pill");
+  var outWaterLiters = document.getElementById("out-water-liters");
+  var outWaterBottles = document.getElementById("out-water-bottles");
+  var outFoodMeals = document.getElementById("out-food-meals");
+  var outToiletCount = document.getElementById("out-toilet-count");
+  var outToiletNote = document.getElementById("out-toilet-note");
+  var outGasCanisters = document.getElementById("out-gas-canisters");
+  var outGasNote = document.getElementById("out-gas-note");
+
+  var cmp3d = document.getElementById("cmp-3d");
+  var cmp7d = document.getElementById("cmp-7d");
+  var cmp3dTitle = document.getElementById("cmp-3d-title");
+  var cmp3dBody = document.getElementById("cmp-3d-body");
+  var cmp7dTitle = document.getElementById("cmp-7d-title");
+  var cmp7dBody = document.getElementById("cmp-7d-body");
+
+  function sanitizeAndRender(rawPeople, rawDays) {
+    var p = Number(rawPeople);
+    var d = Number(rawDays);
+    var fellBack = false;
+
+    if (!Number.isInteger(p) || p < 1 || p > 6) {
+      p = DEFAULT_PEOPLE;
+      fellBack = true;
+    }
+    if (d !== 3 && d !== 7) {
+      d = DEFAULT_DAYS;
+      fellBack = true;
+    }
+
+    state.people = p;
+    state.days = d;
+
+    if (fallbackNote) {
+      fallbackNote.classList.toggle("show", fellBack);
+    }
+
+    var res = calculateStockpile(p, d);
+    var res3 = calculateStockpile(p, 3);
+    var res7 = calculateStockpile(p, 7);
+
+    // Sync controls
+    if (peopleSelect) {
+      peopleSelect.value = String(p);
+    }
+    peopleBtns.forEach(function(btn) {
+      var active = Number(btn.getAttribute("data-people")) === p;
+      btn.classList.toggle("active", active);
+      btn.setAttribute("aria-pressed", active ? "true" : "false");
+    });
+    daysBtns.forEach(function(btn) {
+      var active = Number(btn.getAttribute("data-days")) === d;
+      btn.classList.toggle("active", active);
+      btn.setAttribute("aria-pressed", active ? "true" : "false");
+    });
+
+    // Update output DOM
+    var daysLabel = d === 7 ? "7日分（1週間分）" : "3日分（最低限の目安）";
+    condHeading.textContent = "【試算条件：" + p + "人世帯・" + daysLabel + "】";
+    summaryPill.textContent =
+      "水 " + res.waterLiters + "L（2L×" + res.waterBottles2L + "本）／ 食料 " +
+      res.foodMeals + "食 ／ 携帯トイレ " + res.toiletCount + "個目安 ／ ボンベ " +
+      res.gasCanisters + "本目安";
+
+    outWaterLiters.textContent = res.waterLiters + " L";
+    outWaterBottles.textContent = "（2Lペットボトル換算：" + res.waterBottles2L + " 本）";
+    outFoodMeals.textContent = res.foodMeals + " 食分";
+    outToiletCount.textContent = res.toiletCount + " 個（回分・目安）";
+    outToiletNote.textContent = res.notes.toilet;
+    outGasCanisters.textContent = res.gasCanisters + " 本程度（目安）";
+    outGasNote.textContent = res.notes.gas;
+
+    // Update 3d vs 7d comparison cards
+    cmp3d.classList.toggle("is-active-plan", d === 3);
+    cmp7d.classList.toggle("is-active-plan", d === 7);
+    cmp3dTitle.textContent = "ステップ1：" + p + "人世帯の「3日分（最低限の目安）」";
+    cmp3dBody.textContent =
+      "水 " + res3.waterLiters + "L（2L×" + res3.waterBottles2L + "本）／ 食料 " +
+      res3.foodMeals + "食 ／ 携帯トイレ " + res3.toiletCount + "個目安 ／ ボンベ " +
+      res3.gasCanisters + "本目安";
+    cmp7dTitle.textContent = "ステップ2：" + p + "人世帯の「7日分（できれば1週間分）」";
+    cmp7dBody.textContent =
+      "水 " + res7.waterLiters + "L（2L×" + res7.waterBottles2L + "本）／ 食料 " +
+      res7.foodMeals + "食 ／ 携帯トイレ " + res7.toiletCount + "個目安 ／ ボンベ " +
+      res7.gasCanisters + "本目安";
+  }
+
+  if (peopleSelect) {
+    peopleSelect.addEventListener("change", function(e) {
+      sanitizeAndRender(parseInt(e.target.value, 10), state.days);
+    });
+  }
+
+  peopleBtns.forEach(function(btn) {
+    btn.addEventListener("click", function() {
+      sanitizeAndRender(parseInt(btn.getAttribute("data-people"), 10), state.days);
+    });
+  });
+
+  daysBtns.forEach(function(btn) {
+    btn.addEventListener("click", function() {
+      sanitizeAndRender(state.people, parseInt(btn.getAttribute("data-days"), 10));
+    });
+  });
+
+  // Optional URL parameter initialization (?people=4&days=7) with strict validation
+  var params = new URLSearchParams(window.location.search || "");
+  if (params.has("people") || params.has("days")) {
+    var qp = params.has("people") ? Number(params.get("people")) : DEFAULT_PEOPLE;
+    var qd = params.has("days") ? Number(params.get("days")) : DEFAULT_DAYS;
+    sanitizeAndRender(qp, qd);
+  } else {
+    sanitizeAndRender(DEFAULT_PEOPLE, DEFAULT_DAYS);
+  }
+
+  // Reading progress & back-to-top
+  var bar = document.getElementById("reading-progress-bar");
+  var topBtn = document.getElementById("back-to-top");
+  function onScroll() {
+    var s = window.scrollY || document.documentElement.scrollTop || 0;
+    var h = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    if (bar) bar.style.width = (h > 0 ? Math.min(100, Math.max(0, s / h * 100)) : 0) + "%";
+    if (topBtn) topBtn.classList.toggle("is-visible", s > 280);
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  if (topBtn) topBtn.addEventListener("click", function() { window.scrollTo({ top: 0, behavior: "smooth" }); });
+  onScroll();
+})();
+</script>
+</body>
+</html>
