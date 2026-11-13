@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ふるさと納税の確定申告ガイド｜控除の受け方・必要書類・限度額を超えた場合の扱いまで整理</title>
+<meta name="description" content="ふるさと納税を確定申告で手続きするケース（6自治体以上・医療費控除や住宅ローン1年目併用・個人事業主等）と具体的な手順を解説。控除上限額を超えて寄附した場合の所得税・住民税での扱いと受領証明書の管理方法もまとめました。">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "ふるさと納税の確定申告ガイド｜控除の受け方・必要書類・限度額を超えた場合の扱いまで整理",
+  "description": "ふるさと納税を確定申告で手続きするケース（6自治体以上・医療費控除や住宅ローン1年目併用・個人事業主等）と具体的な手順を解説。控除上限額を超えて寄附した場合の所得税・住民税での扱いと受領証明書の管理方法もまとめました。",
+  "inLanguage": "ja",
+  "datePublished": "2026-11-12",
+  "dateModified": "2026-11-12",
+  "author": {
+    "@type": "Organization",
+    "name": "ふるさと納税限度額ナビ編集部"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ふるさと納税限度額ナビ編集部"
+  },
+  "image": [
+    "../assets/img/docs.webp"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "ふるさと納税限度額ナビ"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ふるさと納税の限度額トップ",
+      "item": "../index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "確定申告での控除の受け方と超過分の扱い"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "過去の年にふるさと納税の確定申告を忘れていた場合、後から申告できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "一般論として、確定申告をする義務がなかった給与所得者等が寄附金控除による還付を受けるための申告（還付申告）や、既に確定申告をした人が控除漏れを訂正する手続き（更正の請求）には、税法上一定の法定期間（期限の目安・細則は要確認）が設けられています。寄附金受領証明書が手元にあれば手続きできる場合があるため、所轄の税務署へご確認ください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "寄附金受領証明書を紛失してしまった場合は確定申告できませんか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "まずは寄附先の自治体へ連絡し、寄附金受領証明書の再発行が可能かどうかを早めに相談してください（再発行には日数がかかる場合があります）。また、利用したポータルサイトが国税庁指定の特定事業者であり、年間寄附額をまとめた電子データ（寄附金控除に関する証明書）の発行に対応している場合は、そちらを添付書類に代えて利用できるケースもあります（対応可否はポータルおよび国税庁案内で要確認）。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ふるさと納税の寄附日と寄附金受領証明書の発行日が年をまたいでいる場合、いつの確定申告になりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "基準となるのは自治体での受領日（クレジットカード決済等であれば原則として決済完了日）が記載された「受領日（寄附日）」です。12月31日までに決済が完了し、証明書に記載された受領日が当年12月31日以前であれば、翌年1月に証明書が郵送されてきた場合でも当年分の確定申告の対象となります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "家族のクレジットカードで決済した寄附でも本人の確定申告で控除できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "寄附金控除は「寄附をした本人」が費用を負担したことが前提となるため、寄附の申込者名義・寄附金受領証明書の宛名・決済手段の名義・確定申告をする本人の名義はすべて一致させるのが原則です。名義が異なる決済を行ってしまった場合の取り扱いは、寄附先自治体および所轄税務署にてご確認ください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "確定申告をしたのに税務署からの還付金が寄附額より少ないのはなぜですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "確定申告によるふるさと納税の控除は、「①当年の所得税からの控除（口座への還付等）」と「②翌年度の住民税からの控除（基本分＋特例分による住民税減額）」の2段階に分かれて反映される仕組みだからです。口座に振り込まれる還付金は①の所得税分のみであり、残りの大部分は翌年6月以降に納める住民税が軽減される形で反映されます。"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<div class="reading-progress" aria-hidden="true" data-design-added="true"><div class="reading-progress-bar" id="reading-progress-bar"></div></div>
+<a class="skip-link" href="#main-content">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand-row">
+      <a class="site-brand" href="../index.html">
+        <span class="site-brand-title">ふるさと納税限度額ナビ <span class="site-brand-badge">控除上限・手続き特化ガイド</span></span>
+        <span class="site-brand-sub">年収・家族構成・各種控除から上限目安と申請期限を整理する情報サイト</span>
+      </a>
+      <a class="header-cta" href="../simulator/index.html">残り枠を試算する →</a>
+    </div>
+    <nav class="global-nav" aria-label="メインナビゲーション">
+      <ul>
+        <li><a href="../index.html">総まとめ</a></li>
+        <li><a href="../simulator/index.html">シミュレーター</a></li>
+        <li><a href="../hayami/index.html">早見表</a></li>
+        <li><a href="../keisan/index.html">計算・書類確認</a></li>
+        <li><a href="../nenshu/index.html">年収別・配分</a></li>
+        <li><a href="../jutaku-loan/index.html">住宅ローン併用</a></li>
+        <li><a href="../ideco/index.html">iDeCo併用</a></li>
+        <li><a href="../setai/index.html">世帯・共働き</a></li>
+        <li><a href="../kojin-jigyo/index.html">個人事業主</a></li>
+        <li><a href="../nenkin/index.html">年金受給者</a></li>
+        <li><a href="../onestop/index.html">ワンストップ特例</a></li>
+        <li><a href="../kakutei/index.html" aria-current="page">確定申告・超過</a></li>
+        <li><a href="../gendo-chouka/index.html">限度額超過</a></li>
+        <li><a href="../henreihin/index.html">返礼品の選び方</a></li>
+        <li><a href="../december/index.html">12月駆け込み</a></li>
+        <li><a href="../miss/index.html">よくある失敗</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="site-main" id="main-content">
+  <nav class="breadcrumb" aria-label="パンくずリスト" data-design-added="true">
+    <ol>
+      <li><a href="../index.html">ふるさと納税の限度額トップ</a></li>
+      <li aria-current="page">確定申告での控除の受け方と超過分の扱い</li>
+    </ol>
+  </nav>
+  <article class="article-shell">
+    <header class="article-header">
+      <p class="pr-notice-top">※本記事にはプロモーション（#PR）が含まれます。</p>
+      <h1>ふるさと納税の確定申告ガイド｜控除の受け方・必要書類・限度額を超えた場合の扱いまで整理</h1>
+      <div class="article-meta" data-design-added="true">
+        <span>最終更新日：<time datetime="2026-11-12">2026年11月12日</time></span>
+        <span>執筆・編集：ふるさと納税限度額ナビ編集部</span>
+      </div>
+    </header>
+    <figure class="article-eyecatch" data-design-added="true">
+      <div class="article-eyecatch-img-wrap">
+        <img src="../assets/img/docs.webp" alt="確定申告書や寄附金受領証明書の書類束と電卓のイラスト" width="800" height="500">
+      </div>
+      <figcaption class="article-eyecatch-bar">
+        <span class="article-eyecatch-tag">確定申告・超過時の扱い</span>
+        <span class="article-eyecatch-summary">寄附金受領証明書の準備・2段階控除の仕組み・限度額超過時の対応</span>
+      </figcaption>
+    </figure>
+
+    <div class="article-body numbered-headings">
+      <p>ふるさと納税を行ったあと、「自分はワンストップ特例ではなく確定申告が必要なのか」「確定申告をすると税金はいつ・どのように戻るのか」、あるいは「計算違いで限度額を超えてしまったかもしれないがどうすればよいのか」と悩む場面は少なくありません。</p>
+
+      <p>ふるさと納税では、年間の寄附合計額のうち<strong>2,000円を超える部分について、一定の上限まで所得税と住民税から原則として全額が控除</strong>されます。確定申告を行う場合は、「所得税からの控除」と「住民税からの控除」の2段階で反映される仕組みです。また、万が一<strong>控除限度額を超えて寄附してしまった場合でも、超過分がまったく控除されなくなるわけではなく、通常の寄附金控除の対象に含まれます</strong>。さらに上限超過時は、ワンストップ特例よりも確定申告を行う方が所得税からも控除されるため控除範囲が広くなります。</p>
+
+      <p>本記事では、確定申告での手続きが必要・適しているケースの整理、所得税と住民税から2段階で控除される仕組み、限度額を超過した場合の具体的な扱い、必要書類と申告時の記入漏れ防止ポイントまで分かりやすく解説します。制度全体の基本は<a href="../index.html">ふるさと納税の限度額の全体像と確認方法</a>もあわせてご参照ください。</p>
+
+      <div class="summary-box">
+  <p class="summary-box-title">この記事のポイント（確定申告と限度額超過時の扱い・結論まとめ）</p>
+  <ul>
+    <li><strong>確定申告が必要な代表例</strong>：個人事業主、年間の寄附先が <strong>6自治体以上</strong> の人、医療費控除等で確定申告を行う人、ワンストップ申請期限（<strong>翌年1月10日必着</strong>）に間に合わなかった人</li>
+    <li><strong>2段階の控除構造</strong>：「所得税からの控除＝<strong>（ふるさと納税額−2,000円）×所得税率</strong>（対象寄附額は総所得金額等の40%上限）」と「住民税からの控除」の合計で反映される</li>
+    <li><strong>ワンストップとの連動注意</strong>：確定申告を行うと提出済みのワンストップ特例は <strong>すべて無効</strong> になるため、当年の全寄附分を確定申告書に記載する</li>
+    <li><strong>限度額を超えた場合</strong>：全額控除にはならないが寄附金控除の対象にはなり、<strong>ワンストップ特例より確定申告の方が控除範囲が広い</strong></li>
+  </ul>
+</div>
+
+      <nav class="toc-box" aria-label="目次" data-design-added="true">
+  <p class="toc-title">目次</p>
+  <ol>
+    <li><a href="#sec-1">ふるさと納税で「確定申告」が必要になる人・選んだ方がよい人</a></li>
+    <li><a href="#sec-2">確定申告で税金が控除される仕組み｜「所得税」と「住民税」の2段階反映</a></li>
+    <li><a href="#sec-3">うっかり「控除限度額」を超えてしまった場合の扱いと対処法</a></li>
+    <li><a href="#sec-4">確定申告で寄附金控除を受けるための準備書類と手順</a></li>
+    <li><a href="#sec-5">ポータル利用ルールと翌年の控除反映確認まで</a></li>
+    <li><a href="#sec-6">確定申告と限度額超過に関するよくある質問（FAQ）</a></li>
+    <li><a href="#sec-7">まとめ｜6自治体以上・他控除併用・上限超過時は確定申告で確実に手続きしよう</a></li>
+  </ol>
+</nav>
+
+      <h2 id="sec-1">ふるさと納税で「確定申告」が必要になる人・選んだ方がよい人</h2>
+
+      <p>ふるさと納税の控除申請には「ワンストップ特例制度」と「確定申告」の2通りがありますが、次のいずれかに当てはまる場合は確定申告で寄附金控除の手続きを行います。</p>
+
+      <div class="stacked-diagram" role="figure" aria-label="確定申告における「所得税還付」と「翌年度住民税減額」の2段階反映イメージ" data-design-added="true">
+  <div class="stacked-diagram-head">
+    <span class="stacked-diagram-title">確定申告における「所得税還付」と「翌年度住民税減額」の2段階反映イメージ</span>
+    <span class="stacked-diagram-total">超過時も確定申告の方が控除範囲が広い</span>
+  </div>
+  <div class="stacked-track"><div class="stacked-seg seg-c3" style="width: 24%;">① 所得税（還付・減額）</div><div class="stacked-seg seg-c1" style="width: 70%;">②③ 翌年度の住民税（基本分＋特例分）から減額</div><div class="stacked-seg seg-c4" style="width: 6%;">2千円</div></div>
+  <div class="stacked-legend"><div class="stacked-legend-item is-focus"><span class="stacked-legend-label"><span class="dot-swatch swatch-c3"></span>① 所得税からの控除</span><span class="stacked-legend-val">(寄附額−2,000円)×所得税率［総所得40%上限］</span></div><div class="stacked-legend-item"><span class="stacked-legend-label"><span class="dot-swatch swatch-c1"></span>②③ 翌年度住民税からの控除</span><span class="stacked-legend-val">基本分＋特例分（住民税所得割額20%上限）</span></div></div>
+  <p class="stacked-diagram-foot">※横幅比率は構造理解用の概念図です。口座への還付金は①所得税分のみであり、残りは翌年度住民税の減額として反映されます。</p>
+</div>
+
+      <div class="table-wrap">
+<table>
+<thead>
+<tr>
+  <th>ケース区分</th>
+  <th>該当する具体的な状況</th>
+  <th>手続き上の注意点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>① もともと確定申告を行う人</strong></td>
+  <td>・個人事業主・フリーランス、不動産所得等がある人<br>・給与収入が所定基準を超える人や複数勤務先がある人</td>
+  <td>ワンストップ特例は対象外のため、最初から確定申告で一括手続きする（詳細：<a href="../kojin-jigyo/index.html">個人事業主の限度額の考え方</a>）</td>
+</tr>
+<tr>
+  <td><strong>② 他の控除を受けるために確定申告をする会社員・年金受給者</strong></td>
+  <td>・<strong>医療費控除</strong>やセルフメディケーション税制を申告する人<br>・<strong>住宅ローン控除の1年目</strong>で申告する人<br>・年末調整で漏れた保険料控除やiDeCo等を申告する人</td>
+  <td><strong>確定申告をすると提出済みのワンストップ特例はすべて無効</strong>になるため、ふるさと納税も必ず確定申告書に含める</td>
+</tr>
+<tr>
+  <td><strong>③ 年間の寄附先が「6自治体以上」になった人</strong></td>
+  <td>・1月1日〜12月31日の間に6つ以上の異なる自治体へ寄附した人</td>
+  <td>6自治体目だけでなく、<strong>1〜5自治体目も含めた全寄附分</strong>を確定申告する</td>
+</tr>
+<tr>
+  <td><strong>④ ワンストップ特例の期限（翌年1月10日必着）を過ぎた人</strong></td>
+  <td>・年末間際の寄附等で1月10日必着に間に合わなかった人<br>・転居後の変更届出書を期限内に出せなかった人</td>
+  <td>確定申告へ切り替えれば控除手続きが可能（詳細：<a href="../onestop/index.html">ワンストップ特例の条件・手順・期限</a>）</td>
+</tr>
+<tr>
+  <td><strong>⑤ 控除限度額を超過して寄附してしまった人</strong></td>
+  <td>・年末の賞与減や控除増加により、結果として全額控除の上限目安を上回った人</td>
+  <td>住民税のみのワンストップ特例より、所得税からも控除される<strong>確定申告の方が控除範囲が広い</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+      <p>特に会社員の方で見落としが多いのが②のケースです。「ふるさと納税は秋にワンストップ申請書を出したから終わり」と思い込み、翌年2月に医療費控除だけの確定申告書を提出してしまうと、ワンストップ特例が無効化されたうえに確定申告書にも寄附金控除の記載がない状態となり、ふるさと納税の控除が受けられなくなってしまいます。</p>
+
+      <h2 id="sec-2">確定申告で税金が控除される仕組み｜「所得税」と「住民税」の2段階反映</h2>
+
+      <p>確定申告でふるさと納税（寄附金控除）を申告した際、よく聞かれる疑問が「税務署から振り込まれた還付金が、寄附した金額よりずっと少なかったのは失敗したからか？」というものです。これは失敗ではなく、<strong>確定申告では「所得税」と「住民税」の2つの窓口に分かれて時間差で控除される仕組み</strong>になっているためです。</p>
+
+      <div class="table-wrap">
+<table>
+<thead>
+<tr>
+  <th>控除される税金</th>
+  <th>計算方法・制度上のルール</th>
+  <th>反映される形と時期の目安</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>① 所得税からの控除</strong></td>
+  <td><strong>（ふるさと納税額 − 2,000円）× 所得税率</strong><br>※復興特別所得税を加味する場合は1.021を乗じるのが一般的（細部は要確認）。<br>※控除対象のふるさと納税額は <strong>総所得金額等の40%</strong> が上限</td>
+  <td>源泉徴収済みの会社員等であれば、確定申告後に指定口座への<strong>還付金振込</strong>（または納付すべき所得税からの減額）として反映（時期は申告後1〜2ヶ月程度が目安・要確認）</td>
+</tr>
+<tr>
+  <td><strong>② 住民税からの控除（基本分）</strong></td>
+  <td>（ふるさと納税額 − 2,000円）に所定の住民税率を乗じた額（総所得金額等の上限規定あり・要確認）</td>
+  <td>翌年度の<strong>住民税額から減額</strong>される形で反映（例年6月頃から切り替わる住民税で反映されるのが一般的・要確認）</td>
+</tr>
+<tr>
+  <td><strong>③ 住民税からの控除（特例分）</strong></td>
+  <td>寄附額から2,000円を引き、さらに①と②を引いた残額（<strong>住民税の所得割額の20%</strong> が上限）</td>
+  <td>②と同じく、翌年度の<strong>住民税額から減額</strong>される形で反映</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+      <p>つまり、確定申告後に銀行口座へ還付されるのは<strong>「①の所得税分だけ」</strong>であり、控除額の大部分を占める「②住民税基本分＋③住民税特例分」は、その後に届く翌年度の住民税が安くなる形で反映されます。①＋②＋③をすべて合計すると、控除上限額の範囲内であれば「ふるさと納税額 − 2,000円」と同額になる構造です。計算式の詳しい成り立ちは<a href="../keisan/index.html">限度額の計算方法と源泉徴収票での確認</a>で解説しています。</p>
+
+      <div class="sim-cta" data-design-added="true">
+        <div class="sim-cta-text">
+          <strong>早見表ベースの基準目安と「今年の残り枠」を即時試算</strong>
+          給与収入（300万〜800万円・25万円刻み）×家族構成3区分と寄附済み額から確認できます（※給与収入のみ・他控除なしの目安）。
+        </div>
+        <a class="sim-cta-btn" href="../simulator/index.html">残り枠シミュレーターを開く →</a>
+      </div>
+
+      <h2 id="sec-3">うっかり「控除限度額」を超えてしまった場合の扱いと対処法</h2>
+
+      <p>「年の途中に早見表を見て寄附したが、冬の賞与が減った」「後から医療費控除やiDeCoの控除が加わり、限度額が下がってしまった」など、結果として限度額を超えて寄附してしまうケースもあります。その場合のルールを正確に押さえておきましょう。</p>
+
+      <h3>1. 限度額を超えた分も「寄附金控除の対象」にはなる（全額自己負担ではない）</h3>
+
+      <p>「限度額を1万円超えたら、その1万円は1円も控除されずすべて自己負担になる」と誤解されることがありますが、実際はそうではありません。総務省の公表情報にあるとおり、<strong>限度額を超えた分も寄附金控除の対象にはなりますが、「全額控除（自己負担2,000円のみ）」にはならない</strong>というのが正確な扱いです。</p>
+
+      <p>前述の表のとおり、いわゆる「ふるさと納税の限度額」とは、<strong>③の住民税特例分が上限（住民税所得割額の20%）に達するライン</strong>のことです。このラインを超えた寄附部分については③の特例分こそ上乗せされなくなりますが、所定の上限（所得税は総所得金額等の40%上限等）の範囲内であれば、<strong>①の所得税からの控除（（寄附額−2,000円）×所得税率）や②の住民税基本分の計算対象には含まれます</strong>。その結果、超過した金額のうち所得税率や住民税基本分に応じた一部は控除され、残りの部分が2,000円に上乗せされる自己負担となります。</p>
+
+      <h3>2. 限度額を超過したときは「ワンストップ特例」より「確定申告」を選ぶ</h3>
+
+      <p>ここが実務上の重要な分岐点です。<strong>限度額を超過してしまった場合は、ワンストップ特例のままにするよりも、確定申告を行って寄附金控除を申告する方が控除範囲が広くなります。</strong></p>
+
+      <ul>
+  <li><strong>ワンストップ特例の場合</strong>：確定申告を行わず住民税側だけで控除を完結させる特例ですが、所得税相当分を肩代わりする計算が住民税特例分の上限と連動しているため、限度額を超過した部分に対して所得税率分の控除効果が十分に及ばなくなります。</li>
+  <li><strong>確定申告の場合</strong>：税務署への申告によって<strong>「所得税からの控除＝（ふるさと納税額−2,000円）×所得税率」が直接適用</strong>され、さらに住民税の基本分も控除されるため、超過部分の自己負担増加を抑えることができます。</li>
+</ul>
+
+      <h3>3. 基準となる早見表と算出式で超過の有無を点検する</h3>
+
+      <p>自分の寄附合計額が上限目安を超えていないか不安な場合は、まず基準となる総務省公表の早見表と算出式（<code>控除限度額＝（住民税の所得割額×20%）÷（90%−所得税率×1.021）＋2,000円</code>）に照らして確認しましょう。</p>
+
+      <p class="note-text">※本表は総務省公表値に基づく、<strong>給与収入のみ・他の控除がない場合の控除上限額の目安</strong>（抜粋）です。全21行は<a href="../hayami/index.html">控除上限額の早見表（年収×家族構成）</a>を参照してください。iDeCo等の他控除がある場合はこれより限度額が下がる場合があります（詳細：<a href="../ideco/index.html">iDeCo併用で限度額がどう変わるか</a>）。正確な限度額は源泉徴収票・住民税決定通知書・お住まいの自治体でご確認ください。</p>
+
+      <div class="table-wrap">
+<table>
+<thead>
+<tr>
+  <th class="num-col">給与収入（額面）</th>
+  <th class="num-col">独身・共働き</th>
+  <th class="num-col">夫婦（配偶者控除あり）</th>
+  <th class="num-col">共働き＋子1人（高校生）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="num-col"><strong>300万円</strong></td>
+  <td class="num-col">28,000円</td>
+  <td class="num-col">19,000円</td>
+  <td class="num-col">19,000円</td>
+</tr>
+<tr>
+  <td class="num-col"><strong>400万円</strong></td>
+  <td class="num-col">42,000円</td>
+  <td class="num-col">33,000円</td>
+  <td class="num-col">33,000円</td>
+</tr>
+<tr>
+  <td class="num-col"><strong>500万円</strong></td>
+  <td class="num-col">61,000円</td>
+  <td class="num-col">49,000円</td>
+  <td class="num-col">49,000円</td>
+</tr>
+<tr>
+  <td class="num-col"><strong>600万円</strong></td>
+  <td class="num-col">77,000円</td>
+  <td class="num-col">69,000円</td>
+  <td class="num-col">69,000円</td>
+</tr>
+<tr>
+  <td class="num-col"><strong>700万円</strong></td>
+  <td class="num-col">108,000円</td>
+  <td class="num-col">86,000円</td>
+  <td class="num-col">86,000円</td>
+</tr>
+<tr>
+  <td class="num-col"><strong>800万円</strong></td>
+  <td class="num-col">129,000円</td>
+  <td class="num-col">120,000円</td>
+  <td class="num-col">120,000円</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+      <aside class="pr-box" aria-label="プロモーション案内">
+  <div class="pr-box-head"><span class="pr-badge">【#PR】</span>寄附履歴と上限目安を照らし合わせた計画的な寄附のご案内</div>
+  <ul>
+    <li>これまでの寄附合計額と当年の残り枠を確認しながら、上限目安を超えないよう寄附金額の刻みを見比べて計画的に検討できます。</li>
+    <li><a class="pr-slot" href="https://hb.afl.rakuten.co.jp/hgc/11e7c15e.43b4d992.11e7c15f.7b1e602a/?pc=https%3A%2F%2Fevent.rakuten.co.jp%2Ffurusato%2F&amp;link_type=text&amp;ut=eyJwYWdlIjoidXJsIiwidHlwZSI6InRleHQiLCJjb2wiOjF9" target="_blank" rel="nofollow sponsored noopener">楽天ふるさと納税で寄附先を探す</a></li>
+  </ul>
+</aside>
+
+      <h2 id="sec-4">確定申告で寄附金控除を受けるための準備書類と手順</h2>
+
+      <p>実際に確定申告を行う際は、以下の書類を手元に揃えて手順を進めます。</p>
+
+      <h3>1. 事前に揃えておく主な書類</h3>
+
+      <ol>
+  <li><strong>寄附金受領証明書（または所定の寄附金控除に関する証明書データ）</strong><br>寄附先の各自治体から郵送される証明書です。複数のポータルサイトや自治体を利用した場合は、当年（1月1日〜12月31日決済分）の証明書がすべて揃っているか件数を照合します（特定事業者が発行する年間まとめの控除証明書データを利用できる制度もあり、対応要件は国税庁および利用ポータルの案内で要確認）。</li>
+  <li><strong>源泉徴収票（給与所得者・公的年金受給者などの場合）</strong><br>当年分の給与収入・源泉徴収税額・社会保険料等の入力に使います。個人事業主の場合は青色申告決算書または収支内訳書を用意します。</li>
+  <li><strong>本人確認書類（マイナンバーカード等）および還付金受取用の本人名義口座情報</strong><br>所得税の還付金を受け取るための金融機関口座番号と、マイナンバー確認書類を用意します。</li>
+</ol>
+
+      <h3>2. 手続きの流れと特に見落としたくない「住民税に関する事項」</h3>
+
+      <p>確定申告書の作成は、国税庁の「確定申告書等作成コーナー」を用いたオンライン申告（e-Tax）または書面作成・提出で行うのが一般的です（申告期間は寄附した翌年の2月中旬〜3月中旬頃が原則的な目安・還付申告の受付期間等の細則は国税庁案内で要確認）。</p>
+
+      <p>入力・記入時に特に注意したいチェックポイントは以下の3点です。</p>
+
+      <ul>
+  <li><strong>寄附先の区分を正しく選ぶ</strong>：「都道府県、市区町村に対する寄附金（ふるさと納税）」の区分を選択して入力します。一般の公益法人等への寄附金と区分を間違えると住民税特例分が計算されないため注意が必要です。</li>
+  <li><strong>確定申告書「第二表」の住民税に関する事項を確認する</strong>：書面等で作成する場合、第一表の「寄附金控除」欄だけでなく、<strong>第二表の「住民税・事業税に関する事項」にある都道府県・市区町村への寄附金欄</strong>にも金額が記載されているかを必ず確認します（作成コーナーでふるさと納税として正しく入力すれば自動反映される仕組みが一般的ですが、提出前の控えプレビューで確認すると確実です）。ここが空欄だと所得税の還付だけ行われ、住民税の控除が漏れる原因になります。</li>
+  <li><strong>ワンストップ申請済みの寄附分も合算する</strong>：年の前半にワンストップ申請書を送った自治体分も、確定申告をするなら漏らさず全件入力します。</li>
+</ul>
+
+      <h2 id="sec-5">ポータル利用ルールと翌年の控除反映確認まで</h2>
+
+      <p>なお、返礼品については総務省基準により「調達価格が寄附額の3割以下」「地場産品であること」と定められており（2019年6月から指定制度）、<strong>2025年10月からはポータルサイト等を経由した寄附へのポイント付与も総務省基準で禁止</strong>されています。確定申告を行う方は、年間の寄附履歴一覧の確認や証明書管理がしやすいかどうかという実用面でポータルサイトを活用しましょう。</p>
+
+      <p>また、当年分の確定申告対象となる寄附は<strong>12月31日決済完了分まで</strong>です（年末の締切管理は<a href="../schedule/index.html">年間スケジュールと締切（12/31・1/10）</a>を参照）。翌春に確定申告を終えたあとは、①税務署からの還付金振込通知（国税還付金振込通知書等）と、②初夏に届く「住民税決定通知書」の2つを保管書類と突き合わせ、所得税・住民税の両方で控除が反映されたかを確認しましょう。</p>
+
+      <aside class="pr-box" aria-label="プロモーション案内">
+  <div class="pr-box-head"><span class="pr-badge">【#PR】</span>寄附履歴や証明書管理もしやすいポータル利用のご案内</div>
+  <ul>
+    <li>6自治体以上への寄附や確定申告を予定している方も、年間の寄附金額合計を整理しながら12月31日の締切までに計画的に手続きを進められます。</li>
+    <li><a class="pr-slot" href="https://hb.afl.rakuten.co.jp/hgc/11e7c15e.43b4d992.11e7c15f.7b1e602a/?pc=https%3A%2F%2Fevent.rakuten.co.jp%2Ffurusato%2F&amp;link_type=text&amp;ut=eyJwYWdlIjoidXJsIiwidHlwZSI6InRleHQiLCJjb2wiOjF9" target="_blank" rel="nofollow sponsored noopener">楽天ふるさと納税で寄附先を探す</a></li>
+  </ul>
+</aside>
+
+
+      <div class="context-link-box">
+        <p class="context-link-title">限度額超過の詳細構造・第二表記入漏れ防止・住宅ローン1年目の解説</p>
+        <p>上限を超えた場合に確定申告の方が控除範囲が広くなる3段階構造の詳細は「<a href="../gendo-chouka/index.html">限度額を超えたらどうなるか</a>」、確定申告書第二表の記入漏れやワンストップ無効化の注意点は「<a href="../miss/index.html">よくある失敗と対処法</a>」で解説しています。住宅ローン控除1年目の方は「<a href="../jutaku-loan/index.html">住宅ローン控除とふるさと納税の併用</a>」もあわせてご参照ください。</p>
+      </div>
+      <h2 id="sec-6">確定申告と限度額超過に関するよくある質問（FAQ）</h2>
+
+      <div class="faq-list">
+  <div class="faq-item">
+    <h3>Q1. 過去の年にふるさと納税の確定申告を忘れていた場合、後から申告できますか？</h3>
+    <p><strong>A.</strong> 一般論として、確定申告をする義務がなかった給与所得者等が寄附金控除による還付を受けるための申告（還付申告）や、既に確定申告をした人が控除漏れを訂正する手続き（更正の請求）には、税法上一定の法定期間（期限の目安・細則は要確認）が設けられています。寄附金受領証明書が手元にあれば手続きできる場合があるため、所轄の税務署へご確認ください。</p>
+  </div>
+  <div class="faq-item">
+    <h3>Q2. 寄附金受領証明書を紛失してしまった場合は確定申告できませんか？</h3>
+    <p><strong>A.</strong> まずは寄附先の自治体へ連絡し、寄附金受領証明書の再発行が可能かどうかを早めに相談してください（再発行には日数がかかる場合があります）。また、利用したポータルサイトが国税庁指定の特定事業者であり、年間寄附額をまとめた電子データ（寄附金控除に関する証明書）の発行に対応している場合は、そちらを添付書類に代えて利用できるケースもあります（対応可否はポータルおよび国税庁案内で要確認）。</p>
+  </div>
+  <div class="faq-item">
+    <h3>Q3. ふるさと納税の寄附日と寄附金受領証明書の発行日が年をまたいでいる場合、いつの確定申告になりますか？</h3>
+    <p><strong>A.</strong> 基準となるのは自治体での受領日（クレジットカード決済等であれば原則として決済完了日）が記載された「受領日（寄附日）」です。12月31日までに決済が完了し、証明書に記載された受領日が当年12月31日以前であれば、翌年1月に証明書が郵送されてきた場合でも当年分の確定申告の対象となります。</p>
+  </div>
+  <div class="faq-item">
+    <h3>Q4. 家族のクレジットカードで決済した寄附でも本人の確定申告で控除できますか？</h3>
+    <p><strong>A.</strong> 寄附金控除は「寄附をした本人」が費用を負担したことが前提となるため、寄附の申込者名義・寄附金受領証明書の宛名・決済手段の名義・確定申告をする本人の名義はすべて一致させるのが原則です。名義が異なる決済を行ってしまった場合の取り扱いは、寄附先自治体および所轄税務署にてご確認ください。</p>
+  </div>
+  <div class="faq-item">
+    <h3>Q5. 確定申告をしたのに税務署からの還付金が寄附額より少ないのはなぜですか？</h3>
+    <p><strong>A.</strong> 確定申告によるふるさと納税の控除は、「①当年の所得税からの控除（口座への還付等）」と「②翌年度の住民税からの控除（基本分＋特例分による住民税減額）」の2段階に分かれて反映される仕組みだからです。口座に振り込まれる還付金は①の所得税分のみであり、残りの大部分は翌年6月以降に納める住民税が軽減される形で反映されます。</p>
+  </div>
+</div>
+
+      <h2 id="sec-7">まとめ｜6自治体以上・他控除併用・上限超過時は確定申告で確実に手続きしよう</h2>
+
+      <p>ふるさと納税を確定申告で手続きすると、<strong>「所得税からの控除」と「翌年度住民税からの控除」の2段階</strong>で税金が軽減されます。ワンストップ特例の申請書を出したあとに確定申告へ切り替える場合は全寄附分を漏れなく申告書へ記載し、万が一限度額を超過してしまった場合も控除範囲が広い確定申告を活用しましょう。正確な控除限度額や個別の申告手続きについては、源泉徴収票・住民税決定通知書をご確認のうえ、お住まいの自治体や所轄税務署にてご確認ください。</p>
+
+      <p>あわせて確認しておきたい関連ページは以下のとおりです。</p>
+
+      <ul>
+  <li><strong>全体像と限度額の基本に戻る</strong>：<a href="../index.html">ふるさと納税の限度額の全体像と確認方法</a> ／ <a href="../hayami/index.html">控除上限額の早見表（年収×家族構成）</a></li>
+  <li><strong>ワンストップ特例との違いを確認する</strong>：<a href="../onestop/index.html">ワンストップ特例の条件・手順・期限</a></li>
+  <li><strong>算出式と源泉徴収票の見方を知る</strong>：<a href="../keisan/index.html">限度額の計算方法と源泉徴収票での確認</a></li>
+  <li><strong>属性・併用控除の注意点を見る</strong>：<a href="../kojin-jigyo/index.html">個人事業主の限度額の考え方</a> ／ <a href="../nenkin/index.html">年金受給者の限度額の考え方</a> ／ <a href="../ideco/index.html">iDeCo併用で限度額がどう変わるか</a></li>
+  <li><strong>年末締切と年間スケジュールを見る</strong>：<a href="../schedule/index.html">年間スケジュールと締切（12/31・1/10）</a></li>
+</ul>
+
+      <div class="hub-grid" data-design-added="true">
+  <a class="hub-card" href="../simulator/index.html">
+    <span class="hub-card-tag">試算ツール</span>
+    <span class="hub-card-title">控除上限額・残り枠シミュレーター</span>
+    <span class="hub-card-desc">給与収入×家族構成から上限目安と寄附済み額差し引き後の残り枠を即時計算</span>
+  </a>
+  <a class="hub-card" href="../index.html">
+    <span class="hub-card-tag">総まとめガイド</span>
+    <span class="hub-card-title">ふるさと納税の限度額 総まとめ</span>
+    <span class="hub-card-desc">限度額の仕組み・25万円刻み早見表・計算確認・申請手続きまで一括整理</span>
+  </a>
+  <a class="hub-card" href="../hayami/index.html">
+    <span class="hub-card-tag">早見表・目安確認</span>
+    <span class="hub-card-title">控除上限額の早見表（年収×家族構成）</span>
+    <span class="hub-card-desc">給与収入300万〜800万円×家族3区分の公表早見表と正しい読み方</span>
+  </a>
+  <a class="hub-card" href="../keisan/index.html">
+    <span class="hub-card-tag">算出式・書類照合</span>
+    <span class="hub-card-title">限度額の計算方法と源泉徴収票での確認</span>
+    <span class="hub-card-desc">住民税所得割額ベースの算出式と源泉徴収票・決定通知書の見方</span>
+  </a>
+  <a class="hub-card" href="../nenshu/index.html">
+    <span class="hub-card-tag">年収別・配分設計</span>
+    <span class="hub-card-title">年収別に見る限度額と寄附配分の考え方</span>
+    <span class="hub-card-desc">300万〜800万円帯ごとの特徴と5自治体以内の無理のない寄附配分</span>
+  </a>
+  <a class="hub-card" href="../kojin-jigyo/index.html">
+    <span class="hub-card-tag">属性別：個人事業主</span>
+    <span class="hub-card-title">個人事業主の限度額の考え方</span>
+    <span class="hub-card-desc">売上と事業所得の違い・確認書類3点・確定申告での寄附金控除ルール</span>
+  </a>
+  <a class="hub-card" href="../nenkin/index.html">
+    <span class="hub-card-tag">属性別：年金受給者</span>
+    <span class="hub-card-title">年金受給者の限度額の考え方</span>
+    <span class="hub-card-desc">課税状況の事前確認・公的年金等控除の違い・医療費控除併用時の注意点</span>
+  </a>
+  <a class="hub-card" href="../ideco/index.html">
+    <span class="hub-card-tag">控除併用：iDeCo</span>
+    <span class="hub-card-title">iDeCo併用で限度額がどう変わるか</span>
+    <span class="hub-card-desc">掛金の所得控除で限度額が下がる仕組みと年末調整・確定申告の選び方</span>
+  </a>
+  <a class="hub-card" href="../onestop/index.html">
+    <span class="hub-card-tag">手続き：ワンストップ</span>
+    <span class="hub-card-title">ワンストップ特例の条件・手順・期限</span>
+    <span class="hub-card-desc">5自治体以内のカウント方法・翌年1月10日必着・確定申告での無効化対策</span>
+  </a>
+  <a class="hub-card" href="../schedule/index.html">
+    <span class="hub-card-tag">期限・スケジュール</span>
+    <span class="hub-card-title">年間スケジュールと締切（12/31・1/10）</span>
+    <span class="hub-card-desc">12月31日決済完了基準・翌年1月10日必着ルール・時期別の分散アクション</span>
+  </a>
+
+  <a class="hub-card" href="../jutaku-loan/index.html">
+    <span class="hub-card-tag">控除併用：住宅ローン</span>
+    <span class="hub-card-title">住宅ローン控除とふるさと納税の併用</span>
+    <span class="hub-card-desc">1年目（確定申告）と2年目以降（ワンストップ可）の手続きと確認点</span>
+  </a>
+  <a class="hub-card" href="../setai/index.html">
+    <span class="hub-card-tag">夫婦・共働き</span>
+    <span class="hub-card-title">共働き・夫婦世帯の限度額の考え方</span>
+    <span class="hub-card-desc">世帯合算できない原則と各自の名義・決済ルール</span>
+  </a>
+  <a class="hub-card" href="../henreihin/index.html">
+    <span class="hub-card-tag">返礼品選び・制度</span>
+    <span class="hub-card-title">返礼品の選び方と総務省基準ルール</span>
+    <span class="hub-card-desc">冷凍容量・発送時期・金額刻みの観点と2025年10月基準</span>
+  </a>
+</div>
+
+      <section class="verify-box" aria-label="更新日・数値の確認方法について">
+  <h2>更新日・数値の確認方法について</h2>
+  <ul>
+    <li><strong>最終更新日</strong>：2026年11月12日</li>
+    <li><strong>執筆・編集</strong>：ふるさと納税限度額ナビ編集部</li>
+    <li><strong>数値・制度情報の確認方針</strong>：本記事に掲載している所得税の控除計算式（総所得金額等の40%上限含む）、限度額を超過した場合の取り扱い、ワンストップ特例との関係、および早見表抜粋値は、総務省ふるさと納税ポータルサイト等の公表情報をもとに整理しています。早見表は「給与収入のみ・他の控除がない場合」の目安です。実際の控除額や確定申告の手続き要件は個人の課税状況により異なるため、源泉徴収票・住民税決定通知書をご確認のうえ、所轄税務署やお住まいの自治体にてご確認ください。</li>
+  </ul>
+</section>
+
+      <section class="source-memo" aria-label="出典・参考情報メモ">
+  <h2>出典・参考情報メモ（公開前差し替え用プレースホルダ）</h2>
+  <p class="note-text">※公開CMS入稿時に以下の公的機関ページの最新URLおよび細部要件を確認のうえ差し替えを実施する。</p>
+  <ul>
+    <li><code>[出典プレースホルダ：総務省「ふるさと納税ポータルサイト｜税金の控除について・全額控除されるふるさと納税額の年間上限を超えた場合・ワンストップ特例制度」（所得税控除式・総所得金額等の40%上限・超過時の確定申告控除範囲・無効化ルールの確認用）]</code></li>
+    <li><code>[出典プレースホルダ：総務省「ふるさと納税の指定制度および2025年10月ポイント付与禁止に関する公表資料」（返礼品基準・ポイント付与禁止の確認用）]</code></li>
+    <li><code>[出典プレースホルダ：国税庁「確定申告書等作成コーナー・タックスアンサー｜寄附金控除・特定事業者の寄附金控除に関する証明書（電子的控除証明書）」（申告期間・還付振込時期・第二表記入方法・過去分の還付申告や更正の請求の法定期間・名義要件の確認用）（要出典確認）]</code></li>
+    <li><code>[出典プレースホルダ：住民税基本分の税率・総所得金額等上限および翌年度住民税への反映月細則（要出典確認）]</code></li>
+  </ul>
+</section>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand-title">ふるさと納税限度額ナビ</p>
+        <p class="footer-brand-desc">総務省ふるさと納税ポータルサイト等の公表基準にもとづき、控除上限額（限度額）の早見表・算出式・属性別の注意点・ワンストップ特例および確定申告の手続きを客観的に整理する特化情報サイトです。掲載数値は一般的な目安であり、正確な控除限度額は源泉徴収票・住民税決定通知書・お住まいの自治体にてご確認ください。</p>
+      </div>
+      <div class="footer-col">
+        <h3>コンテンツ一覧</h3>
+        <ul>
+          <li><a href="../index.html">ふるさと納税の限度額 総まとめ</a></li>
+          <li><a href="../simulator/index.html">控除上限額・残り枠シミュレーター</a></li>
+          <li><a href="../hayami/index.html">控除上限額の早見表（年収×家族構成）</a></li>
+          <li><a href="../keisan/index.html">限度額の計算方法と源泉徴収票での確認</a></li>
+          <li><a href="../nenshu/index.html">年収別に見る限度額と寄附配分の考え方</a></li>
+          <li><a href="../jutaku-loan/index.html">住宅ローン控除とふるさと納税の併用</a></li>
+          <li><a href="../ideco/index.html">iDeCo併用で限度額がどう変わるか</a></li>
+          <li><a href="../setai/index.html">共働き・夫婦世帯の限度額の考え方</a></li>
+          <li><a href="../kojin-jigyo/index.html">個人事業主の限度額の考え方</a></li>
+          <li><a href="../nenkin/index.html">年金受給者の限度額の考え方</a></li>
+          <li><a href="../onestop/index.html">ワンストップ特例の条件・手順・期限</a></li>
+          <li><a href="../kakutei/index.html" aria-current="page">確定申告での控除の受け方と超過分の扱い</a></li>
+          <li><a href="../gendo-chouka/index.html">限度額を超えたらどうなる？超過時の扱い</a></li>
+          <li><a href="../henreihin/index.html">返礼品の選び方と総務省基準ルール</a></li>
+          <li><a href="../schedule/index.html">年間スケジュールと締切（12/31・1/10）</a></li>
+          <li><a href="../december/index.html">12月駆け込み寄附の注意点チェックリスト</a></li>
+          <li><a href="../miss/index.html">ふるさと納税でよくある失敗とリカバリー</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>サイト情報・運営ポリシー</h3>
+        <ul>
+          <li><a href="../about/index.html">運営者情報・編集部体制・制作ポリシー</a></li>
+          <li><a href="../policy/verification/index.html">数値算出基準・出典確認フロー</a></li>
+          <li><a href="../policy/advertising/index.html">広告掲載ポリシー（#PR表記方針）</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 ふるさと納税限度額ナビ編集部</p>
+      <p>※当サイトの記事にはプロモーション（#PR）が含まれます。</p>
+    </div>
+  </div>
+</footer>
+<button type="button" class="back-to-top" id="back-to-top" aria-label="ページ上部へ戻る" data-design-added="true">
+  <span class="back-to-top-arrow" aria-hidden="true">↑</span>
+  <span>TOP</span>
+</button>
+<script data-design-added="true">
+(function(){
+  var bar = document.getElementById("reading-progress-bar");
+  var btn = document.getElementById("back-to-top");
+  function onScroll(){
+    var s = window.scrollY || document.documentElement.scrollTop || 0;
+    var h = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    if(bar) bar.style.width = (h > 0 ? Math.min(100, Math.max(0, s / h * 100)) : 0) + "%";
+    if(btn) btn.classList.toggle("is-visible", s > 280);
+  }
+  window.addEventListener("scroll", onScroll, {passive: true});
+  if(btn) btn.addEventListener("click", function(){ window.scrollTo({top: 0, behavior: "smooth"}); });
+  onScroll();
+})();
+</script>
+</body>
+</html>

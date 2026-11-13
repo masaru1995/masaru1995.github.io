@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ふるさと納税 控除上限額・残り枠シミュレーター｜年収×家族構成から即時確認</title>
+<meta name="description" content="総務省公表の早見表（給与収入300万〜800万円・25万円刻み×家族構成3区分）にもとづき、ふるさと納税の控除上限額の目安と寄附済み額を差し引いた今年の残り枠、自己負担2,000円を除く控除対象額目安を即時計算します。">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "ふるさと納税 控除上限額・残り枠シミュレーター",
+  "description": "総務省公表の早見表（給与収入300万〜800万円・25万円刻み×家族構成3区分）にもとづき、ふるさと納税の控除上限額の目安と寄附済み額を差し引いた今年の残り枠、自己負担2,000円を除く控除対象額目安を即時計算します。",
+  "inLanguage": "ja",
+  "datePublished": "2026-11-12",
+  "dateModified": "2026-11-12",
+  "author": {
+    "@type": "Organization",
+    "name": "ふるさと納税限度額ナビ編集部"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ふるさと納税限度額ナビ編集部"
+  },
+  "image": [
+    "../assets/img/docs.webp"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "ふるさと納税限度額ナビ"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ふるさと納税の限度額トップ",
+      "item": "../index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "控除上限額・残り枠シミュレーター"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "25万円刻みの間にある給与収入（例：520万円など）を入力した場合、どのように計算されますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "本シミュレーターでは独自補間による上限超過リスクを防ぐため、25万円刻みの間にある給与収入については直近下位の行（520万円なら500万円の行）の総務省公表値を参照して表示し、その旨の注記を表示する仕様としています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "「今年の寄附済み合計額」が上限目安を超えている場合、残り枠はどう表示されますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "今年の残り枠は下限を0円（マイナス表示なし）として計算し、目安を上回っている金額を確認できるよう表示します。上限目安を超えた場合の税制上の扱いや確定申告への切り替えについては「限度額を超えたらどうなる？超過時の扱い」をご確認ください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "iDeCo・医療費控除・住宅ローン控除を利用している場合や、個人事業主・年金受給者もそのまま使えますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "本シミュレーターが参照する総務省公表の早見表は「給与収入のみ・他の控除がない場合」の目安です。他の所得控除・税額控除を併用している場合や、事業所得・公的年金等の雑所得がある場合は実際の控除上限額が異なるため、源泉徴収票・確定申告書控え・住民税決定通知書およびお住まいの自治体窓口でご確認ください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "入力した年収や寄附済み額のデータが外部へ送信されることはありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "いいえ、入力された数値や家族構成の選択内容はすべてお使いのブラウザ内でのみ計算処理され、外部サーバーへ送信・保存されることはありません。"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<div class="reading-progress" aria-hidden="true"><div class="reading-progress-bar" id="reading-progress-bar"></div></div>
+<a class="skip-link" href="#main-content">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand-row">
+      <a class="site-brand" href="../index.html">
+        <span class="site-brand-title">ふるさと納税限度額ナビ <span class="site-brand-badge">控除上限・手続き特化ガイド</span></span>
+        <span class="site-brand-sub">年収・家族構成・各種控除から上限目安と申請期限を整理する情報サイト</span>
+      </a>
+      <a class="header-cta" href="../simulator/index.html">残り枠を試算する →</a>
+    </div>
+    <nav class="global-nav" aria-label="メインナビゲーション">
+      <ul>
+        <li><a href="../index.html">総まとめ</a></li>
+        <li><a href="../simulator/index.html" aria-current="page">シミュレーター</a></li>
+        <li><a href="../hayami/index.html">早見表</a></li>
+        <li><a href="../keisan/index.html">計算・書類確認</a></li>
+        <li><a href="../nenshu/index.html">年収別・配分</a></li>
+        <li><a href="../jutaku-loan/index.html">住宅ローン併用</a></li>
+        <li><a href="../ideco/index.html">iDeCo併用</a></li>
+        <li><a href="../setai/index.html">世帯・共働き</a></li>
+        <li><a href="../kojin-jigyo/index.html">個人事業主</a></li>
+        <li><a href="../nenkin/index.html">年金受給者</a></li>
+        <li><a href="../onestop/index.html">ワンストップ特例</a></li>
+        <li><a href="../kakutei/index.html">確定申告・超過</a></li>
+        <li><a href="../gendo-chouka/index.html">限度額超過</a></li>
+        <li><a href="../henreihin/index.html">返礼品の選び方</a></li>
+        <li><a href="../december/index.html">12月駆け込み</a></li>
+        <li><a href="../miss/index.html">よくある失敗</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="site-main sim-wrap" id="main-content">
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <ol>
+      <li><a href="../index.html">ふるさと納税の限度額トップ</a></li>
+      <li aria-current="page">控除上限額・残り枠シミュレーター</li>
+    </ol>
+  </nav>
+
+  <div class="sim-hero-panel">
+    <header class="top">
+      <p class="pr-notice-top">※本ページにはプロモーション（#PR）が含まれます。</p>
+      <span class="top-hero-eyebrow">総務省公表の早見表ルックアップ方式（独自補間なし）</span>
+      <h1>ふるさと納税 控除上限額・残り枠シミュレーター</h1>
+      <p class="lead">当年の給与収入（額面見込み：300万〜800万円・25万円刻み）と家族構成3区分から、全額控除となる年間上限額の目安と「今年の寄附済み額を差し引いた残り枠（下限0円）」を即座に確認できます。</p>
+    </header>
+    <div class="sim-hero-banner">
+      <img src="../assets/img/docs.webp" alt="電卓と税務確認書類・卓上カレンダーのイラスト" width="800" height="500">
+    </div>
+  </div>
+
+  <section class="card" aria-label="シミュレーター本体">
+    <h2>条件を選んで控除上限額の目安・残り枠を計算</h2>
+    <div style="margin-bottom: 14px;">
+      <span style="font-size: 12.5px; font-weight: 800; color: var(--sub); display: block; margin-bottom: 6px;">代表的な確認ケース（ワンクリック入力）：</span>
+      <div class="sim-presets" id="case-presets">
+        <button type="button" class="sim-preset-btn" data-inc="300" data-fam="single_or_dual" data-don="0">Case1：300万円・独身（28,000円）</button>
+        <button type="button" class="sim-preset-btn" data-inc="500" data-fam="single_or_dual" data-don="0">Case2：500万円・独身（61,000円）</button>
+        <button type="button" class="sim-preset-btn" data-inc="500" data-fam="married_single_income" data-don="0">Case3：500万円・夫婦（49,000円）</button>
+        <button type="button" class="sim-preset-btn" data-inc="700" data-fam="dual_with_highschool_child" data-don="0">Case4：700万円・共働き＋高校生1人（86,000円）</button>
+        <button type="button" class="sim-preset-btn" data-inc="800" data-fam="single_or_dual" data-don="0">Case5：800万円・独身（129,000円）</button>
+      </div>
+    </div>
+    <div class="js-furusato-sim" id="standalone-sim" data-base-prefix="../"></div>
+  </section>
+
+  <section class="card" aria-label="計算根拠となる総務省公表の早見表一覧">
+    <h2>参照データ一覧（給与収入300万〜800万円×家族構成3区分）</h2>
+    <p class="note-text" style="margin-bottom: 14px;">※本表は総務省ふるさと納税ポータルサイト公表値に基づく、<strong>給与収入のみ・他の控除（iDeCo・医療費控除・住宅ローン控除等）がない場合の控除上限額の目安</strong>です。表にない中間の年収は補間せず直近下位の行の値を参照します。正確な限度額は源泉徴収票・住民税決定通知書・お住まいの自治体でご確認ください。</p>
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th class="num-col">給与収入（額面）</th>
+            <th class="num-col">独身・共働き<br>（配偶者控除なし）</th>
+            <th class="num-col">夫婦<br>（配偶者控除あり）</th>
+            <th class="num-col">共働き＋子1人<br>（高校生＝16〜18歳）</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td class="num-col"><strong>300万円</strong>（3,000,000円）</td>
+              <td class="num-col">28,000円</td>
+              <td class="num-col">19,000円</td>
+              <td class="num-col">19,000円</td>
+            </tr>
+            <tr>
+              <td class="num-col"><strong>325万円</strong>（3,250,000円）</td>
+              <td class="num-col">31,000円</td>
+              <td class="num-col">23,000円</td>
+              <td class="num-col">23,000円</td>
+            </tr>
+            <tr>
+              <td class="num-col"><strong>350万円</strong>（3,500,000円）</td>
+              <td class="num-col">34,000円</td>
+              <td class="num-col">26,000円</td>
+              <td class="num-col">26,000円</td>
+            </tr>
+            <tr>
+              <td class="num-col"><strong>375万円</strong>（3,750,000円）</td>
+              <td class="num-col">38,000円</td>
+              <td class="num-col">29,000円</td>
+              <td class="num-col">29,000円</td>
+            </tr>
+            <tr>
+              <td class="num-col"><strong>400万円</strong>（4,000,000円）</td>
+              <td class="num-col">42,000円</td>
+              <td class="num-col">33,000円</td>
+              <td class="num-col">33,000円</td>
+            </tr>
+            <tr>
+              <td class="num-col"><strong>425万円</strong>（4,250,000円）</td>
+              <td class="num-col">45,000円</td>
+              <td class="num-col">37,000円</td>
+              <td class="num-col">37,000円</td>
+            </tr>
+            <tr>
+              <td class="num-col"><strong>450万円</strong>（4,500,000円）</td>
+              <td class="num-col">52,000円</td>
+              <td class="num-col">41,000円</td>
+              <td class="num-col">41,000円</td>
+            </tr>
+            <tr>
+              <td class="num-col"><strong>475万円</strong>（4,750,000円）</td>
+              <td class="num-col">56,000円</td>
+              <td class="num-col">45,000円</td>
+              <td class="num-col">45,000円</td>
+            </tr>
+            <tr>
+              <td class="num-col"><strong>500万円</strong>（5,000,000円）</td>
+              <td class="num-col">61,000円</td>
+              <td class="num-col">49,000円</td>
+              <td class="num-col">49,000円</td>
+            </tr>
+            <tr>
+              <td class="num-col"><strong>525万円</strong>（5,250,000円）</td>
+              <td class="num-col">65,000円</td>
+              <td class="num-col">56,000円</td>
+              <td class="num-col">56,000円</td>
+            </tr>
+            <tr>
+              <td class="num-col"><strong>550万円</strong>（5,500,000円）</td>
+              <td class="num-col">69,000円</td>
+              <td class="num-col">60,000円</td>
+              <td class="num-col">60,000円</td>
+            </tr>
+            <tr>
+              <td class="num-col"><strong>575万円</strong>（5,750,000円）</td>
+              <td class="num-col">73,000円</td>
+              <td class="num-col">64,000円</td>
+              <td class="num-col">64,000円</td>
+            </tr>
+            <tr>
+              <td class="num-col"><strong>600万円</strong>（6,000,000円）</td>
+              <td class="num-col">77,000円</td>
+              <td class="num-col">69,000円</td>
+              <td class="num-col">69,000円</td>
+            </tr>
+            <tr>
+              <td class="num-col"><strong>625万円</strong>（6,250,000円）</td>
+              <td class="num-col">81,000円</td>
+              <td class="num-col">73,000円</td>
+              <td class="num-col">73,000円</td>
+            </tr>
+            <tr>
+              <td class="num-col"><strong>650万円</strong>（6,500,000円）</td>
+              <td class="num-col">97,000円</td>
+              <td class="num-col">77,000円</td>
+              <td class="num-col">77,000円</td>
+            </tr>
+            <tr>
+              <td class="num-col"><strong>675万円</strong>（6,750,000円）</td>
+              <td class="num-col">102,000円</td>
+              <td class="num-col">81,000円</td>
+              <td class="num-col">81,000円</td>
+            </tr>
+            <tr>
+              <td class="num-col"><strong>700万円</strong>（7,000,000円）</td>
+              <td class="num-col">108,000円</td>
+              <td class="num-col">86,000円</td>
+              <td class="num-col">86,000円</td>
+            </tr>
+            <tr>
+              <td class="num-col"><strong>725万円</strong>（7,250,000円）</td>
+              <td class="num-col">113,000円</td>
+              <td class="num-col">104,000円</td>
+              <td class="num-col">104,000円</td>
+            </tr>
+            <tr>
+              <td class="num-col"><strong>750万円</strong>（7,500,000円）</td>
+              <td class="num-col">118,000円</td>
+              <td class="num-col">109,000円</td>
+              <td class="num-col">109,000円</td>
+            </tr>
+            <tr>
+              <td class="num-col"><strong>775万円</strong>（7,750,000円）</td>
+              <td class="num-col">124,000円</td>
+              <td class="num-col">114,000円</td>
+              <td class="num-col">114,000円</td>
+            </tr>
+            <tr>
+              <td class="num-col"><strong>800万円</strong>（8,000,000円）</td>
+              <td class="num-col">129,000円</td>
+              <td class="num-col">120,000円</td>
+              <td class="num-col">120,000円</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note-text" style="margin-top: 12px;">※給与収入300万円行の参考公表値：「共働き＋子1人（大学生）：15,000円」「夫婦＋子1人（高校生）：11,000円」「共働き＋子2人（大学生と高校生）：7,000円」（他の年収行は個別の課税状況・最新公表資料での確認が必要となるため本表には含めていません）。</p>
+  </section>
+
+  <section class="card" aria-label="寄附手続きのご案内">
+    <aside class="pr-box" aria-label="プロモーション案内" style="margin:0;">
+      <div class="pr-box-head"><span class="pr-badge">【#PR】</span>試算した上限目安・残り枠をもとに寄附先を検討する</div>
+      <p>控除上限額の目安と今年の残り枠を確認したうえで、5,000円・10,000円などの寄附金額帯や発送時期、保存方法を見比べながら計画的に寄附先を確認できます（※当年分対象は12月31日決済完了分まで）。</p>
+      <div class="pr-slot-group">
+        <a class="pr-slot" href="https://hb.afl.rakuten.co.jp/hgc/11e7c15e.43b4d992.11e7c15f.7b1e602a/?pc=https%3A%2F%2Fevent.rakuten.co.jp%2Ffurusato%2F&amp;link_type=text&amp;ut=eyJwYWdlIjoidXJsIiwidHlwZSI6InRleHQiLCJjb2wiOjF9" target="_blank" rel="nofollow sponsored noopener">楽天ふるさと納税で寄附先を探す</a>
+      </div>
+    </aside>
+  </section>
+
+  <section class="card" aria-label="関連ガイドページ">
+    <h2>条件別の詳細ガイド・手続き解説</h2>
+    <div class="hub-grid" data-design-added="true">
+  <a class="hub-card" href="../index.html">
+    <span class="hub-card-tag">総まとめガイド</span>
+    <span class="hub-card-title">ふるさと納税の限度額 総まとめ</span>
+    <span class="hub-card-desc">限度額の仕組み・25万円刻み早見表・計算確認・申請手続きまで一括整理</span>
+  </a>
+  <a class="hub-card" href="../hayami/index.html">
+    <span class="hub-card-tag">早見表・目安確認</span>
+    <span class="hub-card-title">控除上限額の早見表（年収×家族構成）</span>
+    <span class="hub-card-desc">給与収入300万〜800万円×家族3区分の公表早見表と正しい読み方</span>
+  </a>
+  <a class="hub-card" href="../keisan/index.html">
+    <span class="hub-card-tag">算出式・書類照合</span>
+    <span class="hub-card-title">限度額の計算方法と源泉徴収票での確認</span>
+    <span class="hub-card-desc">住民税所得割額ベースの算出式と源泉徴収票・決定通知書の見方</span>
+  </a>
+  <a class="hub-card" href="../nenshu/index.html">
+    <span class="hub-card-tag">年収別・配分設計</span>
+    <span class="hub-card-title">年収別に見る限度額と寄附配分の考え方</span>
+    <span class="hub-card-desc">300万〜800万円帯ごとの特徴と5自治体以内の無理のない寄附配分</span>
+  </a>
+  <a class="hub-card" href="../kojin-jigyo/index.html">
+    <span class="hub-card-tag">属性別：個人事業主</span>
+    <span class="hub-card-title">個人事業主の限度額の考え方</span>
+    <span class="hub-card-desc">売上と事業所得の違い・確認書類3点・確定申告での寄附金控除ルール</span>
+  </a>
+  <a class="hub-card" href="../nenkin/index.html">
+    <span class="hub-card-tag">属性別：年金受給者</span>
+    <span class="hub-card-title">年金受給者の限度額の考え方</span>
+    <span class="hub-card-desc">課税状況の事前確認・公的年金等控除の違い・医療費控除併用時の注意点</span>
+  </a>
+  <a class="hub-card" href="../ideco/index.html">
+    <span class="hub-card-tag">控除併用：iDeCo</span>
+    <span class="hub-card-title">iDeCo併用で限度額がどう変わるか</span>
+    <span class="hub-card-desc">掛金の所得控除で限度額が下がる仕組みと年末調整・確定申告の選び方</span>
+  </a>
+  <a class="hub-card" href="../onestop/index.html">
+    <span class="hub-card-tag">手続き：ワンストップ</span>
+    <span class="hub-card-title">ワンストップ特例の条件・手順・期限</span>
+    <span class="hub-card-desc">5自治体以内のカウント方法・翌年1月10日必着・確定申告での無効化対策</span>
+  </a>
+  <a class="hub-card" href="../kakutei/index.html">
+    <span class="hub-card-tag">手続き：確定申告・超過</span>
+    <span class="hub-card-title">確定申告での控除の受け方と超過分の扱い</span>
+    <span class="hub-card-desc">所得税と住民税の2段階控除・必要書類・限度額超過時に確定申告を選ぶ理由</span>
+  </a>
+  <a class="hub-card" href="../schedule/index.html">
+    <span class="hub-card-tag">期限・スケジュール</span>
+    <span class="hub-card-title">年間スケジュールと締切（12/31・1/10）</span>
+    <span class="hub-card-desc">12月31日決済完了基準・翌年1月10日必着ルール・時期別の分散アクション</span>
+  </a>
+
+  <a class="hub-card" href="../jutaku-loan/index.html">
+    <span class="hub-card-tag">控除併用：住宅ローン</span>
+    <span class="hub-card-title">住宅ローン控除とふるさと納税の併用</span>
+    <span class="hub-card-desc">1年目（確定申告）と2年目以降（ワンストップ可）の手続きと確認点</span>
+  </a>
+  <a class="hub-card" href="../setai/index.html">
+    <span class="hub-card-tag">夫婦・共働き</span>
+    <span class="hub-card-title">共働き・夫婦世帯の限度額の考え方</span>
+    <span class="hub-card-desc">世帯合算できない原則と各自の名義・決済ルール</span>
+  </a>
+  <a class="hub-card" href="../henreihin/index.html">
+    <span class="hub-card-tag">返礼品選び・制度</span>
+    <span class="hub-card-title">返礼品の選び方と総務省基準ルール</span>
+    <span class="hub-card-desc">冷凍容量・発送時期・金額刻みの観点と2025年10月基準</span>
+  </a>
+  <a class="hub-card" href="../december/index.html">
+    <span class="hub-card-tag">年末締切チェック</span>
+    <span class="hub-card-title">12月駆け込み寄附の注意点チェックリスト</span>
+    <span class="hub-card-desc">12/31決済完了基準と翌年1/10ワンストップ必着の段取り</span>
+  </a>
+  <a class="hub-card" href="../gendo-chouka/index.html">
+    <span class="hub-card-tag">超過時の扱い</span>
+    <span class="hub-card-title">限度額を超えたらどうなる？超過時の扱い</span>
+    <span class="hub-card-desc">自己負担が増える仕組みと確定申告で控除範囲を広げる手順</span>
+  </a>
+  <a class="hub-card" href="../miss/index.html">
+    <span class="hub-card-tag">失敗防止</span>
+    <span class="hub-card-title">ふるさと納税でよくある失敗とリカバリー</span>
+    <span class="hub-card-desc">ワンストップ無効化・名義違い・住所変更漏れの対策</span>
+  </a>
+</div>
+  </section>
+  <section class="card" id="sec-faq" aria-label="よくある質問（FAQ）" style="margin-top: 22px;">
+    <h2>控除上限額・残り枠シミュレーターに関するよくある質問（FAQ）</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>Q1. 25万円刻みの間にある給与収入（例：520万円など）を入力した場合、どのように計算されますか？</h3>
+        <p><strong>A.</strong> 本シミュレーターでは独自補間による上限超過リスクを防ぐため、25万円刻みの間にある給与収入については直近下位の行（520万円なら500万円の行）の総務省公表値を参照して表示し、その旨の注記を表示する仕様としています。</p>
+      </div>
+      <div class="faq-item">
+        <h3>Q2. 「今年の寄附済み合計額」が上限目安を超えている場合、残り枠はどう表示されますか？</h3>
+        <p><strong>A.</strong> 今年の残り枠は下限を0円（マイナス表示なし）として計算し、目安を上回っている金額を確認できるよう表示します。上限目安を超えた場合の税制上の扱いや確定申告への切り替えについては「<a href="../gendo-chouka/index.html">限度額を超えたらどうなる？超過時の扱い</a>」をご確認ください。</p>
+      </div>
+      <div class="faq-item">
+        <h3>Q3. iDeCo・医療費控除・住宅ローン控除を利用している場合や、個人事業主・年金受給者もそのまま使えますか？</h3>
+        <p><strong>A.</strong> 本シミュレーターが参照する総務省公表の早見表は「給与収入のみ・他の控除がない場合」の目安です。他の所得控除・税額控除を併用している場合や、事業所得・公的年金等の雑所得がある場合は実際の控除上限額が異なるため、源泉徴収票・確定申告書控え・住民税決定通知書およびお住まいの自治体窓口でご確認ください。</p>
+      </div>
+      <div class="faq-item">
+        <h3>Q4. 入力した年収や寄附済み額のデータが外部へ送信されることはありますか？</h3>
+        <p><strong>A.</strong> いいえ、入力された数値や家族構成の選択内容はすべてお使いのブラウザ内でのみ計算処理され、外部サーバーへ送信・保存されることはありません。</p>
+      </div>
+    </div>
+    <div class="context-link-box">
+      <p class="context-link-title">試算後に確認したい書類照合・控除併用・年末締切ガイド</p>
+      <p>源泉徴収票や住民税決定通知書を使った確認手順は「<a href="../keisan/index.html">限度額の計算方法と源泉徴収票での確認</a>」、iDeCoや住宅ローン控除がある場合の注意点は「<a href="../ideco/index.html">iDeCo併用で限度額がどう変わるか</a>」および「<a href="../jutaku-loan/index.html">住宅ローン控除とふるさと納税の併用</a>」で解説しています。</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand-title">ふるさと納税限度額ナビ</p>
+        <p class="footer-brand-desc">総務省ふるさと納税ポータルサイト等の公表基準にもとづき、控除上限額（限度額）の早見表・算出式・属性別の注意点・ワンストップ特例および確定申告の手続きを客観的に整理する特化情報サイトです。掲載数値は一般的な目安であり、正確な控除限度額は源泉徴収票・住民税決定通知書・お住まいの自治体にてご確認ください。</p>
+      </div>
+      <div class="footer-col">
+        <h3>コンテンツ一覧</h3>
+        <ul>
+          <li><a href="../index.html">ふるさと納税の限度額 総まとめ</a></li>
+          <li><a href="../simulator/index.html" aria-current="page">控除上限額・残り枠シミュレーター</a></li>
+          <li><a href="../hayami/index.html">控除上限額の早見表（年収×家族構成）</a></li>
+          <li><a href="../keisan/index.html">限度額の計算方法と源泉徴収票での確認</a></li>
+          <li><a href="../nenshu/index.html">年収別に見る限度額と寄附配分の考え方</a></li>
+          <li><a href="../jutaku-loan/index.html">住宅ローン控除とふるさと納税の併用</a></li>
+          <li><a href="../ideco/index.html">iDeCo併用で限度額がどう変わるか</a></li>
+          <li><a href="../setai/index.html">共働き・夫婦世帯の限度額の考え方</a></li>
+          <li><a href="../kojin-jigyo/index.html">個人事業主の限度額の考え方</a></li>
+          <li><a href="../nenkin/index.html">年金受給者の限度額の考え方</a></li>
+          <li><a href="../onestop/index.html">ワンストップ特例の条件・手順・期限</a></li>
+          <li><a href="../kakutei/index.html">確定申告での控除の受け方と超過分の扱い</a></li>
+          <li><a href="../gendo-chouka/index.html">限度額を超えたらどうなる？超過時の扱い</a></li>
+          <li><a href="../henreihin/index.html">返礼品の選び方と総務省基準ルール</a></li>
+          <li><a href="../schedule/index.html">年間スケジュールと締切（12/31・1/10）</a></li>
+          <li><a href="../december/index.html">12月駆け込み寄附の注意点チェックリスト</a></li>
+          <li><a href="../miss/index.html">ふるさと納税でよくある失敗とリカバリー</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>サイト情報・運営ポリシー</h3>
+        <ul>
+          <li><a href="../about/index.html">運営者情報・編集部体制・制作ポリシー</a></li>
+          <li><a href="../policy/verification/index.html">数値算出基準・出典確認フロー</a></li>
+          <li><a href="../policy/advertising/index.html">広告掲載ポリシー（#PR表記方針）</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 ふるさと納税限度額ナビ編集部</p>
+      <p>※当サイトの記事にはプロモーション（#PR）が含まれます。</p>
+    </div>
+  </div>
+</footer>
+<button type="button" class="back-to-top" id="back-to-top" aria-label="ページ上部へ戻る" data-design-added="true">
+  <span class="back-to-top-arrow" aria-hidden="true">↑</span>
+  <span>TOP</span>
+</button>
+<script src="../assets/simulator.js" data-design-added="true"></script>
+<script data-design-added="true">
+(function(){
+  var bar = document.getElementById("reading-progress-bar");
+  var btn = document.getElementById("back-to-top");
+  function onScroll(){
+    var s = window.scrollY || document.documentElement.scrollTop || 0;
+    var h = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    if(bar) bar.style.width = (h > 0 ? Math.min(100, Math.max(0, s / h * 100)) : 0) + "%";
+    if(btn) btn.classList.toggle("is-visible", s > 280);
+  }
+  window.addEventListener("scroll", onScroll, {passive: true});
+  if(btn) btn.addEventListener("click", function(){ window.scrollTo({top: 0, behavior: "smooth"}); });
+  onScroll();
+})();
+</script>
+<script>
+(function(){
+  var wrap = document.getElementById("case-presets");
+  var simContainer = document.getElementById("standalone-sim");
+  if(!wrap || !simContainer) return;
+  var btns = wrap.querySelectorAll("button[data-inc]");
+  for(var i = 0; i < btns.length; i++){
+    btns[i].addEventListener("click", function(){
+      if(typeof simContainer._applyPreset === "function"){
+        simContainer._applyPreset(
+          Number(this.getAttribute("data-inc")),
+          this.getAttribute("data-fam"),
+          Number(this.getAttribute("data-don")),
+          false
+        );
+      }
+    });
+  }
+})();
+</script>
+</body>
+</html>

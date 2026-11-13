@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ふるさと納税の限度額の計算方法｜算出式の仕組みと源泉徴収票・住民税決定通知書での確認手順</title>
+<meta name="description" content="ふるさと納税の控除限度額が決まる計算式（住民税所得割額の約2割が基準となる仕組み）を解説。手元の源泉徴収票や住民税決定通知書のどこを見れば自分の目安額をより正確に確認できるか、3つのステップで整理します。">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "ふるさと納税の限度額の計算方法｜算出式の仕組みと源泉徴収票・住民税決定通知書での確認手順",
+  "description": "ふるさと納税の控除限度額が決まる計算式（住民税所得割額の約2割が基準となる仕組み）を解説。手元の源泉徴収票や住民税決定通知書のどこを見れば自分の目安額をより正確に確認できるか、3つのステップで整理します。",
+  "inLanguage": "ja",
+  "datePublished": "2026-11-12",
+  "dateModified": "2026-11-12",
+  "author": {
+    "@type": "Organization",
+    "name": "ふるさと納税限度額ナビ編集部"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ふるさと納税限度額ナビ編集部"
+  },
+  "image": [
+    "../assets/img/docs.webp"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "ふるさと納税限度額ナビ"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ふるさと納税の限度額トップ",
+      "item": "../index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "限度額の計算方法と源泉徴収票での確認"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "住民税決定通知書にある「均等割」も含めて20%を計算するのですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "いいえ、算出式の「住民税の所得割額 × 20%」に使うのは「所得割額」のみであり、定額で課税される「均等割額」は含めません。自治体の通知書で「市町村民税の所得割額」と「道府県民税（都民税等）の所得割額」に分かれて記載されている場合は、その2つの所得割額の合計をもとに確認します（記載欄の詳細は各自治体のご案内でご確認ください）。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "所得税の控除対象となるふるさと納税額に上限はありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい、所得税の寄附金控除の対象となるふるさと納税額は、総所得金額等の40%が上限と定められています。もっとも、通常の給与所得者等においては、その40%に達するよりもずっと手前で「住民税特例分（住民税所得割額の20%）」の上限に達するため、全額控除の目安を考える際は住民税所得割額ベースの限度額が実質的な基準となります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "生命保険料控除や地震保険料控除がある場合、早見表より限度額は変わりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "総務省の早見表は「他の控除がない場合」を前提としているため、生命保険料控除や地震保険料控除などがあると課税所得や住民税所得割額が少し減少し、早見表の数値より限度額が下がる場合があります。源泉徴収票の「所得控除の額の合計額」や住民税決定通知書の所得割額をもとに確認するのが堅実です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "自分で計算した結果に自信がない場合はどこに確認すればよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "住民税の課税計算や控除限度額の考え方は、お住まいの市区町村の住民税担当窓口が管轄しています。また、所得税の確定申告や複数の所得がある場合の計算については所轄の税務署や税理士へ相談することで、個別の状況に即した確認が可能です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "翌年に届く「住民税決定通知書」で、ふるさと納税の控除が反映されたかどう確認できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "寄附した翌年の5〜6月頃に届く住民税決定通知書の「税額控除額」欄や「摘要」欄を見ることで、市町村民税と道府県民税から控除された金額を確認できます（自治体により表記欄の名称は異なります）。もし申請漏れやワンストップ無効化で反映されていない場合の対処手順は「よくある失敗と対処法」をご参照ください。"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<div class="reading-progress" aria-hidden="true" data-design-added="true"><div class="reading-progress-bar" id="reading-progress-bar"></div></div>
+<a class="skip-link" href="#main-content">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand-row">
+      <a class="site-brand" href="../index.html">
+        <span class="site-brand-title">ふるさと納税限度額ナビ <span class="site-brand-badge">控除上限・手続き特化ガイド</span></span>
+        <span class="site-brand-sub">年収・家族構成・各種控除から上限目安と申請期限を整理する情報サイト</span>
+      </a>
+      <a class="header-cta" href="../simulator/index.html">残り枠を試算する →</a>
+    </div>
+    <nav class="global-nav" aria-label="メインナビゲーション">
+      <ul>
+        <li><a href="../index.html">総まとめ</a></li>
+        <li><a href="../simulator/index.html">シミュレーター</a></li>
+        <li><a href="../hayami/index.html">早見表</a></li>
+        <li><a href="../keisan/index.html" aria-current="page">計算・書類確認</a></li>
+        <li><a href="../nenshu/index.html">年収別・配分</a></li>
+        <li><a href="../jutaku-loan/index.html">住宅ローン併用</a></li>
+        <li><a href="../ideco/index.html">iDeCo併用</a></li>
+        <li><a href="../setai/index.html">世帯・共働き</a></li>
+        <li><a href="../kojin-jigyo/index.html">個人事業主</a></li>
+        <li><a href="../nenkin/index.html">年金受給者</a></li>
+        <li><a href="../onestop/index.html">ワンストップ特例</a></li>
+        <li><a href="../kakutei/index.html">確定申告・超過</a></li>
+        <li><a href="../gendo-chouka/index.html">限度額超過</a></li>
+        <li><a href="../henreihin/index.html">返礼品の選び方</a></li>
+        <li><a href="../december/index.html">12月駆け込み</a></li>
+        <li><a href="../miss/index.html">よくある失敗</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="site-main" id="main-content">
+  <nav class="breadcrumb" aria-label="パンくずリスト" data-design-added="true">
+    <ol>
+      <li><a href="../index.html">ふるさと納税の限度額トップ</a></li>
+      <li aria-current="page">限度額の計算方法と源泉徴収票での確認</li>
+    </ol>
+  </nav>
+  <article class="article-shell">
+    <header class="article-header">
+      <p class="pr-notice-top">※本記事にはプロモーション（#PR）が含まれます。</p>
+      <h1>ふるさと納税の限度額の計算方法｜算出式の仕組みと源泉徴収票・住民税決定通知書での確認手順</h1>
+      <div class="article-meta" data-design-added="true">
+        <span>最終更新日：<time datetime="2026-11-12">2026年11月12日</time></span>
+        <span>執筆・編集：ふるさと納税限度額ナビ編集部</span>
+      </div>
+    </header>
+    <figure class="article-eyecatch" data-design-added="true">
+      <div class="article-eyecatch-img-wrap">
+        <img src="../assets/img/docs.webp" alt="電卓と源泉徴収票・税務確認書類・卓上カレンダーのイラスト" width="800" height="500">
+      </div>
+      <figcaption class="article-eyecatch-bar">
+        <span class="article-eyecatch-tag">算出式・確認書類ガイド</span>
+        <span class="article-eyecatch-summary">住民税決定通知書と源泉徴収票から控除限度額の成り立ちを確認する手順</span>
+      </figcaption>
+    </figure>
+
+    <div class="article-body numbered-headings">
+      <p>ふるさと納税の限度額を調べるとき、年収別の早見表だけでは「自分の社会保険料や保険料控除を反映すると実際はいくらになるのか」「なぜ年収や扶養家族によって上限額が変わるのか」と疑問を持つ場面があります。特に賞与の変動がある方や複数の控除を利用している方は、計算の仕組みを知っておくと上限超過のリスクを抑えやすくなります。</p>
+
+      <p>ふるさと納税では、寄附合計額のうち<strong>2,000円を超える部分について、一定の上限まで所得税と住民税から原則として全額が控除</strong>されます。その全額控除の上限目安は、概要として<strong>「（住民税の所得割額 × 20%）÷（90% − 所得税率 × 1.021）＋ 2,000円」</strong>という算出式で表されます。つまり「住民税の所得割額」と「所得税率」の2つがわかれば、限度額の成り立ちを具体的に読み解くことができます。</p>
+
+      <p>本記事では、ふるさと納税の控除が計算される3段階の構造、限度額の算出式の読み方、手元の「源泉徴収票」や「住民税決定通知書」を使った確認手順、年の途中で収入を見積もる際の実務ポイントまで丁寧に整理します。制度の全体像は<a href="../index.html">ふるさと納税の限度額の全体像と確認方法</a>もあわせてご参照ください。</p>
+
+      <div class="summary-box">
+  <p class="summary-box-title">この記事のポイント（限度額の計算方法・結論まとめ）</p>
+  <ul>
+    <li><strong>限度額の算出式（概要）</strong>：<strong>控除限度額 ＝（住民税の所得割額 × 20%）÷（90% − 所得税率 × 1.021）＋ 2,000円</strong></li>
+    <li><strong>所得税からの控除式</strong>：<strong>（ふるさと納税額 − 2,000円）× 所得税率</strong>（控除対象のふるさと納税額は総所得金額等の40%が上限）</li>
+    <li><strong>確認に使う主な書類</strong>：<strong>源泉徴収票</strong>（支払金額・給与所得控除後の金額・所得控除合計）と<strong>住民税決定通知書</strong>（住民税の所得割額）</li>
+    <li><strong>計算基準となる期間</strong>：前年の実績ではなく<strong>寄附を行う当年（1月1日〜12月31日）の所得・控除</strong>が基準。正確な額は源泉徴収票・住民税決定通知書・お住まいの自治体で確認する</li>
+  </ul>
+</div>
+
+      <nav class="toc-box" aria-label="目次" data-design-added="true">
+  <p class="toc-title">目次</p>
+  <ol>
+    <li><a href="#sec-1">ふるさと納税の税金控除が計算される基本構造</a></li>
+    <li><a href="#sec-2">控除限度額の算出式（概要）と各数字の意味</a></li>
+    <li><a href="#sec-3">早見表の公表値と計算式の関係を確認しよう</a></li>
+    <li><a href="#sec-4">源泉徴収票と住民税決定通知書を使った確認手順</a></li>
+    <li><a href="#sec-5">計算時に見落としやすい変動要因と上限超過時のルール</a></li>
+    <li><a href="#sec-6">寄附実行から控除手続き・結果確認までの流れ</a></li>
+    <li><a href="#sec-7">限度額の計算方法に関するよくある質問（FAQ）</a></li>
+    <li><a href="#sec-8">まとめ｜算出式の仕組みを知り、書類照合で安心できる寄附計画を</a></li>
+  </ol>
+</nav>
+
+      <h2 id="sec-1">ふるさと納税の税金控除が計算される基本構造</h2>
+
+      <p>限度額の算出式を理解するために、まずは寄附した金額から自己負担2,000円を差し引いた部分が、どのように税金から控除されるのかを押さえておきましょう。</p>
+
+      <div class="stacked-diagram" role="figure" aria-label="ふるさと納税の3段階控除構造イメージ（確定申告時）" data-design-added="true">
+  <div class="stacked-diagram-head">
+    <span class="stacked-diagram-title">ふるさと納税の3段階控除構造イメージ（確定申告時）</span>
+    <span class="stacked-diagram-total">特例分上限＝所得割額の20%</span>
+  </div>
+  <div class="stacked-track"><div class="stacked-seg seg-c2" style="width: 22%;">①所得税分</div><div class="stacked-seg seg-c1" style="width: 20%;">②住民税基本分</div><div class="stacked-seg seg-c3" style="width: 50%;">③住民税特例分（上限基準）</div><div class="stacked-seg seg-c4" style="width: 8%;">2千円</div></div>
+  <div class="stacked-legend"><div class="stacked-legend-item"><span class="stacked-legend-label"><span class="dot-swatch swatch-c2"></span>① 所得税からの控除</span><span class="stacked-legend-val">(寄附額−2,000円)×所得税率［総所得40%上限］</span></div><div class="stacked-legend-item"><span class="stacked-legend-label"><span class="dot-swatch swatch-c1"></span>② 住民税からの控除（基本分）</span><span class="stacked-legend-val">所定の住民税率分</span></div><div class="stacked-legend-item is-focus"><span class="stacked-legend-label"><span class="dot-swatch swatch-c3"></span>③ 住民税からの控除（特例分）</span><span class="stacked-legend-val">住民税所得割額の20%が上限</span></div><div class="stacked-legend-item"><span class="stacked-legend-label"><span class="dot-swatch swatch-c4"></span>年間の自己負担額</span><span class="stacked-legend-val">年間合計 2,000円</span></div></div>
+  <p class="stacked-diagram-foot">※上図の横幅比率は構造理解用の概念イメージです。ワンストップ特例利用時は①所得税相当分も含め翌年度住民税から控除されます。</p>
+</div>
+
+      <p>確定申告を行う場合を基準にすると、ふるさと納税の控除は大きく<strong>「①所得税からの控除」「②住民税からの控除（基本分）」「③住民税からの控除（特例分）」</strong>の3つの枠で構成されています。</p>
+
+      <div class="table-wrap">
+<table>
+<thead>
+<tr>
+  <th>控除の区分</th>
+  <th>計算の考え方・上限規定</th>
+  <th>限度額との関係</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>① 所得税からの控除</strong></td>
+  <td><strong>（ふるさと納税額 − 2,000円）× 所得税率</strong><br>※復興特別所得税を加味する場合は1.021を乗じる考え方が一般的（細部は要確認）。対象寄附額は<strong>総所得金額等の40%</strong>が上限</td>
+  <td>課税所得に応じた所得税率が高いほど、所得税から差し引かれる割合が大きくなる</td>
+</tr>
+<tr>
+  <td><strong>② 住民税からの控除（基本分）</strong></td>
+  <td>（ふるさと納税額 − 2,000円）に所定の住民税率を乗じた金額（総所得金額等の上限規定あり・要確認）</td>
+  <td>通常の寄附金税額控除として住民税から差し引かれる基礎部分</td>
+</tr>
+<tr>
+  <td><strong>③ 住民税からの控除（特例分）</strong></td>
+  <td>①と②で控除しきれなかった残額を控除。ただし<strong>「住民税の所得割額の20%」が上限</strong></td>
+  <td><strong>この「住民税所得割額の20%」の上限に達する寄附額が、全額控除の限度額となる</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+      <p class="note-text">※ワンストップ特例制度を利用する場合は確定申告を行わないため、①の所得税からの控除に相当する金額も翌年度の住民税からまとめて控除される仕組みになります。</p>
+
+      <p>この表からわかるとおり、「自己負担2,000円を除いて全額が控除される」という状態が保たれるのは、<strong>③の住民税特例分が「住民税の所得割額の20%」以内に収まっている間</strong>です。寄附額を増やしすぎてこの20%の枠を超えてしまうと、超えた部分は③の特例分では吸収できなくなり、自己負担が2,000円より増えていきます。</p>
+
+      <h2 id="sec-2">控除限度額の算出式（概要）と各数字の意味</h2>
+
+      <p>上記の「住民税特例分が住民税所得割額の20%ちょうどになる寄附額」を逆算して整理したものが、概要説明として広く用いられる以下の算出式です。</p>
+
+      <div class="formula-box">
+  <p class="formula-label"><strong>控除限度額の算出式（概要説明用）</strong></p>
+  <p class="formula-main"><strong>控除限度額 ＝（住民税の所得割額 × 20%）÷（90% − 所得税率 × 1.021）＋ 2,000円</strong></p>
+  <p class="formula-note">※正確な額は源泉徴収票・住民税決定通知書・お住まいの自治体で必ずご確認ください。</p>
+</div>
+
+      <p>一見すると複雑に見えますが、式を構成している4つのパーツに分けると意味が明確になります。</p>
+
+      <ol>
+  <li><strong>「住民税の所得割額 × 20%」（分子）</strong><br>住民税には、所得にかかわらず定額で課される「均等割」と、前年の所得金額に応じて課される「所得割」があります。ふるさと納税の特例分上限は、このうち<strong>「所得割額」の20%</strong>を基準とします。均等割の金額は含めない点に注意が必要です。</li>
+  <li><strong>「90% − 所得税率 × 1.021」（分母）</strong><br>寄附額（2,000円超の部分）全体のうち、住民税基本分（所定の住民税率枠）と所得税分（所得税率×復興特別所得税係数1.021）を差し引いた残りの割合が、住民税特例分として負担すべき割合（90%−所得税率×1.021）にあたります。</li>
+  <li><strong>割り算の役割</strong><br>「特例分の上限額（住民税所得割額×20%）」を「特例分が占める割合（90%−所得税率×1.021）」で割ることで、自己負担を除いた控除対象寄附額の上限が求まります。</li>
+  <li><strong>「＋ 2,000円」</strong><br>最後に年間の自己負担額である2,000円を足し戻すことで、「年間いくらの寄附額までが全額控除の目安になるか」という控除限度額になります。</li>
+</ol>
+
+      <p>なお、課税所得に対する所得税率は所得水準に応じた段階的な税率区分（超過累進税率）となっており、住民税と所得税では人的控除の差に基づく調整控除などの細かな税務計算が存在します（税率区分表や調整控除の細則は公的資料で要確認）。そのため、上記の式は<strong>「仕組みを理解し概算を確かめるための概要式」</strong>として位置づけ、端数まで厳密に詰めすぎず余裕を残して活用することが大切です。</p>
+
+      <div class="sim-cta" data-design-added="true">
+        <div class="sim-cta-text">
+          <strong>早見表ベースの基準目安と「今年の残り枠」を即時試算</strong>
+          給与収入（300万〜800万円・25万円刻み）×家族構成3区分と寄附済み額から確認できます（※給与収入のみ・他控除なしの目安）。
+        </div>
+        <a class="sim-cta-btn" href="../simulator/index.html">残り枠シミュレーターを開く →</a>
+      </div>
+
+      <h2 id="sec-3">早見表の公表値と計算式の関係を確認しよう</h2>
+
+      <p>手計算を行う前に、総務省が公表しているモデルケースの早見表（給与収入のみ・他の控除なし）で、年収の上昇に伴って限度額の目安がどのように推移するかを見ておきましょう。</p>
+
+      <p class="note-text">※本表は総務省公表値に基づく、<strong>給与収入のみ・他の控除がない場合の控除上限額の目安</strong>（抜粋）です。25万円刻みの全21行は<a href="../hayami/index.html">控除上限額の早見表（年収×家族構成）</a>でご確認いただけます。正確な限度額は源泉徴収票・住民税決定通知書・お住まいの自治体でご確認ください。</p>
+
+      <div class="table-wrap">
+<table>
+<thead>
+<tr>
+  <th class="num-col">給与収入（額面）</th>
+  <th class="num-col">独身・共働き</th>
+  <th class="num-col">夫婦（配偶者控除あり）</th>
+  <th class="num-col">共働き＋子1人（高校生）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="num-col"><strong>300万円</strong></td>
+  <td class="num-col">28,000円</td>
+  <td class="num-col">19,000円</td>
+  <td class="num-col">19,000円</td>
+</tr>
+<tr>
+  <td class="num-col"><strong>400万円</strong></td>
+  <td class="num-col">42,000円</td>
+  <td class="num-col">33,000円</td>
+  <td class="num-col">33,000円</td>
+</tr>
+<tr>
+  <td class="num-col"><strong>500万円</strong></td>
+  <td class="num-col">61,000円</td>
+  <td class="num-col">49,000円</td>
+  <td class="num-col">49,000円</td>
+</tr>
+<tr>
+  <td class="num-col"><strong>600万円</strong></td>
+  <td class="num-col">77,000円</td>
+  <td class="num-col">69,000円</td>
+  <td class="num-col">69,000円</td>
+</tr>
+<tr>
+  <td class="num-col"><strong>650万円</strong></td>
+  <td class="num-col">97,000円</td>
+  <td class="num-col">77,000円</td>
+  <td class="num-col">77,000円</td>
+</tr>
+<tr>
+  <td class="num-col"><strong>700万円</strong></td>
+  <td class="num-col">108,000円</td>
+  <td class="num-col">86,000円</td>
+  <td class="num-col">86,000円</td>
+</tr>
+<tr>
+  <td class="num-col"><strong>800万円</strong></td>
+  <td class="num-col">129,000円</td>
+  <td class="num-col">120,000円</td>
+  <td class="num-col">120,000円</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+      <p>注目したいのは、たとえば「独身・共働き」の列で600万円（77,000円）から650万円（97,000円）へ上がる際や、「夫婦」の列で700万円（86,000円）から750万円（109,000円・全表参照）へ上がる際に、伸び幅が大きくなっている点です。これは年収が増えて課税所得が上がることで、算出式の分子である「住民税の所得割額」が増えるだけでなく、分母にある「所得税率」の区分が上がるタイミングで計算結果が段階的に変化するためです。</p>
+
+      <p>逆に言えば、<strong>課税所得がちょうど税率区分の境目付近にある場合、少しの控除追加や収入減で適用される所得税率や住民税所得割額が変わり、限度額が変動しやすい</strong>という特徴があります。</p>
+
+      <h2 id="sec-4">源泉徴収票と住民税決定通知書を使った確認手順</h2>
+
+      <p>自分の条件に即して限度額を確認したいときは、会社員であれば「給与所得の源泉徴収票」と「住民税決定通知書（給与所得等に係る市民税・県民税 特別徴収税額の決定・変更通知書）」の2つが重要な手がかりになります。</p>
+
+      <h3>1. 住民税決定通知書で確認できること（毎年5〜6月頃に交付）</h3>
+
+      <p>住民税決定通知書は、<strong>前年の1月〜12月の所得にもとづいて確定した住民税額</strong>を知らせる書類です。限度額の算出式に直結する項目が記載されています。</p>
+
+      <div class="table-wrap">
+<table>
+<thead>
+<tr>
+  <th>住民税決定通知書の確認欄（名称は自治体により若干異なる）</th>
+  <th>確認する内容と使い方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>所得割額（市町村民税＋道府県民税の所得割合計）</strong></td>
+  <td>算出式の分子「住民税の所得割額 × 20%」の基礎となる金額。均等割額は含めず、税額控除後の所得割額の表示方法を自治体の記載説明で確認する</td>
+</tr>
+<tr>
+  <td><strong>課税標準額（総所得金額等から所得控除を引いた額）</strong></td>
+  <td>課税される所得の水準を把握する目安になる（所得税の課税所得とは控除額の差により少し異なる場合がある・要確認）</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+      <p><strong>注意点</strong>：6月に届く住民税決定通知書に書かれているのは、あくまで「昨年の所得に対する住民税」です。今年の年収・家族構成・控除内容が昨年とほぼ同じ見込みであれば有力な目安になりますが、今年転職・休職・昇給・扶養変更・iDeCo開始などがあった場合は、今年の条件に合わせて見直す必要があります。</p>
+
+      <h3>2. 給与所得の源泉徴収票で確認できること（毎年12月〜翌1月頃に交付）</h3>
+
+      <p>源泉徴収票には住民税額そのものは載っていませんが、課税所得を計算するための重要な3つの数字が並んでいます。</p>
+
+      <div class="table-wrap">
+<table>
+<thead>
+<tr>
+  <th>源泉徴収票の確認欄</th>
+  <th>記載されている内容</th>
+  <th>限度額確認での役割</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>① 支払金額</strong></td>
+  <td>税金や社会保険料が引かれる前の額面の年間給与収入</td>
+  <td>早見表の「給与収入」列と照合する際の基準額</td>
+</tr>
+<tr>
+  <td><strong>② 給与所得控除後の金額</strong></td>
+  <td>支払金額から会社員の必要経費にあたる給与所得控除を差し引いた「給与所得」</td>
+  <td>課税所得を求める出発点となる金額</td>
+</tr>
+<tr>
+  <td><strong>③ 所得控除の額の合計額</strong></td>
+  <td>社会保険料控除、配偶者控除、扶養控除、基礎控除、生命保険料控除、iDeCo等の合計額</td>
+  <td>②から③を差し引くことで、所得税上の課税所得金額の目安が把握できる</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+      <p>12月中旬〜下旬に今年の給与・賞与が確定して当年分の源泉徴収票（または最終給与明細の年間累計）がわかれば、「今年の支払金額が昨年と比べて増えたか減ったか」「社会保険料や保険料控除、扶養控除がどの程度あるか」を高い精度で確認できます。</p>
+
+      <h3>3. 年の途中（10〜11月頃）に試算するときの現実的な進め方</h3>
+
+      <p>年末の駆け込みを避けて秋頃に寄附を始める場合は、次の手順で確認すると無理がありません。</p>
+
+      <ol>
+  <li><strong>昨年の源泉徴収票・住民税決定通知書</strong>を手元に用意し、昨年の実績ベースの上限目安を把握する。</li>
+  <li><strong>今年の1月〜直近月までの給与明細・賞与明細</strong>を確認し、昨年より収入が減りそうか、医療費控除やiDeCo掛金などの控除が増えそうかを点検する。</li>
+  <li>年収確定前は<strong>算出した目安額の7〜8割程度</strong>にとどめて寄附を行い、12月に年間収入の見通しが固まってから残りの枠を調整する。</li>
+</ol>
+
+      <aside class="pr-box" aria-label="プロモーション案内">
+  <div class="pr-box-head"><span class="pr-badge">【#PR】</span>計算した目安枠・残り枠に応じた寄附先確認のご案内</div>
+  <ul>
+    <li>書類で上限目安を確認したあとは、予算オーバーを防ぐため寄附金額帯ごとに返礼品や配送条件を絞り込んで計画的に検討できます。</li>
+    <li><a class="pr-slot" href="https://hb.afl.rakuten.co.jp/hgc/11e7c15e.43b4d992.11e7c15f.7b1e602a/?pc=https%3A%2F%2Fevent.rakuten.co.jp%2Ffurusato%2F&amp;link_type=text&amp;ut=eyJwYWdlIjoidXJsIiwidHlwZSI6InRleHQiLCJjb2wiOjF9" target="_blank" rel="nofollow sponsored noopener">楽天ふるさと納税で寄附先を探す</a></li>
+  </ul>
+</aside>
+
+      <h2 id="sec-5">計算時に見落としやすい変動要因と上限超過時のルール</h2>
+
+      <h3>他の控除を併用する場合・給与以外の収入がある場合</h3>
+
+      <p>計算上、特に注意したいのが「他の控除との併用」と「給与以外の所得」です。</p>
+
+      <ul>
+  <li><strong>iDeCo・医療費控除などの所得控除がある場合</strong>：源泉徴収票や確定申告書の「所得控除の額」が増えるため、課税所得と住民税の所得割額が減少し、<strong>ふるさと納税の限度額が下がる場合があります</strong>（詳細：<a href="../ideco/index.html">iDeCo併用で限度額がどう変わるか</a>）。</li>
+  <li><strong>住宅ローン控除を受けている場合</strong>：税額控除として所得税から差し引かれ、引ききれない分が住民税からも控除されるケースでは、条件によって限度額が下がる場合があります。</li>
+  <li><strong>個人事業主・年金受給者の場合</strong>：給与所得とは所得の算出方法が異なるため、確定申告書控えや公的年金等の源泉徴収票をもとに確認します（詳細：<a href="../kojin-jigyo/index.html">個人事業主の限度額の考え方</a> ／ <a href="../nenkin/index.html">年金受給者の限度額の考え方</a>）。</li>
+</ul>
+
+      <h3>もし計算違いで限度額を超えてしまった場合の扱い</h3>
+
+      <p>万が一、年末の賞与減や医療費控除の追加などによって結果的に限度額を超えて寄附してしまった場合でも、寄附金控除そのものが受けられなくなるわけではありません。</p>
+
+      <ul>
+  <li><strong>限度額を超えた分の取り扱い</strong>：全額控除（自己負担2,000円のみ）にはなりませんが、所得税（総所得金額等の40%上限）および住民税基本分の<strong>寄附金控除の対象にはなります</strong>。</li>
+  <li><strong>超過時は確定申告の方が控除範囲が広くなる理由</strong>：ワンストップ特例は住民税のみで控除を行うため、住民税特例分の上限を超えた際に控除しきれない部分が出やすくなります。一方、<strong>確定申告を行えば所得税からの控除（（寄附額−2,000円）×所得税率）も適用されるため、ワンストップ特例よりも控除範囲が広くなります</strong>。</li>
+</ul>
+
+      <p>詳しくは<a href="../kakutei/index.html">確定申告での控除の受け方と超過分の扱い</a>で解説しています。</p>
+
+      <h2 id="sec-6">寄附実行から控除手続き・結果確認までの流れ</h2>
+
+      <p>限度額を確認して寄附を行う際は、以下の実務ルールもあわせて押さえておきましょう。</p>
+
+      <ol>
+  <li><strong>ポータル利用と返礼品の基準</strong><br>返礼品は「調達価格が寄附額の3割以下」「地場産品であること」が総務省基準です（2019年6月から指定制度）。また、<strong>2025年10月からポータルサイト等を経由した寄附へのポイント付与は総務省基準で禁止</strong>されているため、寄附履歴の集計機能や上限管理のしやすさを重視して計画的に利用しましょう（年収別の配分例は<a href="../nenshu/index.html">年収別に見る限度額と寄附配分の考え方</a>を参照）。</li>
+  <li><strong>決済期限（12月31日）と申請期限（翌年1月10日必着／確定申告）</strong><br>当年分の寄附対象は<strong>12月31日決済完了分まで</strong>です。ワンストップ特例（確定申告不要な給与所得者等・5自治体以内）を使う場合は寄附ごとに申請書を<strong>翌年1月10日必着</strong>で提出します（詳細：<a href="../onestop/index.html">ワンストップ特例の条件・手順・期限</a> ／ <a href="../schedule/index.html">年間スケジュールと締切（12/31・1/10）</a>）。</li>
+  <li><strong>翌年の住民税決定通知書で答え合わせをする</strong><br>寄附した翌年に届く住民税決定通知書（確定申告をした場合は所得税の還付通知等とあわせて）を確認することで、申請した寄附金控除が正しく反映されているかを照合できます。</li>
+</ol>
+
+      <aside class="pr-box" aria-label="プロモーション案内">
+  <div class="pr-box-head"><span class="pr-badge">【#PR】</span>寄附履歴の管理と年末に向けた手続き準備のご案内</div>
+  <ul>
+    <li>12月31日の決済締切に向けて、これまでの寄附合計額と残り枠を確認しながら、無理のない範囲で寄附先を検討しましょう。</li>
+    <li><a class="pr-slot" href="https://hb.afl.rakuten.co.jp/hgc/11e7c15e.43b4d992.11e7c15f.7b1e602a/?pc=https%3A%2F%2Fevent.rakuten.co.jp%2Ffurusato%2F&amp;link_type=text&amp;ut=eyJwYWdlIjoidXJsIiwidHlwZSI6InRleHQiLCJjb2wiOjF9" target="_blank" rel="nofollow sponsored noopener">楽天ふるさと納税で寄附先を探す</a></li>
+  </ul>
+</aside>
+
+
+      <div class="context-link-box">
+        <p class="context-link-title">算出式の確認とあわせて読みたい超過対策・控除併用ガイド</p>
+        <p>万が一算出目安を超えて寄附した場合の控除構造は「<a href="../gendo-chouka/index.html">限度額を超えたらどうなるか</a>」、住宅ローン控除やiDeCoと組み合わせる際の考え方は「<a href="../jutaku-loan/index.html">住宅ローン控除とふるさと納税の併用</a>」および「<a href="../ideco/index.html">iDeCo併用で限度額がどう変わるか</a>」で詳しく整理しています。年末の源泉徴収票確認手順は「<a href="../december/index.html">12月の駆け込み寄附チェックリスト</a>」もご参照ください。</p>
+      </div>
+      <h2 id="sec-7">限度額の計算方法に関するよくある質問（FAQ）</h2>
+
+      <div class="faq-list">
+  <div class="faq-item">
+    <h3>Q1. 住民税決定通知書にある「均等割」も含めて20%を計算するのですか？</h3>
+    <p><strong>A.</strong> いいえ、算出式の「住民税の所得割額 × 20%」に使うのは<strong>「所得割額」のみ</strong>であり、定額で課税される「均等割額」は含めません。自治体の通知書で「市町村民税の所得割額」と「道府県民税（都民税等）の所得割額」に分かれて記載されている場合は、その2つの所得割額の合計をもとに確認します（記載欄の詳細は各自治体のご案内でご確認ください）。</p>
+  </div>
+  <div class="faq-item">
+    <h3>Q2. 所得税の控除対象となるふるさと納税額に上限はありますか？</h3>
+    <p><strong>A.</strong> はい、所得税の寄附金控除の対象となるふるさと納税額は、<strong>総所得金額等の40%が上限</strong>と定められています。もっとも、通常の給与所得者等においては、その40%に達するよりもずっと手前で「住民税特例分（住民税所得割額の20%）」の上限に達するため、全額控除の目安を考える際は住民税所得割額ベースの限度額が実質的な基準となります。</p>
+  </div>
+  <div class="faq-item">
+    <h3>Q3. 生命保険料控除や地震保険料控除がある場合、早見表より限度額は変わりますか？</h3>
+    <p><strong>A.</strong> 総務省の早見表は「他の控除がない場合」を前提としているため、生命保険料控除や地震保険料控除などがあると課税所得や住民税所得割額が少し減少し、<strong>早見表の数値より限度額が下がる場合があります</strong>。源泉徴収票の「所得控除の額の合計額」や住民税決定通知書の所得割額をもとに確認するのが堅実です。</p>
+  </div>
+  <div class="faq-item">
+    <h3>Q4. 自分で計算した結果に自信がない場合はどこに確認すればよいですか？</h3>
+    <p><strong>A.</strong> 住民税の課税計算や控除限度額の考え方は、<strong>お住まいの市区町村の住民税担当窓口</strong>が管轄しています。また、所得税の確定申告や複数の所得がある場合の計算については所轄の税務署や税理士へ相談することで、個別の状況に即した確認が可能です。</p>
+  </div>
+  <div class="faq-item">
+    <h3>Q5. 翌年に届く「住民税決定通知書」で、ふるさと納税の控除が反映されたかどう確認できますか？</h3>
+    <p><strong>A.</strong> 寄附した翌年の5〜6月頃に届く住民税決定通知書の「税額控除額」欄や「摘要」欄を見ることで、市町村民税と道府県民税から控除された金額を確認できます（自治体により表記欄の名称は異なります）。もし申請漏れやワンストップ無効化で反映されていない場合の対処手順は「<a href="../miss/index.html">よくある失敗と対処法</a>」をご参照ください。</p>
+  </div>
+</div>
+
+      <h2 id="sec-8">まとめ｜算出式の仕組みを知り、書類照合で安心できる寄附計画を</h2>
+
+      <p>ふるさと納税の控除限度額は、概要として<strong>「（住民税の所得割額 × 20%）÷（90% − 所得税率 × 1.021）＋ 2,000円」</strong>のバランスで決まっており、手元の源泉徴収票と住民税決定通知書を確認することで早見表よりも実態に近い見通しを立てることができます。今年の収入が確定するまでは少し余裕を残して寄附を進め、最終的な数値はお住まいの自治体や公的書類で必ずご確認ください。</p>
+
+      <p>目的に応じて以下のページもあわせてご活用ください。</p>
+
+      <ul>
+  <li><strong>全体像・シミュレーターを使う</strong>：<a href="../index.html">ふるさと納税の限度額の全体像と確認方法</a> ／ <a href="../hayami/index.html">控除上限額の早見表（年収×家族構成）</a></li>
+  <li><strong>年収帯別の配分計画を立てる</strong>：<a href="../nenshu/index.html">年収別に見る限度額と寄附配分の考え方</a></li>
+  <li><strong>属性・控除併用別の考え方を見る</strong>：<a href="../kojin-jigyo/index.html">個人事業主の限度額の考え方</a> ／ <a href="../nenkin/index.html">年金受給者の限度額の考え方</a> ／ <a href="../ideco/index.html">iDeCo併用で限度額がどう変わるか</a></li>
+  <li><strong>申請方法と締切を確認する</strong>：<a href="../onestop/index.html">ワンストップ特例の条件・手順・期限</a> ／ <a href="../kakutei/index.html">確定申告での控除の受け方と超過分の扱い</a> ／ <a href="../schedule/index.html">年間スケジュールと締切（12/31・1/10）</a></li>
+</ul>
+
+      <div class="hub-grid" data-design-added="true">
+  <a class="hub-card" href="../simulator/index.html">
+    <span class="hub-card-tag">試算ツール</span>
+    <span class="hub-card-title">控除上限額・残り枠シミュレーター</span>
+    <span class="hub-card-desc">給与収入×家族構成から上限目安と寄附済み額差し引き後の残り枠を即時計算</span>
+  </a>
+  <a class="hub-card" href="../index.html">
+    <span class="hub-card-tag">総まとめガイド</span>
+    <span class="hub-card-title">ふるさと納税の限度額 総まとめ</span>
+    <span class="hub-card-desc">限度額の仕組み・25万円刻み早見表・計算確認・申請手続きまで一括整理</span>
+  </a>
+  <a class="hub-card" href="../hayami/index.html">
+    <span class="hub-card-tag">早見表・目安確認</span>
+    <span class="hub-card-title">控除上限額の早見表（年収×家族構成）</span>
+    <span class="hub-card-desc">給与収入300万〜800万円×家族3区分の公表早見表と正しい読み方</span>
+  </a>
+  <a class="hub-card" href="../nenshu/index.html">
+    <span class="hub-card-tag">年収別・配分設計</span>
+    <span class="hub-card-title">年収別に見る限度額と寄附配分の考え方</span>
+    <span class="hub-card-desc">300万〜800万円帯ごとの特徴と5自治体以内の無理のない寄附配分</span>
+  </a>
+  <a class="hub-card" href="../kojin-jigyo/index.html">
+    <span class="hub-card-tag">属性別：個人事業主</span>
+    <span class="hub-card-title">個人事業主の限度額の考え方</span>
+    <span class="hub-card-desc">売上と事業所得の違い・確認書類3点・確定申告での寄附金控除ルール</span>
+  </a>
+  <a class="hub-card" href="../nenkin/index.html">
+    <span class="hub-card-tag">属性別：年金受給者</span>
+    <span class="hub-card-title">年金受給者の限度額の考え方</span>
+    <span class="hub-card-desc">課税状況の事前確認・公的年金等控除の違い・医療費控除併用時の注意点</span>
+  </a>
+  <a class="hub-card" href="../ideco/index.html">
+    <span class="hub-card-tag">控除併用：iDeCo</span>
+    <span class="hub-card-title">iDeCo併用で限度額がどう変わるか</span>
+    <span class="hub-card-desc">掛金の所得控除で限度額が下がる仕組みと年末調整・確定申告の選び方</span>
+  </a>
+  <a class="hub-card" href="../onestop/index.html">
+    <span class="hub-card-tag">手続き：ワンストップ</span>
+    <span class="hub-card-title">ワンストップ特例の条件・手順・期限</span>
+    <span class="hub-card-desc">5自治体以内のカウント方法・翌年1月10日必着・確定申告での無効化対策</span>
+  </a>
+  <a class="hub-card" href="../kakutei/index.html">
+    <span class="hub-card-tag">手続き：確定申告・超過</span>
+    <span class="hub-card-title">確定申告での控除の受け方と超過分の扱い</span>
+    <span class="hub-card-desc">所得税と住民税の2段階控除・必要書類・限度額超過時に確定申告を選ぶ理由</span>
+  </a>
+  <a class="hub-card" href="../schedule/index.html">
+    <span class="hub-card-tag">期限・スケジュール</span>
+    <span class="hub-card-title">年間スケジュールと締切（12/31・1/10）</span>
+    <span class="hub-card-desc">12月31日決済完了基準・翌年1月10日必着ルール・時期別の分散アクション</span>
+  </a>
+
+  <a class="hub-card" href="../jutaku-loan/index.html">
+    <span class="hub-card-tag">控除併用：住宅ローン</span>
+    <span class="hub-card-title">住宅ローン控除とふるさと納税の併用</span>
+    <span class="hub-card-desc">1年目（確定申告）と2年目以降（ワンストップ可）の手続きと確認点</span>
+  </a>
+  <a class="hub-card" href="../setai/index.html">
+    <span class="hub-card-tag">夫婦・共働き</span>
+    <span class="hub-card-title">共働き・夫婦世帯の限度額の考え方</span>
+    <span class="hub-card-desc">世帯合算できない原則と各自の名義・決済ルール</span>
+  </a>
+  <a class="hub-card" href="../henreihin/index.html">
+    <span class="hub-card-tag">返礼品選び・制度</span>
+    <span class="hub-card-title">返礼品の選び方と総務省基準ルール</span>
+    <span class="hub-card-desc">冷凍容量・発送時期・金額刻みの観点と2025年10月基準</span>
+  </a>
+</div>
+
+      <section class="verify-box" aria-label="更新日・数値の確認方法について">
+  <h2>更新日・数値の確認方法について</h2>
+  <ul>
+    <li><strong>最終更新日</strong>：2026年11月12日</li>
+    <li><strong>執筆・編集</strong>：ふるさと納税限度額ナビ編集部</li>
+    <li><strong>数値・制度情報の確認方針</strong>：本記事に掲載している限度額の算出式、所得税の控除計算式（総所得金額等の40%上限含む）、および早見表抜粋値は、総務省ふるさと納税ポータルサイト等の公表情報をもとに整理しています。早見表は「給与収入のみ・他の控除がない場合」の目安であり、算出式も概要説明用の式であるため、端数処理や調整控除等により実額と異なる場合があります。正確な限度額は源泉徴収票・住民税決定通知書をご確認のうえ、お住まいの自治体や所轄税務署にてご確認ください。</li>
+  </ul>
+</section>
+
+      <section class="source-memo" aria-label="出典・参考情報メモ">
+  <h2>出典・参考情報メモ（公開前差し替え用プレースホルダ）</h2>
+  <p class="note-text">※公開CMS入稿時に以下の公的機関ページの最新URLおよび細部計算規定を確認のうえ差し替えを実施する。</p>
+  <ul>
+    <li><code>[出典プレースホルダ：総務省「ふるさと納税ポータルサイト｜ふるさと納税のしくみ（税金の控除について）」（所得税控除式・住民税特例分20%上限・限度額算出式・早見表の確認用）]</code></li>
+    <li><code>[出典プレースホルダ：総務省「ふるさと納税の指定制度および2025年10月ポータルサイトポイント付与禁止に関する公表資料」（返礼品3割・地場産品基準・ポイント付与禁止の確認用）]</code></li>
+    <li><code>[出典プレースホルダ：国税庁「タックスアンサー｜寄附金控除・所得税の税率・給与所得の源泉徴収票の見方」（総所得金額等の40%上限・所得税速算表・復興特別所得税係数・源泉徴収票各項目の確認用）（要出典確認）]</code></li>
+    <li><code>[出典プレースホルダ：住民税基本分の税率・人的控除差に基づく調整控除・住民税決定通知書の自治体別表記および他控除併用時の減額計算細則（要出典確認）]</code></li>
+  </ul>
+</section>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand-title">ふるさと納税限度額ナビ</p>
+        <p class="footer-brand-desc">総務省ふるさと納税ポータルサイト等の公表基準にもとづき、控除上限額（限度額）の早見表・算出式・属性別の注意点・ワンストップ特例および確定申告の手続きを客観的に整理する特化情報サイトです。掲載数値は一般的な目安であり、正確な控除限度額は源泉徴収票・住民税決定通知書・お住まいの自治体にてご確認ください。</p>
+      </div>
+      <div class="footer-col">
+        <h3>コンテンツ一覧</h3>
+        <ul>
+          <li><a href="../index.html">ふるさと納税の限度額 総まとめ</a></li>
+          <li><a href="../simulator/index.html">控除上限額・残り枠シミュレーター</a></li>
+          <li><a href="../hayami/index.html">控除上限額の早見表（年収×家族構成）</a></li>
+          <li><a href="../keisan/index.html" aria-current="page">限度額の計算方法と源泉徴収票での確認</a></li>
+          <li><a href="../nenshu/index.html">年収別に見る限度額と寄附配分の考え方</a></li>
+          <li><a href="../jutaku-loan/index.html">住宅ローン控除とふるさと納税の併用</a></li>
+          <li><a href="../ideco/index.html">iDeCo併用で限度額がどう変わるか</a></li>
+          <li><a href="../setai/index.html">共働き・夫婦世帯の限度額の考え方</a></li>
+          <li><a href="../kojin-jigyo/index.html">個人事業主の限度額の考え方</a></li>
+          <li><a href="../nenkin/index.html">年金受給者の限度額の考え方</a></li>
+          <li><a href="../onestop/index.html">ワンストップ特例の条件・手順・期限</a></li>
+          <li><a href="../kakutei/index.html">確定申告での控除の受け方と超過分の扱い</a></li>
+          <li><a href="../gendo-chouka/index.html">限度額を超えたらどうなる？超過時の扱い</a></li>
+          <li><a href="../henreihin/index.html">返礼品の選び方と総務省基準ルール</a></li>
+          <li><a href="../schedule/index.html">年間スケジュールと締切（12/31・1/10）</a></li>
+          <li><a href="../december/index.html">12月駆け込み寄附の注意点チェックリスト</a></li>
+          <li><a href="../miss/index.html">ふるさと納税でよくある失敗とリカバリー</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>サイト情報・運営ポリシー</h3>
+        <ul>
+          <li><a href="../about/index.html">運営者情報・編集部体制・制作ポリシー</a></li>
+          <li><a href="../policy/verification/index.html">数値算出基準・出典確認フロー</a></li>
+          <li><a href="../policy/advertising/index.html">広告掲載ポリシー（#PR表記方針）</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 ふるさと納税限度額ナビ編集部</p>
+      <p>※当サイトの記事にはプロモーション（#PR）が含まれます。</p>
+    </div>
+  </div>
+</footer>
+<button type="button" class="back-to-top" id="back-to-top" aria-label="ページ上部へ戻る" data-design-added="true">
+  <span class="back-to-top-arrow" aria-hidden="true">↑</span>
+  <span>TOP</span>
+</button>
+<script data-design-added="true">
+(function(){
+  var bar = document.getElementById("reading-progress-bar");
+  var btn = document.getElementById("back-to-top");
+  function onScroll(){
+    var s = window.scrollY || document.documentElement.scrollTop || 0;
+    var h = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    if(bar) bar.style.width = (h > 0 ? Math.min(100, Math.max(0, s / h * 100)) : 0) + "%";
+    if(btn) btn.classList.toggle("is-visible", s > 280);
+  }
+  window.addEventListener("scroll", onScroll, {passive: true});
+  if(btn) btn.addEventListener("click", function(){ window.scrollTo({top: 0, behavior: "smooth"}); });
+  onScroll();
+})();
+</script>
+</body>
+</html>

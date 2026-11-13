@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>iDeCoとふるさと納税を併用すると限度額はどう変わる？下がる仕組み・確認手順・申請方法の注意点</title>
+<meta name="description" content="iDeCo（個人型確定拠出年金）とふるさと納税を併用すると限度額がどう変わるかを解説。掛金の全額所得控除により課税所得・住民税所得割額が減る仕組み、掛金払込証明書と源泉徴収票での確認手順、年末調整と確定申告の注意点を整理します。">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "iDeCoとふるさと納税を併用すると限度額はどう変わる？下がる仕組み・確認手順・申請方法の注意点",
+  "description": "iDeCo（個人型確定拠出年金）とふるさと納税を併用すると限度額がどう変わるかを解説。掛金の全額所得控除により課税所得・住民税所得割額が減る仕組み、掛金払込証明書と源泉徴収票での確認手順、年末調整と確定申告の注意点を整理します。",
+  "inLanguage": "ja",
+  "datePublished": "2026-11-12",
+  "dateModified": "2026-11-12",
+  "author": {
+    "@type": "Organization",
+    "name": "ふるさと納税限度額ナビ編集部"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ふるさと納税限度額ナビ編集部"
+  },
+  "image": [
+    "../assets/img/docs.webp"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "ふるさと納税限度額ナビ"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ふるさと納税の限度額トップ",
+      "item": "../index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "iDeCo併用で限度額がどう変わるか"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "iDeCoとふるさと納税を併用すると、iDeCo側の控除額が減ることはありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "いいえ、税金計算の順序としてiDeCoの掛金（小規模企業共済等掛金控除）が先に所得から差し引かれるため、ふるさと納税を行ったことによってiDeCo側の所得控除額が減ることはありません。影響を受けるのは後に計算される「ふるさと納税の控除限度額」の側です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "iDeCoの運用益が出た年や運用損が出た年は、ふるさと納税の限度額に影響しますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "一般論として、iDeCoの口座内で生じた運用益は非課税で再投資される仕組みであり、毎年の給与所得や事業所得と合算・損益通算されるものではないため、運用成績そのものが毎年のふるさと納税の限度額を上下させることはありません。影響するのはあくまで「その年に拠出したiDeCoの掛金額」です（受取時の退職所得・雑所得の扱いは別途公的資料で要確認）。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "年の途中でiDeCoの掛金額を変更した場合、いつの金額で考えればよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "その年の1月〜12月の間に実際に納付（拠出）された掛金の合計額が当年の所得控除対象となります。秋に届く払込証明書や年末調整の申告金額で、当年分の正確な払込合計額を確認してください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "iDeCo・住宅ローン控除・ふるさと納税の3つを同時に利用することはできますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "3つの制度を同じ年に利用すること自体は可能です。ただし、iDeCoによって課税所得が減り、さらに住宅ローン控除によって所得税や住民税（条件による）が控除されるため、ふるさと納税の限度額が下がる場合があります。また、ワンストップ特例を使うか確定申告をするかによっても住宅ローン控除との兼ね合いが変わるケースがあるため、源泉徴収票や住民税決定通知書をもとに自治体や税務署で事前確認することが大切です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "会社員がiDeCoの掛金を「年末調整」で申告している場合でも、ワンストップ特例は使えますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい、勤務先の年末調整で小規模企業共済等掛金控除の手続きが完結しており、医療費控除など他に確定申告をする必要がなく、かつ年間の寄附先が5自治体以内であればワンストップ特例制度を利用できます。一方、年末調整に間に合わず確定申告でiDeCoの控除を申告する場合はワンストップ特例が無効になるため、ふるさと納税も確定申告書に記載してください（詳細はワンストップ特例の条件を参照）。"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<div class="reading-progress" aria-hidden="true" data-design-added="true"><div class="reading-progress-bar" id="reading-progress-bar"></div></div>
+<a class="skip-link" href="#main-content">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand-row">
+      <a class="site-brand" href="../index.html">
+        <span class="site-brand-title">ふるさと納税限度額ナビ <span class="site-brand-badge">控除上限・手続き特化ガイド</span></span>
+        <span class="site-brand-sub">年収・家族構成・各種控除から上限目安と申請期限を整理する情報サイト</span>
+      </a>
+      <a class="header-cta" href="../simulator/index.html">残り枠を試算する →</a>
+    </div>
+    <nav class="global-nav" aria-label="メインナビゲーション">
+      <ul>
+        <li><a href="../index.html">総まとめ</a></li>
+        <li><a href="../simulator/index.html">シミュレーター</a></li>
+        <li><a href="../hayami/index.html">早見表</a></li>
+        <li><a href="../keisan/index.html">計算・書類確認</a></li>
+        <li><a href="../nenshu/index.html">年収別・配分</a></li>
+        <li><a href="../jutaku-loan/index.html">住宅ローン併用</a></li>
+        <li><a href="../ideco/index.html" aria-current="page">iDeCo併用</a></li>
+        <li><a href="../setai/index.html">世帯・共働き</a></li>
+        <li><a href="../kojin-jigyo/index.html">個人事業主</a></li>
+        <li><a href="../nenkin/index.html">年金受給者</a></li>
+        <li><a href="../onestop/index.html">ワンストップ特例</a></li>
+        <li><a href="../kakutei/index.html">確定申告・超過</a></li>
+        <li><a href="../gendo-chouka/index.html">限度額超過</a></li>
+        <li><a href="../henreihin/index.html">返礼品の選び方</a></li>
+        <li><a href="../december/index.html">12月駆け込み</a></li>
+        <li><a href="../miss/index.html">よくある失敗</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="site-main" id="main-content">
+  <nav class="breadcrumb" aria-label="パンくずリスト" data-design-added="true">
+    <ol>
+      <li><a href="../index.html">ふるさと納税の限度額トップ</a></li>
+      <li aria-current="page">iDeCo併用で限度額がどう変わるか</li>
+    </ol>
+  </nav>
+  <article class="article-shell">
+    <header class="article-header">
+      <p class="pr-notice-top">※本記事にはプロモーション（#PR）が含まれます。</p>
+      <h1>iDeCoとふるさと納税を併用すると限度額はどう変わる？下がる仕組み・確認手順・申請方法の注意点</h1>
+      <div class="article-meta" data-design-added="true">
+        <span>最終更新日：<time datetime="2026-11-12">2026年11月12日</time></span>
+        <span>執筆・編集：ふるさと納税限度額ナビ編集部</span>
+      </div>
+    </header>
+    <figure class="article-eyecatch" data-design-added="true">
+      <div class="article-eyecatch-img-wrap">
+        <img src="../assets/img/docs.webp" alt="掛金払込証明書や源泉徴収票などの確認書類と電卓のイラスト" width="800" height="500">
+      </div>
+      <figcaption class="article-eyecatch-bar">
+        <span class="article-eyecatch-tag">控除併用・証明書確認</span>
+        <span class="article-eyecatch-summary">掛金払込証明書・源泉徴収票での確認手順と年末調整・確定申告の注意点</span>
+      </figcaption>
+    </figure>
+
+    <div class="article-body numbered-headings">
+      <p>老後の資産形成としてiDeCo（個人型確定拠出年金）に加入している方の間でよく挙がる疑問が、「iDeCoとふるさと納税は同じ年に併用できるのか」「iDeCoの掛金を払っていると、ふるさと納税の限度額は早見表より下がるのか」という点です。結論からいえば、<strong>iDeCoとふるさと納税の併用自体は問題なく可能</strong>ですが、限度額の見積もり方には注意が必要です。</p>
+
+      <p>ふるさと納税では、年間の寄附合計額のうち<strong>2,000円を超える部分について、一定の上限まで所得税と住民税から原則として全額が控除</strong>されます。一方でiDeCoの掛金は全額が所得控除の対象となるため、課税される所得金額や住民税の所得割額が減少します。その結果、<strong>iDeCoを併用しない場合（一般的な早見表の目安）と比べて、ふるさと納税の控除限度額が下がる場合があります</strong>。早見表の数値をそのまま信じて満額まで寄附すると、意図せず上限を超過してしまう恐れがあります。</p>
+
+      <p>本記事では、iDeCo併用時にふるさと納税の限度額が変わる税制上の仕組み、源泉徴収票や掛金払込証明書を使った確認手順、医療費控除・住宅ローン控除等も重なる場合の考え方、年末調整・ワンストップ特例・確定申告の正しい組み合わせ方まで詳しく整理します。制度全体の基本は<a href="../index.html">ふるさと納税の限度額の全体像と確認方法</a>もあわせてご参照ください。</p>
+
+      <div class="summary-box">
+  <p class="summary-box-title">この記事のポイント（iDeCo併用時の限度額・結論まとめ）</p>
+  <ul>
+    <li><strong>併用の可否と影響</strong>：iDeCoとふるさと納税は同じ年に併用可能。ただしiDeCoの所得控除により課税所得・住民税所得割額が減るため、<strong>ふるさと納税の限度額が下がる場合がある</strong></li>
+    <li><strong>早見表を見る際の注意</strong>：総務省公表の早見表は「他の控除がない場合」の目安であるため、iDeCo加入者がそのまま満額使うと上限超過につながる恐れがある</li>
+    <li><strong>申請方法の選び方</strong>：会社員がiDeCoを<strong>年末調整</strong>で申告済みで寄附先が<strong>5自治体以内</strong>ならワンストップ特例も利用可能。確定申告でiDeCoを申告する場合はふるさと納税も確定申告で行う</li>
+    <li><strong>正確な金額の確認</strong>：掛金払込証明書・源泉徴収票・住民税決定通知書をもとに、お住まいの自治体や公的書類で確認する</li>
+  </ul>
+</div>
+
+      <nav class="toc-box" aria-label="目次" data-design-added="true">
+  <p class="toc-title">目次</p>
+  <ol>
+    <li><a href="#sec-1">iDeCoとふるさと納税を併用すると限度額が下がる場合がある仕組み</a></li>
+    <li><a href="#sec-2">「他控除なしの早見表」の位置づけと見る際の注意点</a></li>
+    <li><a href="#sec-3">iDeCo併用者が自分の限度額を確認する3つの実践ステップ</a></li>
+    <li><a href="#sec-4">iDeCo併用時の申請手続き｜ワンストップ特例と確定申告の選び方</a></li>
+    <li><a href="#sec-5">万が一限度額を超えた場合の扱いと年末までのルール</a></li>
+    <li><a href="#sec-6">iDeCo併用とふるさと納税に関するよくある質問（FAQ）</a></li>
+    <li><a href="#sec-7">まとめ｜iDeCoの掛金控除を織り込み、余裕を残した寄附計画を</a></li>
+  </ol>
+</nav>
+
+      <h2 id="sec-1">iDeCoとふるさと納税を併用すると限度額が下がる場合がある仕組み</h2>
+
+      <p>「なぜiDeCoで税金の控除を受けているのに、ふるさと納税の枠に影響が出るのか」を理解する鍵は、iDeCoとふるさと納税それぞれの控除が働く順番にあります。</p>
+
+      <div class="stacked-diagram" role="figure" aria-label="iDeCo掛金（所得控除）とふるさと納税（税額控除等）が働く順番イメージ" data-design-added="true">
+  <div class="stacked-diagram-head">
+    <span class="stacked-diagram-title">iDeCo掛金（所得控除）とふるさと納税（税額控除等）が働く順番イメージ</span>
+    <span class="stacked-diagram-total">iDeCo控除後に限度額が決まる</span>
+  </div>
+  <div class="stacked-track"><div class="stacked-seg seg-c1" style="width: 36%;">給与所得控除・基礎社保等</div><div class="stacked-seg seg-c3" style="width: 22%;">iDeCo掛金控除</div><div class="stacked-seg seg-c2" style="width: 42%;">減少後の課税所得（限度額基準）</div></div>
+  <div class="stacked-legend"><div class="stacked-legend-item is-focus"><span class="stacked-legend-label"><span class="dot-swatch swatch-c3"></span>① 先に差し引かれる控除</span><span class="stacked-legend-val">iDeCo掛金（小規模企業共済等掛金控除）</span></div><div class="stacked-legend-item"><span class="stacked-legend-label"><span class="dot-swatch swatch-c2"></span>② 後に決まる上限枠</span><span class="stacked-legend-val">減少した住民税所得割額等から限度額を算定</span></div></div>
+  <p class="stacked-diagram-foot">※横幅比率は概念イメージです。他控除なしの早見表よりふるさと納税の限度額が下がる場合があるため、余裕を残して確認します。</p>
+</div>
+
+      <h3>1. 税金計算における「所得控除（iDeCo）」と「税額控除（ふるさと納税）」の順番</h3>
+
+      <p>個人の所得税や住民税を計算する際は、まず年間の収入から必要経費や給与所得控除を引き、さらに各種の<strong>「所得控除」</strong>を差し引いて「課税所得」を確定させます。その課税所得に対して税率を掛けて税額を算出したあと、最後に差し引くのが住民税の寄附金税額控除などの<strong>「税額控除」</strong>です。</p>
+
+      <ol>
+  <li><strong>ステップ①（所得の算出）</strong>：給与収入 − 給与所得控除 ＝ 給与所得</li>
+  <li><strong>ステップ②（所得控除の差し引き）</strong>：給与所得 − 各種所得控除（基礎控除・社会保険料控除・配偶者控除・<strong>iDeCoの小規模企業共済等掛金控除</strong> など） ＝ <strong>課税所得</strong></li>
+  <li><strong>ステップ③（税額と上限の決定）</strong>：課税所得をもとに所得税率や<strong>住民税の所得割額</strong>が決まり、その住民税所得割額等を基準に<strong>ふるさと納税の控除限度額</strong>が決まる</li>
+</ol>
+
+      <p>つまり、ステップ②でiDeCoの年間掛金が所得から差し引かれると、ステップ③の基礎となる「課税所得」と「住民税の所得割額」が小さくなります。元の住民税所得割額が小さくなるため、そこから控除できるふるさと納税の上限枠も連動して小さくなる仕組みです。</p>
+
+      <h3>2. 限度額の算出式（概要）で見る影響箇所</h3>
+
+      <p>総務省の制度説明等で用いられる概要説明用の算出式に当てはめると、どの数字が変化するのかがより明確になります。</p>
+
+      <div class="formula-box">
+  <p class="formula-label"><strong>控除限度額の算出式（概要説明用）</strong></p>
+  <p class="formula-main"><strong>控除限度額 ＝（住民税の所得割額 × 20%）÷（90% − 所得税率 × 1.021）＋ 2,000円</strong></p>
+  <p class="formula-note">※正確な額は源泉徴収票・住民税決定通知書・お住まいの自治体でご確認ください。</p>
+</div>
+
+      <p>iDeCoを併用すると、この式の2箇所に変化が生じる可能性があります。</p>
+
+      <ul>
+  <li><strong>分子「住民税の所得割額 × 20%」の減少</strong>：iDeCoの年間掛金によって課税標準額が下がり、住民税の所得割額が減少します。</li>
+  <li><strong>分母「90% − 所得税率 × 1.021」の変化</strong>：もしiDeCoの掛金控除によって課税所得がちょうど所得税率区分の境目を下回った場合、適用される所得税率が1段階下がり、分母が大きくなることでさらに限度額が下がる場合があります。</li>
+</ul>
+
+      <p>どの程度限度額が変わるかは、本人の給与収入、扶養親族の有無、社会保険料額、そして年間のiDeCo掛金額の組み合わせによって個別に異なるため、一律の金額で決めつけず自分の課税所得ベースで確認することが大切です（算出式の詳しい構造は<a href="../keisan/index.html">限度額の計算方法と源泉徴収票での確認</a>を参照）。</p>
+
+      <div class="sim-cta" data-design-added="true">
+        <div class="sim-cta-text">
+          <strong>早見表ベースの基準目安と「今年の残り枠」を即時試算</strong>
+          給与収入（300万〜800万円・25万円刻み）×家族構成3区分と寄附済み額から確認できます（※給与収入のみ・他控除なしの目安）。
+        </div>
+        <a class="sim-cta-btn" href="../simulator/index.html">残り枠シミュレーターを開く →</a>
+      </div>
+
+      <h2 id="sec-2">「他控除なしの早見表」の位置づけと見る際の注意点</h2>
+
+      <p>総務省が公表している控除上限額の早見表は、iDeCoや医療費控除などを利用していない場合の「基準ライン」を知るうえでは役立ちます。まずは基準となる数値を把握したうえで、iDeCo加入者は「この表の金額がそのまま自分の上限にはならない」という前提で参照しましょう。</p>
+
+      <p class="note-text">※本表は総務省公表値に基づく、<strong>給与収入のみ・他の控除（iDeCo等）がない場合の控除上限額の目安</strong>（抜粋）です。25万円刻みの全21行は<a href="../hayami/index.html">控除上限額の早見表（年収×家族構成）</a>をご参照ください。正確な限度額は源泉徴収票・住民税決定通知書・お住まいの自治体でご確認ください。</p>
+
+      <div class="table-wrap">
+<table>
+<thead>
+<tr>
+  <th class="num-col">給与収入（額面）</th>
+  <th class="num-col">独身・共働き（他控除なし目安）</th>
+  <th class="num-col">夫婦（他控除なし目安）</th>
+  <th class="num-col">共働き＋子1人［高校生］（他控除なし目安）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="num-col"><strong>300万円</strong></td>
+  <td class="num-col">28,000円</td>
+  <td class="num-col">19,000円</td>
+  <td class="num-col">19,000円</td>
+</tr>
+<tr>
+  <td class="num-col"><strong>400万円</strong></td>
+  <td class="num-col">42,000円</td>
+  <td class="num-col">33,000円</td>
+  <td class="num-col">33,000円</td>
+</tr>
+<tr>
+  <td class="num-col"><strong>500万円</strong></td>
+  <td class="num-col">61,000円</td>
+  <td class="num-col">49,000円</td>
+  <td class="num-col">49,000円</td>
+</tr>
+<tr>
+  <td class="num-col"><strong>600万円</strong></td>
+  <td class="num-col">77,000円</td>
+  <td class="num-col">69,000円</td>
+  <td class="num-col">69,000円</td>
+</tr>
+<tr>
+  <td class="num-col"><strong>700万円</strong></td>
+  <td class="num-col">108,000円</td>
+  <td class="num-col">86,000円</td>
+  <td class="num-col">86,000円</td>
+</tr>
+<tr>
+  <td class="num-col"><strong>800万円</strong></td>
+  <td class="num-col">129,000円</td>
+  <td class="num-col">120,000円</td>
+  <td class="num-col">120,000円</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+      <h3>特に注意したい3つのケース</h3>
+
+      <ol>
+  <li><strong>年の途中からiDeCoを始めた・掛金額を引き上げた年</strong><br>昨年まではiDeCoに加入しておらず、今年から新たに拠出を始めた場合や掛金額を増額した場合、今年の6月に届いている住民税決定通知書にはまだiDeCoの控除が反映されていません。昨年と同じ感覚で寄附すると上限を超えやすいため、当年（1月〜12月）に実際に引き落とされるiDeCo掛金の年間合計額を必ず加味して見直します。</li>
+  <li><strong>もともと課税所得が少なめの年収帯・扶養家族が多い世帯</strong><br>給与収入が300万円前後の方や扶養親族が多い方がiDeCoの掛金を拠出すると、課税所得に対する掛金控除の比重が相対的に大きくなり、住民税所得割額が大きく減る場合があります。</li>
+  <li><strong>企業型DC（マッチング拠出等）や小規模企業共済を利用している場合</strong><br>個人事業主が加入する「小規模企業共済」の掛金や、会社員の企業型確定拠出年金における本人拠出分（マッチング拠出）なども同様に「小規模企業共済等掛金控除」として課税所得を減らす働きをするため、iDeCoと同じく早見表より限度額が下がる場合があります（個人事業主の考え方は<a href="../kojin-jigyo/index.html">個人事業主の限度額の考え方</a>を参照）。</li>
+</ol>
+
+      <h2 id="sec-3">iDeCo併用者が自分の限度額を確認する3つの実践ステップ</h2>
+
+      <p>iDeCoを利用しながら無理なくふるさと納税の枠を確認するには、秋から年末にかけて届く書類を使い、次の3ステップで進めるのが確実です。</p>
+
+      <h3>ステップ1：「小規模企業共済等掛金払込証明書」で年間掛金額を確認する</h3>
+
+      <p>個人口座からの引き落とし（個人払込）でiDeCoに加入している場合、例年10月〜11月頃に国民年金基金連合会から<strong>「小規模企業共済等掛金払込証明書」</strong>が郵送（または電子交付）されます。ここには、その年の1月から12月までに払い込まれた実績額および払込予定額の年間合計が記載されています（年の後半に加入した場合は翌年1月頃の発行となり確定申告が必要になるケースがあるため発行時期は要確認）。給与天引き（事業主払込）の場合は、給与明細の控除欄で年間合計を確認できます。</p>
+
+      <h3>ステップ2：源泉徴収票・住民税決定通知書と突き合わせる</h3>
+
+      <ul>
+  <li><strong>昨年から継続して同額のiDeCoを掛けている場合</strong>：6月頃に届く「住民税決定通知書」の所得割額には、すでに前年分のiDeCo控除が反映されています。今年の年収や扶養状況が昨年と変わらなければ、その「住民税の所得割額」を前述の算出式に当てはめることで目安を把握できます。</li>
+  <li><strong>今年から始めた・年収や掛金額が変わった場合</strong>：前年の源泉徴収票の「所得控除の額の合計額」に今年のiDeCo年間掛金見込みを上乗せして課税所得の減少イメージを掴み、12月に当年分の源泉徴収票（年末調整反映後）が出た段階で最終確認します。</li>
+</ul>
+
+      <h3>ステップ3：医療費控除・住宅ローン控除・NISAとの違いも整理する</h3>
+
+      <p>他の制度も同時に利用している場合は、影響の有無を切り分けておきましょう。</p>
+
+      <div class="table-wrap">
+<table>
+<thead>
+<tr>
+  <th>併用する制度</th>
+  <th>ふるさと納税の限度額への影響</th>
+  <th>理由と確認ポイント</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>医療費控除</strong></td>
+  <td><strong>限度額が下がる場合がある</strong></td>
+  <td>iDeCoと同じ「所得控除」のため、さらに課税所得と住民税所得割額が減少する（また確定申告が必須になる）</td>
+</tr>
+<tr>
+  <td><strong>住宅ローン控除</strong></td>
+  <td><strong>限度額が下がる場合がある</strong></td>
+  <td>所得税から控除しきれず翌年度の住民税からも住宅ローン控除を受ける場合など、条件により影響が出る場合がある</td>
+</tr>
+<tr>
+  <td><strong>NISA（少額投資非課税制度）</strong></td>
+  <td>原則として影響しない（一般論）</td>
+  <td>NISAは運用益が非課税になる制度であり、掛金が所得控除になる仕組みではないため給与等の課税所得は変わらない（特定口座の譲渡所得等を確定申告する場合の扱いは要確認）</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+      <aside class="pr-box" aria-label="プロモーション案内">
+  <div class="pr-box-head"><span class="pr-badge">【#PR】</span>控えめに見積もった枠内で段階的に選べる寄附手続きのご案内</div>
+  <ul>
+    <li>iDeCo等の控除を踏まえて余裕を残した目安枠の範囲内で、5,000円・10,000円など寄附金額の刻みや配送時期を見比べながら計画的に寄附先を検討できます。</li>
+    <li><a class="pr-slot" href="https://hb.afl.rakuten.co.jp/hgc/11e7c15e.43b4d992.11e7c15f.7b1e602a/?pc=https%3A%2F%2Fevent.rakuten.co.jp%2Ffurusato%2F&amp;link_type=text&amp;ut=eyJwYWdlIjoidXJsIiwidHlwZSI6InRleHQiLCJjb2wiOjF9" target="_blank" rel="nofollow sponsored noopener">楽天ふるさと納税で寄附先を探す</a></li>
+  </ul>
+</aside>
+
+      <h2 id="sec-4">iDeCo併用時の申請手続き｜ワンストップ特例と確定申告の選び方</h2>
+
+      <p>「iDeCoをやっていると、ふるさと納税のワンストップ特例は使えなくなるのか？」と迷う方も多いですが、これは<strong>iDeCoの掛金控除を「年末調整」で済ませるか、「確定申告」で行うか</strong>によって決まります。</p>
+
+      <div class="table-wrap">
+<table>
+<thead>
+<tr>
+  <th>本人の状況パターン</th>
+  <th>iDeCoの控除手続き</th>
+  <th>ふるさと納税の手続き方法</th>
+  <th>注意点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>会社員・公務員で、iDeCoを「年末調整（または給与天引き）」で完結し、寄附先が5自治体以内</strong></td>
+  <td>勤務先の年末調整（保険料控除申告書に払込証明書を添付）</td>
+  <td><strong>ワンストップ特例が利用可能</strong><br>（翌年1月10日必着）</td>
+  <td>他に医療費控除や副業等で確定申告をしないことが条件</td>
+</tr>
+<tr>
+  <td><strong>会社員だが年末調整にiDeCoの証明書提出が間に合わず、確定申告をする</strong></td>
+  <td>税務署へ確定申告</td>
+  <td><strong>確定申告で寄附金控除を申告</strong><br>（ワンストップ特例は無効）</td>
+  <td>先にワンストップ申請書を出していても無効になるため、全寄附分を確定申告書に記載する</td>
+</tr>
+<tr>
+  <td><strong>6自治体以上に寄附した／医療費控除・住宅ローン控除1年目がある／個人事業主である</strong></td>
+  <td>年末調整 または 確定申告</td>
+  <td><strong>確定申告で寄附金控除を申告</strong></td>
+  <td>寄附金受領証明書（または所定の控除証明書データ）を保管して一括申告する</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+      <h3>特に注意したい「年末調整に間に合わなかったとき」の連動ミス</h3>
+
+      <p>10月以降にiDeCoへ新規加入した場合や、勤務先の年末調整提出期限までに「小規模企業共済等掛金払込証明書」が手元に届かなかった場合は、翌春に自分で確定申告をしてiDeCoの所得控除を受けることになります。</p>
+
+      <p>このとき、すでにふるさと納税でワンストップ特例の申請書を自治体に送っていたとしても、<strong>iDeCoのために確定申告書を提出した時点でワンストップ特例はすべて無効</strong>になります。必ず確定申告書の「寄附金控除」欄にも、その年に行ったすべてのふるさと納税額を漏れなく記入してください。詳しくは<a href="../onestop/index.html">ワンストップ特例の条件・手順・期限</a>および<a href="../kakutei/index.html">確定申告での控除の受け方と超過分の扱い</a>で解説しています。</p>
+
+      <h2 id="sec-5">万が一限度額を超えた場合の扱いと年末までのルール</h2>
+
+      <p>iDeCo併用での見込み違いを防ぐため、上限超過時のルールとポータル利用・締切の基本も押さえておきましょう。</p>
+
+      <ul>
+  <li><strong>限度額を超えた場合の取り扱い</strong>：もし上限目安を超えて寄附してしまった場合、超過分は「自己負担2,000円を除く全額控除」にはなりませんが、<strong>通常の寄附金控除の対象（所得税は総所得金額等の40%上限）には含まれます</strong>。なお、上限を超過した際は住民税のみで控除するワンストップ特例よりも、所得税からの控除（<code>（ふるさと納税額−2,000円）×所得税率</code>）も適用される<strong>確定申告の方が控除範囲が広くなります</strong>。</li>
+  <li><strong>返礼品基準と2025年10月からのポイント付与禁止</strong>：返礼品は「調達価格が寄附額の3割以下」「地場産品であること」が総務省基準です（2019年6月から指定制度）。また、<strong>2025年10月からポータルサイト等を経由した寄附へのポイント付与が総務省基準で禁止</strong>されているため、寄附履歴の集計管理や書類案内の分かりやすさで計画的に利用しましょう（年収別の配分考え方は<a href="../nenshu/index.html">年収別に見る限度額と寄附配分の考え方</a>を参照）。</li>
+  <li><strong>12月31日の決済締切</strong>：当年分の寄附対象は<strong>12月31日決済完了分まで</strong>です（スケジュール詳細は<a href="../schedule/index.html">年間スケジュールと締切（12/31・1/10）</a>を参照）。秋までに目安の半分〜7割程度にとどめ、年末調整後に源泉徴収票の数値が見えてから残り枠を調整すると安心です。</li>
+</ul>
+
+      <aside class="pr-box" aria-label="プロモーション案内">
+  <div class="pr-box-head"><span class="pr-badge">【#PR】</span>寄附履歴を確認しながら無理なく進める年末手続きのご案内</div>
+  <ul>
+    <li>iDeCoや各種控除の状況を踏まえて残り枠を整理し、12月31日の決済締切までに余裕をもって寄附先と申請方法を確認しましょう。</li>
+    <li><a class="pr-slot" href="https://hb.afl.rakuten.co.jp/hgc/11e7c15e.43b4d992.11e7c15f.7b1e602a/?pc=https%3A%2F%2Fevent.rakuten.co.jp%2Ffurusato%2F&amp;link_type=text&amp;ut=eyJwYWdlIjoidXJsIiwidHlwZSI6InRleHQiLCJjb2wiOjF9" target="_blank" rel="nofollow sponsored noopener">楽天ふるさと納税で寄附先を探す</a></li>
+  </ul>
+</aside>
+
+
+      <div class="context-link-box">
+        <p class="context-link-title">住宅ローン控除との併用・上限超過・算出式の関連ガイド</p>
+        <p>住宅ローン控除も同時に利用している場合の手続き区分は「<a href="../jutaku-loan/index.html">住宅ローン控除とふるさと納税の併用</a>」、所得割額をベースにした算出式の読み方は「<a href="../keisan/index.html">限度額の計算方法と源泉徴収票での確認</a>」で詳しく整理しています。万が一上限目安を超えた場合の対処は「<a href="../gendo-chouka/index.html">限度額を超えたらどうなるか</a>」をご参照ください。</p>
+      </div>
+      <h2 id="sec-6">iDeCo併用とふるさと納税に関するよくある質問（FAQ）</h2>
+
+      <div class="faq-list">
+  <div class="faq-item">
+    <h3>Q1. iDeCoとふるさと納税を併用すると、iDeCo側の控除額が減ることはありますか？</h3>
+    <p><strong>A.</strong> いいえ、税金計算の順序としてiDeCoの掛金（小規模企業共済等掛金控除）が先に所得から差し引かれるため、ふるさと納税を行ったことによってiDeCo側の所得控除額が減ることはありません。影響を受けるのは後に計算される「ふるさと納税の控除限度額」の側です。</p>
+  </div>
+  <div class="faq-item">
+    <h3>Q2. iDeCoの運用益が出た年や運用損が出た年は、ふるさと納税の限度額に影響しますか？</h3>
+    <p><strong>A.</strong> 一般論として、iDeCoの口座内で生じた運用益は非課税で再投資される仕組みであり、毎年の給与所得や事業所得と合算・損益通算されるものではないため、運用成績そのものが毎年のふるさと納税の限度額を上下させることはありません。影響するのはあくまで「その年に拠出したiDeCoの掛金額」です（受取時の退職所得・雑所得の扱いは別途公的資料で要確認）。</p>
+  </div>
+  <div class="faq-item">
+    <h3>Q3. 年の途中でiDeCoの掛金額を変更した場合、いつの金額で考えればよいですか？</h3>
+    <p><strong>A.</strong> その年の<strong>1月〜12月の間に実際に納付（拠出）された掛金の合計額</strong>が当年の所得控除対象となります。秋に届く払込証明書や年末調整の申告金額で、当年分の正確な払込合計額を確認してください。</p>
+  </div>
+  <div class="faq-item">
+    <h3>Q4. iDeCo・住宅ローン控除・ふるさと納税の3つを同時に利用することはできますか？</h3>
+    <p><strong>A.</strong> 3つの制度を同じ年に利用すること自体は可能です。ただし、iDeCoによって課税所得が減り、さらに住宅ローン控除によって所得税や住民税（条件による）が控除されるため、ふるさと納税の限度額が下がる場合があります。また、ワンストップ特例を使うか確定申告をするかによっても住宅ローン控除との兼ね合いが変わるケースがあるため、源泉徴収票や住民税決定通知書をもとに自治体や税務署で事前確認することが大切です。</p>
+  </div>
+  <div class="faq-item">
+    <h3>Q5. 会社員がiDeCoの掛金を「年末調整」で申告している場合でも、ワンストップ特例は使えますか？</h3>
+    <p><strong>A.</strong> はい、勤務先の年末調整で小規模企業共済等掛金控除の手続きが完結しており、医療費控除など他に確定申告をする必要がなく、かつ年間の寄附先が5自治体以内であればワンストップ特例制度を利用できます。一方、年末調整に間に合わず確定申告でiDeCoの控除を申告する場合はワンストップ特例が無効になるため、ふるさと納税も確定申告書に記載してください（詳細は<a href="../onestop/index.html">ワンストップ特例の条件</a>を参照）。</p>
+  </div>
+</div>
+
+      <h2 id="sec-7">まとめ｜iDeCoの掛金控除を織り込み、余裕を残した寄附計画を</h2>
+
+      <p>iDeCoとふるさと納税は両立できる制度ですが、iDeCoの掛金が全額所得控除となることで課税所得・住民税所得割額が減り、<strong>「他控除なし」の早見表よりもふるさと納税の限度額が下がる場合があります</strong>。年末調整でiDeCoを申告すれば5自治体以内でワンストップ特例も使えますが、証明書未着等で確定申告に切り替える際はふるさと納税も忘れず確定申告書へ記載しましょう。正確な限度額は必ず源泉徴収票・住民税決定通知書・お住まいの自治体でご確認ください。</p>
+
+      <p>関連する詳細情報は以下のページもあわせてご活用ください。</p>
+
+      <ul>
+  <li><strong>全体像を確認する</strong>：<a href="../index.html">ふるさと納税の限度額の全体像と確認方法</a></li>
+  <li><strong>算出式と源泉徴収票の見方を知る</strong>：<a href="../keisan/index.html">限度額の計算方法と源泉徴収票での確認</a> ／ <a href="../hayami/index.html">控除上限額の早見表（年収×家族構成）</a></li>
+  <li><strong>個人事業主・年収別の配分を見る</strong>：<a href="../kojin-jigyo/index.html">個人事業主の限度額の考え方</a> ／ <a href="../nenshu/index.html">年収別に見る限度額と寄附配分の考え方</a></li>
+  <li><strong>申請手続きと締切を確認する</strong>：<a href="../onestop/index.html">ワンストップ特例の条件・手順・期限</a> ／ <a href="../kakutei/index.html">確定申告での控除の受け方と超過分の扱い</a> ／ <a href="../schedule/index.html">年間スケジュールと締切（12/31・1/10）</a></li>
+</ul>
+
+      <div class="hub-grid" data-design-added="true">
+  <a class="hub-card" href="../simulator/index.html">
+    <span class="hub-card-tag">試算ツール</span>
+    <span class="hub-card-title">控除上限額・残り枠シミュレーター</span>
+    <span class="hub-card-desc">給与収入×家族構成から上限目安と寄附済み額差し引き後の残り枠を即時計算</span>
+  </a>
+  <a class="hub-card" href="../index.html">
+    <span class="hub-card-tag">総まとめガイド</span>
+    <span class="hub-card-title">ふるさと納税の限度額 総まとめ</span>
+    <span class="hub-card-desc">限度額の仕組み・25万円刻み早見表・計算確認・申請手続きまで一括整理</span>
+  </a>
+  <a class="hub-card" href="../hayami/index.html">
+    <span class="hub-card-tag">早見表・目安確認</span>
+    <span class="hub-card-title">控除上限額の早見表（年収×家族構成）</span>
+    <span class="hub-card-desc">給与収入300万〜800万円×家族3区分の公表早見表と正しい読み方</span>
+  </a>
+  <a class="hub-card" href="../keisan/index.html">
+    <span class="hub-card-tag">算出式・書類照合</span>
+    <span class="hub-card-title">限度額の計算方法と源泉徴収票での確認</span>
+    <span class="hub-card-desc">住民税所得割額ベースの算出式と源泉徴収票・決定通知書の見方</span>
+  </a>
+  <a class="hub-card" href="../nenshu/index.html">
+    <span class="hub-card-tag">年収別・配分設計</span>
+    <span class="hub-card-title">年収別に見る限度額と寄附配分の考え方</span>
+    <span class="hub-card-desc">300万〜800万円帯ごとの特徴と5自治体以内の無理のない寄附配分</span>
+  </a>
+  <a class="hub-card" href="../kojin-jigyo/index.html">
+    <span class="hub-card-tag">属性別：個人事業主</span>
+    <span class="hub-card-title">個人事業主の限度額の考え方</span>
+    <span class="hub-card-desc">売上と事業所得の違い・確認書類3点・確定申告での寄附金控除ルール</span>
+  </a>
+  <a class="hub-card" href="../nenkin/index.html">
+    <span class="hub-card-tag">属性別：年金受給者</span>
+    <span class="hub-card-title">年金受給者の限度額の考え方</span>
+    <span class="hub-card-desc">課税状況の事前確認・公的年金等控除の違い・医療費控除併用時の注意点</span>
+  </a>
+  <a class="hub-card" href="../onestop/index.html">
+    <span class="hub-card-tag">手続き：ワンストップ</span>
+    <span class="hub-card-title">ワンストップ特例の条件・手順・期限</span>
+    <span class="hub-card-desc">5自治体以内のカウント方法・翌年1月10日必着・確定申告での無効化対策</span>
+  </a>
+  <a class="hub-card" href="../kakutei/index.html">
+    <span class="hub-card-tag">手続き：確定申告・超過</span>
+    <span class="hub-card-title">確定申告での控除の受け方と超過分の扱い</span>
+    <span class="hub-card-desc">所得税と住民税の2段階控除・必要書類・限度額超過時に確定申告を選ぶ理由</span>
+  </a>
+  <a class="hub-card" href="../schedule/index.html">
+    <span class="hub-card-tag">期限・スケジュール</span>
+    <span class="hub-card-title">年間スケジュールと締切（12/31・1/10）</span>
+    <span class="hub-card-desc">12月31日決済完了基準・翌年1月10日必着ルール・時期別の分散アクション</span>
+  </a>
+
+  <a class="hub-card" href="../jutaku-loan/index.html">
+    <span class="hub-card-tag">控除併用：住宅ローン</span>
+    <span class="hub-card-title">住宅ローン控除とふるさと納税の併用</span>
+    <span class="hub-card-desc">1年目（確定申告）と2年目以降（ワンストップ可）の手続きと確認点</span>
+  </a>
+  <a class="hub-card" href="../setai/index.html">
+    <span class="hub-card-tag">夫婦・共働き</span>
+    <span class="hub-card-title">共働き・夫婦世帯の限度額の考え方</span>
+    <span class="hub-card-desc">世帯合算できない原則と各自の名義・決済ルール</span>
+  </a>
+  <a class="hub-card" href="../henreihin/index.html">
+    <span class="hub-card-tag">返礼品選び・制度</span>
+    <span class="hub-card-title">返礼品の選び方と総務省基準ルール</span>
+    <span class="hub-card-desc">冷凍容量・発送時期・金額刻みの観点と2025年10月基準</span>
+  </a>
+</div>
+
+      <section class="verify-box" aria-label="更新日・数値の確認方法について">
+  <h2>更新日・数値の確認方法について</h2>
+  <ul>
+    <li><strong>最終更新日</strong>：2026年11月12日</li>
+    <li><strong>執筆・編集</strong>：ふるさと納税限度額ナビ編集部</li>
+    <li><strong>数値・制度情報の確認方針</strong>：本記事に掲載している限度額の算出式・早見表抜粋値・ワンストップ特例および返礼品基準は、総務省ふるさと納税ポータルサイト等の公表情報をもとに整理しています。早見表は「給与収入のみ・他の控除がない場合」の目安であり、iDeCoや医療費控除・住宅ローン控除等を併用した際の具体的な減額幅は掛金額や課税所得水準により一人ひとり異なるため、本記事では一律の金額断定を行っておりません。正確な控除限度額は源泉徴収票・住民税決定通知書・掛金払込証明書をご確認のうえ、お住まいの自治体や所轄税務署にてご確認ください。</li>
+  </ul>
+</section>
+
+      <section class="source-memo" aria-label="出典・参考情報メモ">
+  <h2>出典・参考情報メモ（公開前差し替え用プレースホルダ）</h2>
+  <p class="note-text">※公開CMS入稿時に以下の公的機関ページの最新URLおよび細部要件を確認のうえ差し替えを実施する。</p>
+  <ul>
+    <li><code>[出典プレースホルダ：総務省「ふるさと納税ポータルサイト｜ふるさと納税のしくみ（税金の控除について・早見表・ワンストップ特例制度）」（算出式・他控除なし早見表・確定申告時の無効化ルールの確認用）]</code></li>
+    <li><code>[出典プレースホルダ：総務省「ふるさと納税の指定制度および2025年10月ポイント付与禁止に関する公表資料」（返礼品基準・ポイント付与禁止の確認用）]</code></li>
+    <li><code>[出典プレースホルダ：iDeCo・医療費控除・住宅ローン控除とふるさと納税を併用した場合の具体的な限度額試算・減額幅および住宅ローン控除住民税控除枠との兼ね合い（要出典確認）]</code></li>
+    <li><code>[出典プレースホルダ：iDeCo（個人型確定拠出年金）公式サイト・国税庁「小規模企業共済等掛金控除・払込証明書の発行時期・NISAや企業型DCの税務上の取り扱い」（制度細則の確認用）（要出典確認）]</code></li>
+  </ul>
+</section>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand-title">ふるさと納税限度額ナビ</p>
+        <p class="footer-brand-desc">総務省ふるさと納税ポータルサイト等の公表基準にもとづき、控除上限額（限度額）の早見表・算出式・属性別の注意点・ワンストップ特例および確定申告の手続きを客観的に整理する特化情報サイトです。掲載数値は一般的な目安であり、正確な控除限度額は源泉徴収票・住民税決定通知書・お住まいの自治体にてご確認ください。</p>
+      </div>
+      <div class="footer-col">
+        <h3>コンテンツ一覧</h3>
+        <ul>
+          <li><a href="../index.html">ふるさと納税の限度額 総まとめ</a></li>
+          <li><a href="../simulator/index.html">控除上限額・残り枠シミュレーター</a></li>
+          <li><a href="../hayami/index.html">控除上限額の早見表（年収×家族構成）</a></li>
+          <li><a href="../keisan/index.html">限度額の計算方法と源泉徴収票での確認</a></li>
+          <li><a href="../nenshu/index.html">年収別に見る限度額と寄附配分の考え方</a></li>
+          <li><a href="../jutaku-loan/index.html">住宅ローン控除とふるさと納税の併用</a></li>
+          <li><a href="../ideco/index.html" aria-current="page">iDeCo併用で限度額がどう変わるか</a></li>
+          <li><a href="../setai/index.html">共働き・夫婦世帯の限度額の考え方</a></li>
+          <li><a href="../kojin-jigyo/index.html">個人事業主の限度額の考え方</a></li>
+          <li><a href="../nenkin/index.html">年金受給者の限度額の考え方</a></li>
+          <li><a href="../onestop/index.html">ワンストップ特例の条件・手順・期限</a></li>
+          <li><a href="../kakutei/index.html">確定申告での控除の受け方と超過分の扱い</a></li>
+          <li><a href="../gendo-chouka/index.html">限度額を超えたらどうなる？超過時の扱い</a></li>
+          <li><a href="../henreihin/index.html">返礼品の選び方と総務省基準ルール</a></li>
+          <li><a href="../schedule/index.html">年間スケジュールと締切（12/31・1/10）</a></li>
+          <li><a href="../december/index.html">12月駆け込み寄附の注意点チェックリスト</a></li>
+          <li><a href="../miss/index.html">ふるさと納税でよくある失敗とリカバリー</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>サイト情報・運営ポリシー</h3>
+        <ul>
+          <li><a href="../about/index.html">運営者情報・編集部体制・制作ポリシー</a></li>
+          <li><a href="../policy/verification/index.html">数値算出基準・出典確認フロー</a></li>
+          <li><a href="../policy/advertising/index.html">広告掲載ポリシー（#PR表記方針）</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 ふるさと納税限度額ナビ編集部</p>
+      <p>※当サイトの記事にはプロモーション（#PR）が含まれます。</p>
+    </div>
+  </div>
+</footer>
+<button type="button" class="back-to-top" id="back-to-top" aria-label="ページ上部へ戻る" data-design-added="true">
+  <span class="back-to-top-arrow" aria-hidden="true">↑</span>
+  <span>TOP</span>
+</button>
+<script data-design-added="true">
+(function(){
+  var bar = document.getElementById("reading-progress-bar");
+  var btn = document.getElementById("back-to-top");
+  function onScroll(){
+    var s = window.scrollY || document.documentElement.scrollTop || 0;
+    var h = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    if(bar) bar.style.width = (h > 0 ? Math.min(100, Math.max(0, s / h * 100)) : 0) + "%";
+    if(btn) btn.classList.toggle("is-visible", s > 280);
+  }
+  window.addEventListener("scroll", onScroll, {passive: true});
+  if(btn) btn.addEventListener("click", function(){ window.scrollTo({top: 0, behavior: "smooth"}); });
+  onScroll();
+})();
+</script>
+</body>
+</html>
