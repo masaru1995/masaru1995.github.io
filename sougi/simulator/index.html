@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>葬儀費用シミュレーター｜形式・参列人数・お布施条件から内訳別レンジを試算｜葬儀費用ナビ</title>
+<meta name="description" content="葬儀の形式（直葬・一日葬・家族葬・一般葬）、参列者の規模、飲食・返礼品、宗教者への謝礼、火葬場種別を選ぶだけで、基本3項目小計と総支出の概算レンジをリアルタイムで試算できる葬儀費用シミュレーターです。">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "葬儀費用シミュレーター｜形式・人数・内訳別の概算レンジ試算",
+  "description": "葬儀の形式（直葬・一日葬・家族葬・一般葬）、参列者の規模、飲食・返礼品、宗教者への謝礼、火葬場種別を選ぶだけで、基本3項目小計と総支出の概算レンジをリアルタイムで試算できる葬儀費用シミュレーターです。",
+  "inLanguage": "ja",
+  "datePublished": "2026-11-12",
+  "dateModified": "2026-11-12",
+  "author": {
+    "@type": "Organization",
+    "name": "葬儀費用ナビ編集部"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "葬儀費用ナビ編集部"
+  },
+  "image": [
+    "../assets/img/hero.webp"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "葬儀費用ナビ｜相場・給付・控除の手引き"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "葬儀費用ナビ TOP",
+      "item": "../index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "葬儀費用シミュレーター"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "試算結果が「基本3項目小計」と「総支出レンジ」の2段階で表示されるのはなぜですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "鎌倉新書『第6回 お葬式に関する全国調査（2024年）』の葬儀費用総額（全体平均118.5万円）は「基本料金＋飲食費＋返礼品費」の3項目で集計されており、宗教者への謝礼（お布施等）が含まれていないためです。調査データとの比較位置を分かりやすく示しつつ、火葬場利用料やお布施目安も含めた実際の資金準備額を見通せるよう2段階で表示しています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "参列者から受け取る「香典」が最初から差し引かれていないのはなぜですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "香典の金額は参列範囲や香典辞退の有無、地域慣習によって大きく変わるうえ、受け取った場合には香典返しの手配費用も発生するためです。香典収入を前提にすると葬儀当日の支払資金が不足する恐れがあるため、まずは総支出ベースで資金計画を立てられる設計にしています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "入力した条件データが外部に送信されたり、営業連絡につながったりすることはありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "いいえ、選択した条件はすべてお使いのブラウザ内でのみ計算処理されており、外部サーバーへ送信・保存されることは一切ありません。個人情報の入力も不要ですので、形式や人数を変えながら落ち着いて比較試算していただけます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "生活保護を受給中で「葬祭扶助」を利用したい場合も、この試算金額になりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "いいえ、生活保護法に基づく葬祭扶助を利用する場合は一般プランの試算ではなく、ご逝去後に葬儀社と本契約する前の「福祉事務所への事前申請」により、自治体が定める基準額の範囲内で搬送・火葬等を行う仕組みとなります。詳しくは「生活保護の葬儀（葬祭扶助）の手引き」をご確認ください。"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<div class="reading-progress" aria-hidden="true" data-design-added="true"><div class="reading-progress-bar" id="reading-progress-bar"></div></div>
+<a class="skip-link" href="#main-content">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand-row">
+      <a class="site-brand" href="../index.html">
+        <span class="site-brand-title">葬儀費用ナビ <span class="site-brand-badge">相場・給付・控除の手引き</span></span>
+        <span class="site-brand-sub">全国調査データと公的制度から葬儀費用の総額・内訳を穏やかに整理する情報サイト</span>
+      </a>
+      <a class="header-cta" href="index.html">葬儀費用を試算する →</a>
+    </div>
+    <nav class="global-nav" aria-label="メインナビゲーション">
+      <ul>
+        <li><a href="../index.html">総まとめ</a></li>
+        <li><a href="../simulator/index.html" aria-current="page">シミュレーター</a></li>
+        <li><a href="../souba/index.html">相場・平均</a></li>
+        <li><a href="../kazokuso/index.html">家族葬</a></li>
+        <li><a href="../ichinichiso/index.html">一日葬</a></li>
+        <li><a href="../kasou/index.html">火葬のみ・直葬</a></li>
+        <li><a href="../chokuso-nagare/index.html">直葬の流れ</a></li>
+        <li><a href="../mitsumori/index.html">見積もり比較</a></li>
+        <li><a href="../jizen/index.html">事前相談・準備</a></li>
+        <li><a href="../hojo/index.html">補助金・葬祭費</a></li>
+        <li><a href="../seikatsu-hogo/index.html">生活保護・葬祭扶助</a></li>
+        <li><a href="../tetsuzuki/index.html">葬儀後の手続き</a></li>
+        <li><a href="../koujo/index.html">控除・確定申告</a></li>
+        <li><a href="../souzoku/index.html">相続税・相続放棄</a></li>
+        <li><a href="../hoken/index.html">葬儀保険</a></li>
+        <li><a href="../gojokai/index.html">互助会</a></li>
+        <li><a href="../pet/index.html">ペット葬儀</a></li>
+        <li><a href="../pet-hikaku/index.html">ペット火葬比較</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="site-main sim-wrap" id="main-content">
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <ol>
+      <li><a href="../index.html">葬儀費用ナビ TOP</a></li>
+      <li>葬儀費用シミュレーター</li>
+    </ol>
+  </nav>
+
+  <div class="sim-hero-panel">
+    <header class="top">
+      <p class="pr-notice-top">※本ページにはプロモーション（#PR）が含まれます。</p>
+      <h1>葬儀費用シミュレーター｜形式・人数・内訳別の概算レンジ試算</h1>
+      <p class="lead">葬儀の形式・参列規模・飲食や返礼品・宗教者への謝礼（お布施等）・火葬場の種別を選ぶと、「葬儀基本3項目小計（全国調査と比較しやすい範囲）」と「火葬料・宗教者費用を含めた総支出レンジ」の2段階で概算目安を算出します（個人情報の入力・送信はありません）。</p>
+      <div class="preset-bar" aria-label="代表的なモデルケース読込">
+        <button type="button" class="preset-btn" data-case="1">ケース1：直葬10名（無宗教）</button>
+        <button type="button" class="preset-btn" data-case="2">ケース2：一日葬20名（控えめ）</button>
+        <button type="button" class="preset-btn is-active" data-case="3">ケース3：家族葬20名（標準）</button>
+        <button type="button" class="preset-btn" data-case="4">ケース4：家族葬30名（手厚め・民間）</button>
+        <button type="button" class="preset-btn" data-case="5">ケース5：一般葬50名（標準）</button>
+      </div>
+    </header>
+    <div class="sim-hero-banner">
+      <img src="../assets/img/hero.webp" alt="落ち着いた室内で白百合を前に穏やかに語り合う家族のイラスト" width="2048" height="1152">
+    </div>
+  </div>
+
+  <!-- 条件入力カード -->
+  <section class="card" aria-label="条件入力">
+    <h2>条件を選択してください（4項目＋補助2項目）</h2>
+
+    <!-- ① 葬儀の形式 -->
+    <div class="field">
+      <span class="lab">① 葬儀の形式 <span class="sub-desc">形式を切り替えると一般的な参列規模・手配の初期組み合わせが自動選択されます（後から個別に変更できます）</span></span>
+      <div class="radio-list" id="input-format">
+        <label>
+          <input type="radio" name="format" value="chokuso">
+          <span class="radio-option-body">
+            <span class="radio-option-title">直葬・火葬式（通夜・告別式なし）</span>
+            <span class="radio-option-sub">式場・祭壇を使わず搬送・安置・火葬同行に絞った形式（基本ベース：18万〜32万円目安）</span>
+          </span>
+        </label>
+        <label>
+          <input type="radio" name="format" value="ichinichiso">
+          <span class="radio-option-body">
+            <span class="radio-option-title">一日葬（通夜なし・告別式1日）</span>
+            <span class="radio-option-sub">通夜を省き告別式と火葬を1日で行う形式（基本ベース：30万〜55万円目安）</span>
+          </span>
+        </label>
+        <label>
+          <input type="radio" name="format" value="kazokuso" checked>
+          <span class="radio-option-body">
+            <span class="radio-option-title">家族葬（2日間・家族や親族中心）</span>
+            <span class="radio-option-sub">通夜・告別式の2日間を身内中心で行う形式（基本ベース：45万〜75万円目安）</span>
+          </span>
+        </label>
+        <label>
+          <input type="radio" name="format" value="ippanso">
+          <span class="radio-option-body">
+            <span class="radio-option-title">一般葬（2日間・知人や会社関係も参列）</span>
+            <span class="radio-option-sub">広く参列を受け入れる2日間の形式（基本ベース：65万〜105万円目安）</span>
+          </span>
+        </label>
+      </div>
+    </div>
+
+    <!-- ② 参列者の規模 -->
+    <div class="field">
+      <span class="lab">② 参列者の規模 <span class="sub-desc">人数に応じた式場・控室・運営スタッフ体制の加算と、飲食・返礼品の計算人数に反映されます</span></span>
+      <div class="seg seg-5" id="input-scale" role="group" aria-label="参列者の規模">
+        <button type="button" data-scale="scale_10">約10名<small>5〜15名目安</small></button>
+        <button type="button" data-scale="scale_20" class="active">約20名<small>15〜25名目安</small></button>
+        <button type="button" data-scale="scale_30">約30名<small>25〜35名目安</small></button>
+        <button type="button" data-scale="scale_50">約50名<small>40〜60名目安</small></button>
+        <button type="button" data-scale="scale_80">約80名<small>70〜100名目安</small></button>
+      </div>
+      <div class="badge-note" id="warn-chokuso-scale" role="status">
+        ※直葬・火葬式は火葬場の炉前スペースの都合上、10名〜15名程度までの少人数で行われるのが一般的です。20〜30名以上が参列される場合は一日葬や家族葬もあわせてご検討ください。
+      </div>
+    </div>
+
+    <!-- ③ 飲食・返礼品の手配 -->
+    <div class="field">
+      <span class="lab">③ 飲食・返礼品の手配 <span class="sub-desc">通夜振る舞い・精進落とし等の料理と、会葬御礼・返礼品の手配グレードを選びます</span></span>
+      <div class="radio-list" id="input-hospitality">
+        <label>
+          <input type="radio" name="hospitality" value="none">
+          <span class="radio-option-body">
+            <span class="radio-option-title">なし（会食・返礼品をすべて省略）</span>
+            <span class="radio-option-sub">身内のみで会食・返礼品を手配しない構成（飲食0円・返礼0円）</span>
+          </span>
+        </label>
+        <label>
+          <input type="radio" name="hospitality" value="light">
+          <span class="radio-option-body">
+            <span class="radio-option-title">控えめ（軽食・折詰／会葬御礼程度）</span>
+            <span class="radio-option-sub">持ち帰り折詰や簡易な会葬御礼品を中心とする構成</span>
+          </span>
+        </label>
+        <label>
+          <input type="radio" name="hospitality" value="standard" checked>
+          <span class="radio-option-body">
+            <span class="radio-option-title">標準（一般的な会食・返礼品を手配）</span>
+            <span class="radio-option-sub">一般的な精進落とし（2日葬は通夜振る舞い含む）と返礼品を手配</span>
+          </span>
+        </label>
+        <label>
+          <input type="radio" name="hospitality" value="generous">
+          <span class="radio-option-body">
+            <span class="radio-option-title">手厚め（料理・返礼品のグレードを重視）</span>
+            <span class="radio-option-sub">上質な懐石料理コースやカタログギフト等を手配する構成</span>
+          </span>
+        </label>
+      </div>
+    </div>
+
+    <!-- ④ 宗教者への謝礼（お布施等） -->
+    <div class="field">
+      <span class="lab">④ 宗教者への謝礼（お布施等） <span class="sub-desc">読経料・一般的な戒名料・御車代・御膳料を含む目安です（※宗派・地域・寺院との関係で大きく異なります）</span></span>
+      <div class="radio-list" id="input-religion">
+        <label>
+          <input type="radio" name="religion" value="rel_none">
+          <span class="radio-option-body">
+            <span class="radio-option-title">呼ばない（無宗教・読経なし）</span>
+            <span class="radio-option-sub">目安：0万円（※菩提寺がある場合は事前相談が不可欠です）</span>
+          </span>
+        </label>
+        <label>
+          <input type="radio" name="religion" value="rel_kasou">
+          <span class="radio-option-body">
+            <span class="radio-option-title">火葬場での炉前読経のみ</span>
+            <span class="radio-option-sub">目安：3万〜10万円（炉前読経・御車代含む目安）</span>
+          </span>
+        </label>
+        <label>
+          <input type="radio" name="religion" value="rel_1day">
+          <span class="radio-option-body">
+            <span class="radio-option-title">一日葬の読経＋一般的な戒名授与</span>
+            <span class="radio-option-sub">目安：10万〜30万円（告別式・火葬の読経と信士・信女クラス等目安）</span>
+          </span>
+        </label>
+        <label>
+          <input type="radio" name="religion" value="rel_2day" checked>
+          <span class="radio-option-body">
+            <span class="radio-option-title">通夜・告別式2日間の読経＋一般的な戒名授与</span>
+            <span class="radio-option-sub">目安：15万〜50万円（※院号・居士・大姉等の上位戒名は別途上振れ）</span>
+          </span>
+        </label>
+      </div>
+      <div class="badge-note" id="warn-ichinichiso-rel" role="status">
+        ※一日葬では通夜を行わないため、1日分の読経区分を選ぶケースが一般的ですが、菩提寺の方針により通常の葬儀と同等のお布施目安となる場合もあります。
+      </div>
+    </div>
+
+    <!-- ⑤ 火葬場の種別（補助設定） -->
+    <div class="field">
+      <span class="lab">⑤ 火葬場の種別（補助設定） <span class="sub-desc">自治体・施設により料金が大きく異なるため目安レンジとして加算します</span></span>
+      <div class="radio-list" id="input-cremation">
+        <label>
+          <input type="radio" name="cremation" value="public" checked>
+          <span class="radio-option-body">
+            <span class="radio-option-title">公営火葬場（住民登録地の公営施設目安）</span>
+            <span class="radio-option-sub">目安：0万〜5万円（住民料金は無料〜数万円程度が多く待合室料等を含む目安）</span>
+          </span>
+        </label>
+        <label>
+          <input type="radio" name="cremation" value="private">
+          <span class="radio-option-body">
+            <span class="radio-option-title">民間火葬場・住民外利用（都市部民間等）</span>
+            <span class="radio-option-sub">目安：6万〜15万円（都市部の民間火葬場や管外利用時の火葬料＋休憩室料目安）</span>
+          </span>
+        </label>
+      </div>
+    </div>
+
+    <!-- ⑥ 公的給付金の参考反映（補助設定） -->
+    <div class="field">
+      <span class="lab">⑥ 公的給付金の参考反映（補助設定） <span class="sub-desc">葬儀後に申請した場合の参考目安を別枠で併記します（当日の支払いに充当できる前払い制度ではありません）</span></span>
+      <div class="radio-list" id="input-benefit">
+        <label>
+          <input type="radio" name="benefit" value="ben_5" checked>
+          <span class="radio-option-body">
+            <span class="radio-option-title">健康保険・国保等の給付目安（5万円）を参考表示</span>
+            <span class="radio-option-sub">埋葬料（5万円）や葬祭費（5万円が多い／大田区7万円例等）を参考表示</span>
+          </span>
+        </label>
+        <label>
+          <input type="radio" name="benefit" value="ben_none">
+          <span class="radio-option-body">
+            <span class="radio-option-title">反映しない</span>
+            <span class="radio-option-sub">総支出レンジのみを表示</span>
+          </span>
+        </label>
+      </div>
+    </div>
+
+    <p class="note-text" style="margin-top: 16px;">
+      ※生活保護を受給中または申請検討中で「葬祭扶助」の利用を考える場合は、一般プランの試算ではなく事前申請による基準額内の手配となります。詳しくは <a href="../seikatsu-hogo/index.html">生活保護と葬祭扶助の解説</a> をご確認ください。
+    </p>
+  </section>
+
+  <!-- 試算結果カード -->
+  <section class="card" aria-label="試算結果" aria-live="polite">
+    <h2>選択条件での葬儀費用 概算レンジ</h2>
+
+    <div class="result-head">
+      <p class="cap" id="res-condition-label">家族葬 ／ 約20名 ／ 飲食・返礼：標準 ／ 2日間読経 ／ 公営火葬場</p>
+      <p class="total" id="res-total">総支出目安 79万 〜 162万円</p>
+      <div class="result-sub-row">
+        <span class="mid" id="res-subtotal">うち葬儀基本3項目小計（基本料金＋飲食＋返礼品）：64万 〜 107万円</span>
+        <span class="mid" id="res-net">（参考）公的給付5万円目安反映後：74万 〜 157万円</span>
+      </div>
+    </div>
+
+    <div class="survey-anchor-badge" id="res-survey-anchor">
+      <strong>全国調査との比較位置</strong>：鎌倉新書『第6回 お葬式に関する全国調査（2024年）』における<strong>家族葬</strong>の平均値（基本料金＋飲食＋返礼品）は <strong>105.7万円</strong>、最も回答が多い価格帯は <strong>60万〜80万円未満</strong> です（※全体平均は118.5万円。お布施等は調査総額に含まれず、価格帯には広い分布があるため平均は実態の中心とは限りません）。
+    </div>
+
+    <!-- 内訳割合バー（中央値ベース比率） -->
+    <div class="bar" aria-hidden="true">
+      <div class="b1" id="bar-b1" style="width: 53%;"></div>
+      <div class="b2" id="bar-b2" style="width: 11%;"></div>
+      <div class="b3" id="bar-b3" style="width: 7%;"></div>
+      <div class="b4" id="bar-b4" style="width: 2%;"></div>
+      <div class="b5" id="bar-b5" style="width: 27%;"></div>
+    </div>
+    <div class="legend">
+      <span class="l1">① 基本料金</span>
+      <span class="l2">② 飲食費</span>
+      <span class="l3">③ 返礼品費</span>
+      <span class="l4">④ 火葬場利用料（目安）</span>
+      <span class="l5">⑤ 宗教者費用（目安）</span>
+    </div>
+
+    <!-- 5項目内訳カード -->
+    <div class="breakdown">
+      <div class="bd-item bd-c1">
+        <div class="row">
+          <span class="name">① 基本料金（葬儀一式＋規模設営加算）</span>
+          <span class="amt" id="amt-basic">48万 〜 81万円</span>
+        </div>
+        <p class="basis" id="basis-basic">形式ベース 45万〜75万円 ＋ 規模加算（約20名）3万〜6万円。搬送基本距離・基本安置日数・棺・骨壺・遺影・祭壇・式場運営等を含みます。</p>
+        <div class="bd-bar-mini"><div class="bd-bar-mini-fill fill-c1" id="mini-b1" style="width: 53%;"></div></div>
+      </div>
+
+      <div class="bd-item bd-c2">
+        <div class="row">
+          <span class="name">② 飲食費（通夜振る舞い・精進落とし等） <span class="est-badge">目安（要個別確認）</span></span>
+          <span class="amt" id="amt-food">10万 〜 16万円</span>
+        </div>
+        <p class="basis" id="basis-food">計算基準 20名 × 単価 0.5万〜0.8万円/人（5,000〜8,000円目安）。料理グレードや最終確定人数により変動します。</p>
+        <div class="bd-bar-mini"><div class="bd-bar-mini-fill fill-c2" id="mini-b2" style="width: 11%;"></div></div>
+      </div>
+
+      <div class="bd-item bd-c3">
+        <div class="row">
+          <span class="name">③ 返礼品費（会葬御礼・当日返し等） <span class="est-badge">目安（要個別確認）</span></span>
+          <span class="amt" id="amt-gift">6万 〜 10万円</span>
+        </div>
+        <p class="basis" id="basis-gift">計算基準 20名 × 単価 0.3万〜0.5万円/人（3,000〜5,000円目安）。香典辞退の有無や未開封分の返品精算条件で変わります。</p>
+        <div class="bd-bar-mini"><div class="bd-bar-mini-fill fill-c3" id="mini-b3" style="width: 7%;"></div></div>
+      </div>
+
+      <div class="bd-item bd-c4">
+        <div class="row">
+          <span class="name">④ 火葬場利用料（火葬料・待合室料） <span class="est-badge">目安（要個別確認）</span></span>
+          <span class="amt" id="amt-cremation">0万 〜 5万円</span>
+        </div>
+        <p class="basis" id="basis-cremation">公営火葬場（住民料金目安）。自治体住民向けは無料〜数万円程度が多い一方、都市部民間や管外利用では大きく異なります。</p>
+        <div class="bd-bar-mini"><div class="bd-bar-mini-fill fill-c4" id="mini-b4" style="width: 3%;"></div></div>
+      </div>
+
+      <div class="bd-item bd-c5">
+        <div class="row">
+          <span class="name">⑤ 宗教者への謝礼（お布施・読経・戒名・御車代等） <span class="est-badge">目安（要個別確認）</span></span>
+          <span class="amt" id="amt-religion">15万 〜 50万円</span>
+        </div>
+        <p class="basis" id="basis-religion">2日間の読経＋一般的な戒名授与の目安。宗派・菩提寺との関係・希望する戒名の位により大きく異なるため事前確認が大切です。</p>
+        <div class="bd-bar-mini"><div class="bd-bar-mini-fill fill-c5" id="mini-b5" style="width: 26%;"></div></div>
+      </div>
+    </div>
+
+    <!-- 明細一覧テーブル -->
+    <div class="table-wrap" style="margin-top: 20px;">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>内訳区分</th>
+            <th class="num-col">概算レンジ</th>
+            <th>見積書での主な確認ポイント</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>① 基本料金</strong></td>
+            <td class="num-col" id="tbl-basic">48万〜81万円</td>
+            <td>安置日数上限・搬送距離制限・式場使用料がプラン内かを確認</td>
+          </tr>
+          <tr>
+            <td><strong>② 飲食費</strong></td>
+            <td class="num-col" id="tbl-food">10万〜16万円</td>
+            <td>通夜振る舞い・精進落としの人数変更締切日時を確認</td>
+          </tr>
+          <tr>
+            <td><strong>③ 返礼品費</strong></td>
+            <td class="num-col" id="tbl-gift">6万〜10万円</td>
+            <td>未開封品の返品精算（実数精算）の可否と会葬品・香典返しの区分を確認</td>
+          </tr>
+          <tr class="total-row">
+            <td><strong>葬儀基本3項目小計（①＋②＋③）</strong></td>
+            <td class="num-col" id="tbl-subtotal"><strong>64万〜107万円</strong></td>
+            <td><strong>全国調査（鎌倉新書2024年調査）の葬儀費用総額と同じ内訳範囲の小計</strong></td>
+          </tr>
+          <tr>
+            <td><strong>④ 火葬場利用料（目安）</strong></td>
+            <td class="num-col" id="tbl-cremation">0万〜5万円</td>
+            <td>住民登録地の公営料金が適用されるか、当日窓口現金払いかを確認</td>
+          </tr>
+          <tr>
+            <td><strong>⑤ 宗教者費用（目安）</strong></td>
+            <td class="num-col" id="tbl-religion">15万〜50万円</td>
+            <td>葬儀社見積もりとは別枠の現金準備。事前に菩提寺等へ目安を確認</td>
+          </tr>
+          <tr class="total-row">
+            <td><strong>総支出の概算レンジ（①〜⑤合計）</strong></td>
+            <td class="num-col" id="tbl-total"><strong>79万〜162万円</strong></td>
+            <td><strong>一時的に必要となる資金全体の目安レンジ（香典収入は自動控除せず）</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 公的給付・香典の補足ボックス -->
+    <div class="advice" id="benefit-note-box">
+      <p id="benefit-note-text"><strong>公的給付金の参考値（74万〜157万円）について</strong>：健康保険の埋葬料（5万円／埋葬費は実費上限5万円・家族埋葬料5万円）や、国民健康保険・後期高齢者医療の葬祭費（5万円の自治体が多い／例：東京都大田区は7万円）を葬儀後に申請して受給した場合の参考値です。支給額や要件は加入保険・自治体により異なり、申請期限（葬祭費は葬儀翌日から2年以内等）があります（詳細：<a href="../hojo/index.html">補助金・葬祭費・埋葬料の解説</a>）。</p>
+      <p><strong>香典収入を初期控除していない理由</strong>：参列者からの香典は辞退の有無や地域慣習で大きく変わり、受け取った場合も半返し〜3分の1程度を目安とする香典返し費用が発生します。「香典で賄える」と前提にせず、まずは総支出ベースで手元資金を見通しておくと安心です。</p>
+    </div>
+
+    <!-- PR枠（仕様書5-1-4：結果テーブル下部に1枠のみ） -->
+    <aside class="pr-box" aria-label="プロモーション案内">
+      <div class="pr-box-head"><span class="pr-badge">【#PR】</span>試算条件をもとにした葬儀社の見積もり明細比較のご案内</div>
+      <p>実際の総額は、利用する公営斎場・火葬場の空き状況やプランに含まれる安置日数・式場使用料の範囲によって変わります。同じ希望条件で複数社の見積もり明細を取り寄せ、落ち着いて比較検討するのが有効です。</p>
+      <div class="pr-slot-list"><span class="pr-slot">[PR導線：葬儀社紹介]</span><span class="pr-slot">[PR導線：葬儀資料請求・事前相談]</span></div>
+    </aside>
+
+    <!-- 選択中の形式に応じた関連ページ自動出し分け -->
+    <h3 style="margin-top: 26px; font-size: 16px; color: var(--brand-deep);">選択中の条件に関連する詳しい解説ページ</h3>
+    <div class="hub-grid" id="dynamic-related-links">
+      <a class="hub-card" id="dyn-format-card" href="../kazokuso/index.html">
+        <span class="hub-card-tag" id="dyn-format-tag">選択中の形式解説</span>
+        <span class="hub-card-title" id="dyn-format-title">家族葬の費用相場と人数別の内訳</span>
+        <span class="hub-card-desc" id="dyn-format-desc">平均105.7万円と最多価格帯60万〜80万円未満の違い、参列範囲の注意点を解説</span>
+      </a>
+      <a class="hub-card" href="../souba/index.html">
+        <span class="hub-card-tag">4形式の比較</span>
+        <span class="hub-card-title">葬儀費用の相場・平均と価格帯分布</span>
+        <span class="hub-card-desc">一般葬・家族葬・一日葬・直葬の費用構造と人数別マトリクスを比較</span>
+      </a>
+      <a class="hub-card" href="../hojo/index.html">
+        <span class="hub-card-tag">公的給付</span>
+        <span class="hub-card-title">葬儀の補助金・葬祭費・埋葬料ガイド</span>
+        <span class="hub-card-desc">5万円前後の給付制度の対象条件・必要書類・2年以内の申請手順を整理</span>
+      </a>
+      <a class="hub-card" href="../koujo/index.html">
+        <span class="hub-card-tag">税務・相続</span>
+        <span class="hub-card-title">葬儀費用の控除範囲と確定申告・相続税</span>
+        <span class="hub-card-desc">相続税の債務控除で差し引ける費用・引けない費用と領収書保管の基本</span>
+      </a>
+    
+      <a class="hub-card" href="../mitsumori/index.html">
+        <span class="hub-card-tag">見積書の読み方</span>
+        <span class="hub-card-title">葬儀見積もりの取り方と比較チェックリスト</span>
+        <span class="hub-card-desc">一式プラン外の追加費用（安置・搬送・式場料）の見分け方</span>
+      </a>
+      <a class="hub-card" href="../jizen/index.html">
+        <span class="hub-card-tag">生前の備え</span>
+        <span class="hub-card-title">葬儀の事前相談・生前準備ガイド</span>
+        <span class="hub-card-desc">元気なうちに斎場や概算を確認する手順と質問リスト</span>
+      </a>
+      <a class="hub-card" href="../chokuso-nagare/index.html">
+        <span class="hub-card-tag">直葬の段取り</span>
+        <span class="hub-card-title">直葬・火葬式の当日の流れと準備</span>
+        <span class="hub-card-desc">搬送・安置から火葬場での炉前お別れ・収骨までの時系列</span>
+      </a>
+      <a class="hub-card" href="../tetsuzuki/index.html">
+        <span class="hub-card-tag">死後手続き一覧</span>
+        <span class="hub-card-title">葬儀後に必要な手続き一覧と期限</span>
+        <span class="hub-card-desc">役所届出・保険年金・口座凍結・相続までの期限別リスト</span>
+      </a>
+      <a class="hub-card" href="../gojokai/index.html">
+        <span class="hub-card-tag">積立制度の確認</span>
+        <span class="hub-card-title">冠婚葬祭互助会の仕組みと解約・活用判断</span>
+        <span class="hub-card-desc">積立金で賄える範囲と別途費用・解約手数料の注意点</span>
+      </a>
+      <a class="hub-card" href="../pet-hikaku/index.html">
+        <span class="hub-card-tag">ペット供養比較</span>
+        <span class="hub-card-title">ペット火葬（自治体・霊園・訪問火葬）の比較</span>
+        <span class="hub-card-desc">返骨希望・住環境別の選び分けと総額確認チェックリスト</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- シミュレーション解説・モデルケース・見積書照合ガイド (#simulation-guide) -->
+  <section class="card" id="simulation-guide" aria-label="シミュレーション解説・見積書照合ガイド">
+    <h2>試算ロジック解説・5つのモデルケース・見積書照合チェックメモ</h2>
+    <p style="font-size: 14.5px; color: var(--ink); line-height: 1.8;">本シミュレーターは、鎌倉新書『第6回 お葬式に関する全国調査（2024年）』の平均値（総額平均118.5万円：基本料金75.7万円＋飲食費20.7万円＋返礼品費22.0万円）および形式別の平均値・最多価格帯を参照点として、「固定的な費用（基本料金＋火葬場利用料＋宗教者費用）」と「参列人数に連動する費用（飲食費＋返礼品費）」を積み上げて算出しています。</p>
+
+    <h3 style="margin: 20px 0 10px; font-size: 16px; color: var(--brand-deep);">代表的な5つのモデルケース早見表（クリックで条件を反映できます）</h3>
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>モデルケース</th>
+            <th>条件の組み合わせ</th>
+            <th class="num-col">基本3項目小計</th>
+            <th class="num-col">総支出レンジ</th>
+            <th class="num-col">給付5万反映後</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><button type="button" class="preset-btn" data-case="1">ケース1を反映</button></td>
+            <td><strong>直葬・火葬式</strong> ／ 約10名 ／ 飲食返礼なし ／ 無宗教 ／ 公営</td>
+            <td class="num-col"><strong>18万〜32万円</strong></td>
+            <td class="num-col"><strong>18万〜37万円</strong></td>
+            <td class="num-col">13万〜32万円</td>
+          </tr>
+          <tr>
+            <td><button type="button" class="preset-btn" data-case="2">ケース2を反映</button></td>
+            <td><strong>一日葬</strong> ／ 約20名 ／ 控えめ ／ 一日葬読経 ／ 公営</td>
+            <td class="num-col"><strong>39万〜71万円</strong></td>
+            <td class="num-col"><strong>49万〜106万円</strong></td>
+            <td class="num-col">44万〜101万円</td>
+          </tr>
+          <tr>
+            <td><button type="button" class="preset-btn" data-case="3">ケース3を反映</button></td>
+            <td><strong>家族葬</strong> ／ 約20名 ／ 標準 ／ 2日間読経 ／ 公営</td>
+            <td class="num-col"><strong>64万〜107万円</strong></td>
+            <td class="num-col"><strong>79万〜162万円</strong></td>
+            <td class="num-col">74万〜157万円</td>
+          </tr>
+          <tr>
+            <td><button type="button" class="preset-btn" data-case="4">ケース4を反映</button></td>
+            <td><strong>家族葬</strong> ／ 約30名 ／ 手厚め ／ 2日間読経 ／ 民間目安</td>
+            <td class="num-col"><strong>90万〜147万円</strong></td>
+            <td class="num-col"><strong>111万〜212万円</strong></td>
+            <td class="num-col">106万〜207万円</td>
+          </tr>
+          <tr>
+            <td><button type="button" class="preset-btn" data-case="5">ケース5を反映</button></td>
+            <td><strong>一般葬</strong> ／ 約50名 ／ 標準 ／ 2日間読経 ／ 公営</td>
+            <td class="num-col"><strong>117万〜192万円</strong></td>
+            <td class="num-col"><strong>132万〜247万円</strong></td>
+            <td class="num-col">127万〜242万円</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <details class="det" open>
+      <summary>葬儀社の見積書と照合する際の重要チェックメモ（追加費用が出やすい項目）</summary>
+      <div class="det-body">
+        <ul>
+          <li><strong>安置日数が長引いた場合の追加ドライアイス・安置室料</strong>：火葬場の予約待ちで3〜6日安置する場合、基本プランの上限日数（1〜2日分込み等）を超える1日あたりの追加単価（1万〜2万円前後目安）を確認しましょう。</li>
+          <li><strong>寝台車・霊柩車の夜間割増・距離超過</strong>：基本距離（10〜20km等）を超えた場合の加算や、深夜・早朝搬送の割増条件を確認しましょう。</li>
+          <li><strong>式場使用料がプラン内か実費別建てか</strong>：自社ホールか公営斎場・貸し斎場かによって式場費が別建てになる場合があるほか、一日葬でも前日設営で2日分の式場料がかかる斎場がないかを確かめます。</li>
+          <li><strong>料理の人数変更期限と返礼品の返品可否</strong>：料理の最終確定時刻と、会葬御礼・当日返し品の未開封返品（実数精算）に対応しているかを確認すると無駄を抑えやすくなります。</li>
+        </ul>
+        <p style="margin-top: 8px;">さらに詳しい内訳確認や相続手続きについては、<a href="../index.html">葬儀費用の総額・内訳の総まとめ</a> および <a href="../souzoku/index.html">相続税・相続放棄の注意点</a> もあわせてご参照ください。</p>
+      </div>
+    </details>
+
+    <!-- 免責・出典メモ（仕様書5-2常設） -->
+    <div class="disclaimer">
+      <h3>試算結果に関するご注意・出典メモ（基準照合日：2026-11-12時点）</h3>
+      <ul>
+        <li>本シミュレーターの算出額は、鎌倉新書「第6回 お葬式に関する全国調査（2024年）」（2024年3月実施、喪主経験のある全国40歳以上の男女2,000名対象）の公表平均・価格帯分布を参照点としつつ、一般的な料金構造をもとに設計した概算目安レンジです。</li>
+        <li>火葬場利用料・お布施等の宗教者謝礼・料理や返礼品の1人あたり単価・規模別加算額は、地域・自治体・宗派・各葬儀社のプラン内容により大きく異なります（数値基準確認日：2026-11-12時点／火葬料・お布施・単価テーブルは要出典確認・要個別確認項目）。</li>
+        <li>公的給付や税務の取扱いは一般的な制度概要です。個別の状況は必ず葬儀社の個別見積書、菩提寺、税務署・自治体・福祉事務所・加入中の健康保険窓口にて最新情報をご確認ください。（関連：<a href="../policy/verification/index.html">数値目安の算出基準・出典確認フロー</a>）</li>
+      </ul>
+    </div>
+  </section>
+  <section class="card" id="sec-faq" aria-label="よくある質問（FAQ）" style="margin-top: 22px;">
+    <h2>葬儀費用シミュレーターに関するよくある質問（FAQ）</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>Q1. 試算結果が「基本3項目小計」と「総支出レンジ」の2段階で表示されるのはなぜですか？</h3>
+        <p><strong>A.</strong> 鎌倉新書『第6回 お葬式に関する全国調査（2024年）』の葬儀費用総額（全体平均118.5万円）は「基本料金＋飲食費＋返礼品費」の3項目で集計されており、宗教者への謝礼（お布施等）が含まれていないためです。調査データとの比較位置を分かりやすく示しつつ、火葬場利用料やお布施目安も含めた実際の資金準備額を見通せるよう2段階で表示しています。</p>
+      </div>
+      <div class="faq-item">
+        <h3>Q2. 参列者から受け取る「香典」が最初から差し引かれていないのはなぜですか？</h3>
+        <p><strong>A.</strong> 香典の金額は参列範囲や香典辞退の有無、地域慣習によって大きく変わるうえ、受け取った場合には香典返しの手配費用も発生するためです。香典収入を前提にすると葬儀当日の支払資金が不足する恐れがあるため、まずは総支出ベースで資金計画を立てられる設計にしています。</p>
+      </div>
+      <div class="faq-item">
+        <h3>Q3. 入力した条件データが外部に送信されたり、営業連絡につながったりすることはありますか？</h3>
+        <p><strong>A.</strong> いいえ、選択した条件はすべてお使いのブラウザ内でのみ計算処理されており、外部サーバーへ送信・保存されることは一切ありません。個人情報の入力も不要ですので、形式や人数を変えながら落ち着いて比較試算していただけます。</p>
+      </div>
+      <div class="faq-item">
+        <h3>Q4. 生活保護を受給中で「葬祭扶助」を利用したい場合も、この試算金額になりますか？</h3>
+        <p><strong>A.</strong> いいえ、生活保護法に基づく葬祭扶助を利用する場合は一般プランの試算ではなく、ご逝去後に葬儀社と本契約する前の「福祉事務所への事前申請」により、自治体が定める基準額の範囲内で搬送・火葬等を行う仕組みとなります。詳しくは「<a href="../seikatsu-hogo/index.html">生活保護の葬儀（葬祭扶助）の手引き</a>」をご確認ください。</p>
+      </div>
+    </div>
+    <div class="context-link-box">
+      <p class="context-link-title">試算結果をもとに確認したい見積もり・給付金・手続きガイド</p>
+      <p>試算レンジをもとに葬儀社の明細を照合する手順は「<a href="../mitsumori/index.html">葬儀の見積もりの取り方と比較ポイント</a>」、申請により支給される葬祭費・埋葬料の詳細は「<a href="../hojo/index.html">葬儀の補助金・葬祭費・埋葬料ガイド</a>」で確認できます。また、生前の情報収集には「<a href="../jizen/index.html">葬儀の事前相談・生前準備ガイド</a>」もご活用ください。</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand-title">葬儀費用ナビ｜相場・給付・控除の手引き</p>
+        <p class="footer-brand-desc">葬儀費用の総額と内訳、形式別の相場と価格帯分布、公的給付（葬祭費・埋葬料・葬祭扶助）、相続税の債務控除などの税務知識を客観的かつ落ち着いたトーンで整理する情報サイトです。個別の状況は葬儀社の見積書および税務署・自治体・加入中の健康保険窓口にてご確認ください。</p>
+      </div>
+      <div class="footer-col">
+        <h3>コンテンツ一覧</h3>
+        <ul>
+          <li><a href="../index.html">葬儀費用の総額・相場・内訳の総まとめ</a></li>
+          <li><a href="../simulator/index.html" aria-current="page">葬儀費用シミュレーター</a></li>
+          <li><a href="../souba/index.html">形式別の葬儀費用相場・平均比較</a></li>
+          <li><a href="../kazokuso/index.html">家族葬の費用相場と人数別の内訳</a></li>
+          <li><a href="../ichinichiso/index.html">一日葬の費用相場と内訳・注意点</a></li>
+          <li><a href="../kasou/index.html">火葬のみ（直葬・火葬式）の費用と流れ</a></li>
+          <li><a href="../chokuso-nagare/index.html">直葬・火葬式の当日の流れと準備</a></li>
+          <li><a href="../mitsumori/index.html">葬儀見積もりの取り方と比較チェックリスト</a></li>
+          <li><a href="../jizen/index.html">葬儀の事前相談・生前準備ガイド</a></li>
+          <li><a href="../hojo/index.html">葬儀の補助金・葬祭費・埋葬料ガイド</a></li>
+          <li><a href="../seikatsu-hogo/index.html">生活保護の葬儀（葬祭扶助）の手引き</a></li>
+          <li><a href="../tetsuzuki/index.html">葬儀後に必要な手続き一覧と期限</a></li>
+          <li><a href="../koujo/index.html">葬儀費用の控除範囲と確定申告の違い</a></li>
+          <li><a href="../souzoku/index.html">葬儀費用と相続税・相続放棄の注意点</a></li>
+          <li><a href="../hoken/index.html">葬儀保険の仕組みと選び方の注意点</a></li>
+          <li><a href="../gojokai/index.html">冠婚葬祭互助会の仕組みと解約・活用判断</a></li>
+          <li><a href="../pet/index.html">ペット葬儀（犬・猫など）の費用相場</a></li>
+          <li><a href="../pet-hikaku/index.html">ペット火葬（自治体・霊園・訪問火葬）の比較</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>サイト情報・運営ポリシー</h3>
+        <ul>
+          <li><a href="../about/index.html">運営者情報・編集部体制・制作ポリシー</a></li>
+          <li><a href="../policy/verification/index.html">数値目安の算出基準・出典確認フロー</a></li>
+          <li><a href="../policy/advertising/index.html">広告掲載ポリシー（#PR表記方針）</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 葬儀費用ナビ編集部</p>
+      <p>※当サイトの記事にはプロモーション（#PR）が含まれます。</p>
+    </div>
+  </div>
+</footer>
+
+<button type="button" class="back-to-top" id="back-to-top" aria-label="ページ上部へ戻る" data-design-added="true">
+  <span class="back-to-top-arrow" aria-hidden="true">↑</span>
+  <span>TOP</span>
+</button>
+
+<script>
+(function() {
+  "use strict";
+
+  // =========================================================================
+  // site/02_simulator-spec.md 準拠 計算テーブル定義（単位：万円）
+  // =========================================================================
+  var TABLE_A_BASIC = {
+    chokuso:     { label: "直葬・火葬式", min: 18, max: 32, surveyAvg: "42.8万円", surveyMode: "20万〜40万円未満" },
+    ichinichiso: { label: "一日葬",       min: 30, max: 55, surveyAvg: "87.5万円", surveyMode: "20万〜40万円未満" },
+    kazokuso:    { label: "家族葬",       min: 45, max: 75, surveyAvg: "105.7万円", surveyMode: "60万〜80万円未満" },
+    ippanso:     { label: "一般葬",       min: 65, max: 105, surveyAvg: "161.3万円", surveyMode: "120万〜140万円未満" }
+  };
+
+  var TABLE_B_SCALE = {
+    scale_10: { label: "約10名", n: 10, min: 0,  max: 0 },
+    scale_20: { label: "約20名", n: 20, min: 3,  max: 6 },
+    scale_30: { label: "約30名", n: 30, min: 6,  max: 12 },
+    scale_50: { label: "約50名", n: 50, min: 12, max: 22 },
+    scale_80: { label: "約80名", n: 80, min: 20, max: 35 }
+  };
+
+  var TABLE_C_FOOD = {
+    one_day_group: { // chokuso / ichinichiso
+      none:     { label: "なし",   min: 0.0, max: 0.0, yenNote: "0円" },
+      light:    { label: "控えめ", min: 0.2, max: 0.3, yenNote: "2,000〜3,000円/人目安" },
+      standard: { label: "標準",   min: 0.3, max: 0.5, yenNote: "3,000〜5,000円/人目安" },
+      generous: { label: "手厚め", min: 0.5, max: 0.8, yenNote: "5,000〜8,000円/人目安" }
+    },
+    two_day_group: { // kazokuso / ippanso
+      none:     { label: "なし",   min: 0.0, max: 0.0, yenNote: "0円" },
+      light:    { label: "控えめ", min: 0.3, max: 0.5, yenNote: "3,000〜5,000円/人目安" },
+      standard: { label: "標準",   min: 0.5, max: 0.8, yenNote: "5,000〜8,000円/人目安" },
+      generous: { label: "手厚め", min: 0.8, max: 1.2, yenNote: "8,000〜12,000円/人目安" }
+    }
+  };
+
+  var TABLE_D_GIFT = {
+    none:     { label: "なし",   min: 0.0, max: 0.0, yenNote: "0円" },
+    light:    { label: "控えめ", min: 0.1, max: 0.2, yenNote: "1,000〜2,000円/人目安" },
+    standard: { label: "標準",   min: 0.3, max: 0.5, yenNote: "3,000〜5,000円/人目安" },
+    generous: { label: "手厚め", min: 0.5, max: 0.8, yenNote: "5,000〜8,000円/人目安" }
+  };
+
+  var TABLE_E_CREMATION = {
+    public:  { label: "公営火葬場", min: 0, max: 5,  desc: "公営火葬場（住民料金目安）。自治体住民向けは無料〜数万円程度が多く待合室料等を含みます。" },
+    private: { label: "民間火葬場目安", min: 6, max: 15, desc: "都市部の民間火葬場や住民外（管外）利用時の火葬料＋休憩室料の目安です。" }
+  };
+
+  var TABLE_E_RELIGION = {
+    rel_none:  { label: "宗教者なし",   min: 0,  max: 0,  desc: "読経・戒名授与を依頼しない無宗教形式（※菩提寺がある場合は事前相談が不可欠です）。" },
+    rel_kasou: { label: "炉前読経のみ", min: 3,  max: 10, desc: "火葬炉前での読経のみ依頼する目安（御車代含む目安・宗派や地域で異なります）。" },
+    rel_1day:  { label: "一日葬読経",   min: 10, max: 30, desc: "告別式・火葬の読経と一般的な戒名・御車代・御膳料の目安（宗派・寺院により異なります）。" },
+    rel_2day:  { label: "2日間読経",    min: 15, max: 50, desc: "通夜・告別式・火葬の読経と一般的な戒名・御車代・御膳料の目安（※上位戒名は別途上振れ）。" }
+  };
+
+  // 形式変更時の推奨プリセット（仕様書 2-2-1）
+  var FORMAT_PRESETS = {
+    chokuso:     { scale: "scale_10", hospitality: "none",     religion: "rel_kasou" },
+    ichinichiso: { scale: "scale_20", hospitality: "standard", religion: "rel_1day" },
+    kazokuso:    { scale: "scale_20", hospitality: "standard", religion: "rel_2day" },
+    ippanso:     { scale: "scale_50", hospitality: "standard", religion: "rel_2day" }
+  };
+
+  // 仕様書4 検証ケース5件
+  var VERIFICATION_CASES = {
+    "1": { format: "chokuso",     scale: "scale_10", hospitality: "none",     religion: "rel_none", cremation: "public",  benefit: "ben_5" },
+    "2": { format: "ichinichiso", scale: "scale_20", hospitality: "light",    religion: "rel_1day", cremation: "public",  benefit: "ben_5" },
+    "3": { format: "kazokuso",    scale: "scale_20", hospitality: "standard", religion: "rel_2day", cremation: "public",  benefit: "ben_5" },
+    "4": { format: "kazokuso",    scale: "scale_30", hospitality: "generous", religion: "rel_2day", cremation: "private", benefit: "ben_5" },
+    "5": { format: "ippanso",     scale: "scale_50", hospitality: "standard", religion: "rel_2day", cremation: "public",  benefit: "ben_5" }
+  };
+
+  // 形式に応じた関連解説カード情報（仕様書 5-1-4）
+  var FORMAT_CARD_INFO = {
+    chokuso: {
+      href: "../kasou/index.html",
+      tag: "選択形式：直葬・火葬式",
+      title: "火葬のみ（直葬・火葬式）の費用と流れ・注意点",
+      desc: "調査平均42.8万円・最多価格帯20万〜40万円未満の内訳と安置延長・菩提寺確認を解説"
+    },
+    ichinichiso: {
+      href: "../ichinichiso/index.html",
+      tag: "選択形式：一日葬",
+      title: "一日葬の費用相場と内訳・注意点",
+      desc: "調査平均87.5万円・最多価格帯20万〜40万円未満の背景と式場条件・親族配慮を解説"
+    },
+    kazokuso: {
+      href: "../kazokuso/index.html",
+      tag: "選択形式：家族葬",
+      title: "家族葬の費用相場と人数別の内訳",
+      desc: "調査平均105.7万円・最多価格帯60万〜80万円未満の内訳と参列範囲の線引きを解説"
+    },
+    ippanso: {
+      href: "../souba/index.html",
+      tag: "選択形式：一般葬・全体比較",
+      title: "一般葬を含む4形式の費用相場・人数別比較",
+      desc: "一般葬の平均161.3万円・最多価格帯120万〜140万円未満の費用構造と他形式との違いを解説"
+    }
+  };
+
+  function calcFuneralCost(params) {
+    var base = TABLE_A_BASIC[params.format];
+    var scl = TABLE_B_SCALE[params.scale];
+    var isTwoDay = (params.format === "kazokuso" || params.format === "ippanso");
+    var foodUnit = isTwoDay ? TABLE_C_FOOD.two_day_group[params.hospitality] : TABLE_C_FOOD.one_day_group[params.hospitality];
+    var giftUnit = TABLE_D_GIFT[params.hospitality];
+    var crem = TABLE_E_CREMATION[params.cremation];
+    var rel = TABLE_E_RELIGION[params.religion];
+
+    var basicMin = base.min + scl.min;
+    var basicMax = base.max + scl.max;
+
+    // N は10の倍数、単価は0.1刻みのため整数丸めで浮動小数点誤差を完全排除
+    var foodMin = Math.round(scl.n * foodUnit.min);
+    var foodMax = Math.round(scl.n * foodUnit.max);
+
+    var giftMin = Math.round(scl.n * giftUnit.min);
+    var giftMax = Math.round(scl.n * giftUnit.max);
+
+    var subtotalMin = basicMin + foodMin + giftMin;
+    var subtotalMax = basicMax + foodMax + giftMax;
+
+    var totalMin = subtotalMin + crem.min + rel.min;
+    var totalMax = subtotalMax + crem.max + rel.max;
+
+    var netMin = params.benefit === "ben_5" ? Math.max(0, totalMin - 5) : null;
+    var netMax = params.benefit === "ben_5" ? Math.max(0, totalMax - 5) : null;
+
+    return {
+      basic:    [basicMin, basicMax],
+      food:     [foodMin, foodMax],
+      gift:     [giftMin, giftMax],
+      subtotal: [subtotalMin, subtotalMax],
+      cremation:[crem.min, crem.max],
+      religion: [rel.min, rel.max],
+      total:    [totalMin, totalMax],
+      net:      netMin !== null ? [netMin, netMax] : null,
+      meta: {
+        base: base,
+        scl: scl,
+        foodUnit: foodUnit,
+        giftUnit: giftUnit,
+        crem: crem,
+        rel: rel
+      }
+    };
+  }
+
+  // テスト・外部参照用に公開
+  window.calculateFuneralCost = calcFuneralCost;
+  window.SIMULATOR_VERIFICATION_CASES = VERIFICATION_CASES;
+
+  function fmtRange(pair, spaced) {
+    if (pair[0] === 0 && pair[1] === 0) return "0万円";
+    if (pair[0] === pair[1]) return pair[0] + "万円";
+    return spaced ? (pair[0] + "万 〜 " + pair[1] + "万円") : (pair[0] + "万〜" + pair[1] + "万円");
+  }
+
+  var state = {
+    format: "kazokuso",
+    scale: "scale_20",
+    hospitality: "standard",
+    religion: "rel_2day",
+    cremation: "public",
+    benefit: "ben_5"
+  };
+
+  function syncInputsFromState() {
+    var rFormat = document.querySelector('input[name="format"][value="' + state.format + '"]');
+    if (rFormat) rFormat.checked = true;
+
+    var scaleBtns = document.querySelectorAll("#input-scale button[data-scale]");
+    scaleBtns.forEach(function(btn) {
+      btn.classList.toggle("active", btn.getAttribute("data-scale") === state.scale);
+    });
+
+    var rHosp = document.querySelector('input[name="hospitality"][value="' + state.hospitality + '"]');
+    if (rHosp) rHosp.checked = true;
+
+    var rRel = document.querySelector('input[name="religion"][value="' + state.religion + '"]');
+    if (rRel) rRel.checked = true;
+
+    var rCrem = document.querySelector('input[name="cremation"][value="' + state.cremation + '"]');
+    if (rCrem) rCrem.checked = true;
+
+    var rBen = document.querySelector('input[name="benefit"][value="' + state.benefit + '"]');
+    if (rBen) rBen.checked = true;
+
+    // Update preset button active highlight if matching one of 5 cases
+    var presetBtns = document.querySelectorAll(".top .preset-btn[data-case]");
+    presetBtns.forEach(function(b) {
+      var c = VERIFICATION_CASES[b.getAttribute("data-case")];
+      var match = c &&
+        c.format === state.format &&
+        c.scale === state.scale &&
+        c.hospitality === state.hospitality &&
+        c.religion === state.religion &&
+        c.cremation === state.cremation &&
+        c.benefit === state.benefit;
+      b.classList.toggle("is-active", !!match);
+    });
+  }
+
+  function render() {
+    var r = calcFuneralCost(state);
+    var m = r.meta;
+
+    // ソフトバリデーション表示（仕様書 2-2-2）
+    var warnChokuso = document.getElementById("warn-chokuso-scale");
+    var isLargeChokuso = state.format === "chokuso" && (state.scale === "scale_30" || state.scale === "scale_50" || state.scale === "scale_80");
+    warnChokuso.classList.toggle("show", isLargeChokuso);
+
+    var warnIchinichiso = document.getElementById("warn-ichinichiso-rel");
+    warnIchinichiso.classList.toggle("show", state.format === "ichinichiso" && state.religion === "rel_2day");
+
+    // メインサマリー
+    document.getElementById("res-condition-label").textContent =
+      m.base.label + " ／ " + m.scl.label + " ／ 飲食・返礼：" + m.foodUnit.label + " ／ " + m.rel.label + " ／ " + m.crem.label;
+    document.getElementById("res-total").textContent = "総支出目安 " + fmtRange(r.total, true);
+    document.getElementById("res-subtotal").textContent =
+      "うち葬儀基本3項目小計（基本料金＋飲食＋返礼品）：" + fmtRange(r.subtotal, true);
+
+    var netEl = document.getElementById("res-net");
+    var benTextEl = document.getElementById("benefit-note-text");
+    if (r.net) {
+      netEl.style.display = "inline-block";
+      netEl.textContent = "（参考）公的給付5万円目安反映後：" + fmtRange(r.net, true);
+      benTextEl.innerHTML =
+        "<strong>公的給付金の参考値（" + fmtRange(r.net, false) + "）について</strong>：健康保険の埋葬料（5万円／埋葬費は実費上限5万円・家族埋葬料5万円）や、国民健康保険・後期高齢者医療の葬祭費（5万円の自治体が多い／例：東京都大田区は7万円）を申請して受給した場合の参考値です。" +
+        (state.format === "chokuso" ? "火葬のみ（直葬）でも葬祭費・埋葬料の対象となる自治体・保険者があります。" : "") +
+        "支給額や要件は加入保険・自治体により異なり、葬儀後の申請手続きが必要です（詳細：<a href=\"../hojo/index.html\">補助金・葬祭費・埋葬料の解説</a>）。";
+    } else {
+      netEl.style.display = "none";
+      benTextEl.innerHTML =
+        "<strong>公的給付金について</strong>：故人が加入していた健康保険の埋葬料（5万円）や国民健康保険等の葬祭費（5万円の自治体が多い／例：東京都大田区は7万円）を葬儀後に申請できる場合があります（詳細：<a href=\"../hojo/index.html\">補助金・葬祭費・埋葬料の解説</a>）。";
+    }
+
+    // 調査比較バッジ
+    document.getElementById("res-survey-anchor").innerHTML =
+      "<strong>全国調査との比較位置</strong>：鎌倉新書『第6回 お葬式に関する全国調査（2024年）』における<strong>" + m.base.label +
+      "</strong>の平均値（基本料金＋飲食＋返礼品）は <strong>" + m.base.surveyAvg +
+      "</strong>、最も回答が多い価格帯は <strong>" + m.base.surveyMode +
+      "</strong> です（※全体平均は118.5万円。お布施等は調査総額に含まれず、価格帯には広い分布があるため平均は実態の中心とは限りません）。";
+
+    // 内訳カード金額・根拠
+    document.getElementById("amt-basic").textContent = fmtRange(r.basic, true);
+    document.getElementById("basis-basic").textContent =
+      "形式ベース " + m.base.min + "万〜" + m.base.max + "万円 ＋ 規模加算（" + m.scl.label + "）" +
+      (m.scl.min === 0 && m.scl.max === 0 ? "0万円" : (m.scl.min + "万〜" + m.scl.max + "万円")) +
+      "。搬送基本距離・基本安置日数・棺・骨壺・遺影・祭壇・式場運営等を含みます。";
+
+    document.getElementById("amt-food").textContent = fmtRange(r.food, true);
+    document.getElementById("basis-food").textContent =
+      m.foodUnit.max === 0
+        ? "会食・折詰の手配なし（0万円）。"
+        : ("計算基準 " + m.scl.n + "名 × 単価 " + m.foodUnit.min.toFixed(1) + "万〜" + m.foodUnit.max.toFixed(1) + "万円/人（" + m.foodUnit.yenNote + "）。料理グレードや確定人数により変動します。");
+
+    document.getElementById("amt-gift").textContent = fmtRange(r.gift, true);
+    document.getElementById("basis-gift").textContent =
+      m.giftUnit.max === 0
+        ? "会葬御礼・返礼品の手配なし（0万円）。"
+        : ("計算基準 " + m.scl.n + "名 × 単価 " + m.giftUnit.min.toFixed(1) + "万〜" + m.giftUnit.max.toFixed(1) + "万円/人（" + m.giftUnit.yenNote + "）。未開封品の返品精算条件で変わります。");
+
+    document.getElementById("amt-cremation").textContent = fmtRange(r.cremation, true);
+    document.getElementById("basis-cremation").textContent = m.crem.desc;
+
+    document.getElementById("amt-religion").textContent = fmtRange(r.religion, true);
+    document.getElementById("basis-religion").textContent = m.rel.desc;
+
+    // テーブル更新
+    document.getElementById("tbl-basic").textContent = fmtRange(r.basic, false);
+    document.getElementById("tbl-food").textContent = fmtRange(r.food, false);
+    document.getElementById("tbl-gift").textContent = fmtRange(r.gift, false);
+    document.getElementById("tbl-subtotal").innerHTML = "<strong>" + fmtRange(r.subtotal, false) + "</strong>";
+    document.getElementById("tbl-cremation").textContent = fmtRange(r.cremation, false);
+    document.getElementById("tbl-religion").textContent = fmtRange(r.religion, false);
+    document.getElementById("tbl-total").innerHTML = "<strong>" + fmtRange(r.total, false) + "</strong>";
+
+    // バー比率更新（中央値ベース）
+    var mids = [
+      (r.basic[0] + r.basic[1]) / 2,
+      (r.food[0] + r.food[1]) / 2,
+      (r.gift[0] + r.gift[1]) / 2,
+      (r.cremation[0] + r.cremation[1]) / 2,
+      (r.religion[0] + r.religion[1]) / 2
+    ];
+    var sumMid = mids[0] + mids[1] + mids[2] + mids[3] + mids[4] || 1;
+    var barIds = ["bar-b1", "bar-b2", "bar-b3", "bar-b4", "bar-b5"];
+    var miniIds = ["mini-b1", "mini-b2", "mini-b3", "mini-b4", "mini-b5"];
+    for (var i = 0; i < 5; i++) {
+      var pct = Math.round((mids[i] / sumMid) * 1000) / 10;
+      var barEl = document.getElementById(barIds[i]);
+      barEl.style.width = pct + "%";
+      barEl.style.display = pct > 0 ? "block" : "none";
+      document.getElementById(miniIds[i]).style.width = Math.min(100, Math.round((r.total[1] > 0 ? ([r.basic[1], r.food[1], r.gift[1], r.cremation[1], r.religion[1]][i] / r.total[1]) * 100 : 0))) + "%";
+    }
+
+    // 選択中の形式カード更新
+    var fInfo = FORMAT_CARD_INFO[state.format];
+    document.getElementById("dyn-format-card").setAttribute("href", fInfo.href);
+    document.getElementById("dyn-format-tag").textContent = fInfo.tag;
+    document.getElementById("dyn-format-title").textContent = fInfo.title;
+    document.getElementById("dyn-format-desc").textContent = fInfo.desc;
+  }
+
+  // イベント登録：①形式変更時は推奨プリセットを自動反映（仕様書 2-2-1）
+  document.querySelectorAll('input[name="format"]').forEach(function(el) {
+    el.addEventListener("change", function() {
+      state.format = el.value;
+      var preset = FORMAT_PRESETS[state.format];
+      if (preset) {
+        state.scale = preset.scale;
+        state.hospitality = preset.hospitality;
+        state.religion = preset.religion;
+      }
+      syncInputsFromState();
+      render();
+    });
+  });
+
+  document.querySelectorAll("#input-scale button[data-scale]").forEach(function(btn) {
+    btn.addEventListener("click", function() {
+      state.scale = btn.getAttribute("data-scale");
+      syncInputsFromState();
+      render();
+    });
+  });
+
+  ["hospitality", "religion", "cremation", "benefit"].forEach(function(name) {
+    document.querySelectorAll('input[name="' + name + '"]').forEach(function(el) {
+      el.addEventListener("change", function() {
+        state[name] = el.value;
+        syncInputsFromState();
+        render();
+      });
+    });
+  });
+
+  document.querySelectorAll(".preset-btn[data-case]").forEach(function(btn) {
+    btn.addEventListener("click", function() {
+      var c = VERIFICATION_CASES[btn.getAttribute("data-case")];
+      if (!c) return;
+      state.format = c.format;
+      state.scale = c.scale;
+      state.hospitality = c.hospitality;
+      state.religion = c.religion;
+      state.cremation = c.cremation;
+      state.benefit = c.benefit;
+      syncInputsFromState();
+      render();
+    });
+  });
+
+  // スクロール進捗・トップへ戻る
+  var progBar = document.getElementById("reading-progress-bar");
+  var topBtn = document.getElementById("back-to-top");
+  function onScroll() {
+    var s = window.scrollY || document.documentElement.scrollTop || 0;
+    var h = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    if (progBar) progBar.style.width = (h > 0 ? Math.min(100, Math.max(0, s / h * 100)) : 0) + "%";
+    if (topBtn) topBtn.classList.toggle("is-visible", s > 280);
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  if (topBtn) topBtn.addEventListener("click", function() { window.scrollTo({ top: 0, behavior: "smooth" }); });
+
+  syncInputsFromState();
+  render();
+  onScroll();
+})();
+</script>
+</body>
+</html>
