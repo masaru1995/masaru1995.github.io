@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>加湿器 部屋の広さ別の選び方｜適用床面積（木造・プレハブ）と加湿量の目安｜加湿器の選び方ナビ（仮）</title>
+  <meta name="description" content="部屋の広さに合った加湿器の選び方を解説。JEM1426規格（室温20℃・湿度30％前提）に基づく適用床面積と「木造和室／プレハブ洋室」表記の読み方、畳数別の加湿量（mL/h）の目安、ワンサイズ上を選ぶ理由、ワンルーム・寝室・リビング・子ども部屋別の選び方まで詳しく紹介します。">
+  <style>
+    :root {
+      --primary: #0284c7;
+      --primary-dark: #0369a1;
+      --primary-light: #e0f2fe;
+      --bg-body: #f8fafc;
+      --bg-card: #ffffff;
+      --text-main: #1e293b;
+      --text-muted: #475569;
+      --border: #e2e8f0;
+      --accent: #0d9488;
+      --warn-bg: #fff7ed;
+      --warn-border: #fdba74;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+      line-height: 1.75;
+      color: var(--text-main);
+      background-color: var(--bg-body);
+      -webkit-text-size-adjust: 100%;
+    }
+
+    a {
+      color: var(--primary-dark);
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    header {
+      background-color: var(--bg-card);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    .site-title {
+      margin: 0;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+    }
+
+    .site-title a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .header-nav {
+      margin-top: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      font-size: 0.9rem;
+    }
+
+    .header-nav a {
+      text-decoration: none;
+      color: var(--text-muted);
+      font-weight: 500;
+      padding: 4px 0;
+    }
+
+    .header-nav a:hover {
+      color: var(--primary-dark);
+      text-decoration: underline;
+    }
+
+    .breadcrumb {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+
+    .breadcrumb a {
+      color: var(--text-muted);
+    }
+
+    main {
+      background-color: var(--bg-card);
+      margin: 20px auto;
+      padding: 24px 20px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    }
+
+    @media (min-width: 640px) {
+      main {
+        padding: 36px 40px;
+        margin: 28px auto;
+      }
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      line-height: 1.4;
+      margin-top: 0;
+      margin-bottom: 20px;
+      padding-bottom: 14px;
+      border-bottom: 3px solid var(--primary);
+      color: #0f172a;
+    }
+
+    @media (min-width: 640px) {
+      h1 {
+        font-size: 1.85rem;
+      }
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      line-height: 1.4;
+      margin-top: 40px;
+      margin-bottom: 16px;
+      padding: 10px 14px;
+      background-color: var(--primary-light);
+      border-left: 5px solid var(--primary);
+      border-radius: 0 4px 4px 0;
+      color: #0f172a;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      line-height: 1.45;
+      margin-top: 28px;
+      margin-bottom: 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+      color: var(--primary-dark);
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+
+    ul, ol {
+      margin-top: 0;
+      margin-bottom: 18px;
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .toc {
+      background-color: #f1f5f9;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 16px 20px;
+      margin: 24px 0;
+    }
+
+    .toc-title {
+      font-weight: 700;
+      margin-bottom: 10px;
+      font-size: 1rem;
+      color: #0f172a;
+    }
+
+    .toc ul {
+      margin-bottom: 0;
+    }
+
+    .note-box {
+      background-color: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      padding: 16px 18px;
+      margin: 18px 0;
+      font-size: 0.95rem;
+    }
+
+    .note-box-title {
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      -webkit-overflow-scrolling: touch;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+    }
+
+    table {
+      width: 100%;
+      min-width: 560px;
+      border-collapse: collapse;
+      font-size: 0.93rem;
+      background-color: #ffffff;
+    }
+
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th:last-child, td:last-child {
+      border-right: none;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    th {
+      background-color: #f1f5f9;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin: 20px 0;
+    }
+
+    @media (min-width: 640px) {
+      .card-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .card {
+      background-color: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 16px 18px;
+    }
+
+    .card h4 {
+      margin: 0 0 8px 0;
+      font-size: 1.05rem;
+      color: var(--primary-dark);
+    }
+
+    .card p {
+      font-size: 0.93rem;
+      margin-bottom: 10px;
+    }
+
+    .card ul {
+      font-size: 0.92rem;
+      margin-bottom: 0;
+    }
+
+    .btn-link {
+      display: inline-block;
+      background-color: var(--primary);
+      color: #ffffff !important;
+      text-decoration: none !important;
+      padding: 10px 18px;
+      border-radius: 5px;
+      font-weight: 700;
+      font-size: 0.92rem;
+      margin-top: 6px;
+      margin-right: 8px;
+    }
+
+    .btn-link:hover {
+      background-color: var(--primary-dark);
+    }
+
+    .btn-outline {
+      display: inline-block;
+      background-color: #ffffff;
+      color: var(--primary-dark) !important;
+      border: 1px solid var(--primary);
+      text-decoration: none !important;
+      padding: 9px 16px;
+      border-radius: 5px;
+      font-weight: 700;
+      font-size: 0.92rem;
+      margin-top: 6px;
+      margin-right: 8px;
+    }
+
+    .btn-outline:hover {
+      background-color: var(--primary-light);
+    }
+
+    .operator-notice {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 16px 36px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <p class="site-title"><a href="index.html">加湿器の選び方ナビ（仮）</a></p>
+      <nav class="header-nav" aria-label="メインナビゲーション">
+        <a href="index.html">トップページ（選び方全般）</a>
+        <a href="steam.html">スチーム式特集</a>
+        <a href="kishiki.html">気化式特集</a>
+        <a href="hybrid.html">ハイブリッド式特集</a>
+        <a href="chouonpa.html">超音波式特集</a>
+        <a href="desk.html">卓上・小型特集</a>
+        <a href="air-purifier.html">空気清浄機付き特集</a>
+        <a href="bedroom.html">寝室向け特集</a>
+        <a href="care.html">手入れ簡単特集</a>
+        <a href="denki.html">電気代まとめ</a>
+        <a href="room-size.html">部屋の広さ別</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <nav class="breadcrumb" aria-label="パンくずリスト">
+      <a href="index.html">トップページ</a> &gt; 部屋の広さ別の加湿器の選び方
+    </nav>
+
+    <h1>加湿器は部屋の広さで選ぶ！適用床面積（木造・プレハブ）と加湿量の目安</h1>
+
+    <p>「加湿器 部屋の広さ」で検索する方がまず知っておきたいのは、部屋の広さに対して加湿能力が不足していると、いくら長時間運転しても湿度が上がらず、逆に電気代だけがかさみやすくなるという点です。加湿器選びでは、仕様表に記載されている<strong>「適用床面積」</strong>と<strong>「定格加湿量（mL/h）」</strong>を自宅の建物構造や間取りに照らし合わせて確認することが基本になります。</p>
+    <p>このページでは、適用床面積の基準であるJEM1426規格の前提条件と「木造和室／プレハブ洋室」表記の読み方、畳数と加湿量の一般的な目安、ワンサイズ上を選ぶ理由、そして部屋タイプ別（ワンルーム・寝室・リビング・子ども部屋）の選び方を解説します。</p>
+
+    <div class="toc">
+      <p class="toc-title">本ページの内容</p>
+      <ul>
+        <li><a href="#jem1426">1. 適用床面積（JEM1426規格）と「木造和室／プレハブ洋室」表記の読み方</a></li>
+        <li><a href="#capacity-range">2. 加湿量（mL/h）と部屋の広さの対応の考え方</a></li>
+        <li><a href="#one-size-up">3. 迷ったら「ワンサイズ上の能力」を選ぶ理由</a></li>
+        <li><a href="#room-types">4. 部屋タイプ別（ワンルーム・寝室・リビング・子ども部屋）の選び方</a></li>
+      </ul>
+    </div>
+
+    <h2 id="jem1426">1. 適用床面積と「木造和室／プレハブ洋室」表記の読み方</h2>
+    <p>家庭用加湿器の仕様表やカタログには、「適用床面積の目安：木造和室〇畳／プレハブ洋室△畳」という形で2つの畳数が並記されています。</p>
+
+    <div class="note-box">
+      <span class="note-box-title">適用床面積の基準（JEM1426規格）の前提条件</span>
+      日本の主要メーカーが採用している適用床面積は、一般社団法人日本電機工業会規格（<strong>JEM1426</strong>）に基づき、<strong>「室温20℃・湿度30％の条件下で定格加湿能力（最大加湿量）を発揮した場合の目安」</strong>として算出された数値です。<br>
+      ※これは標準的な天井高や換気回数などを想定した規格上の目安であり、住宅の断熱性能・築年数・外気温・間取りによって実際の加湿効率は前後します。
+    </div>
+
+    <h3>「木造和室」と「プレハブ洋室」の違いと当てはめ方</h3>
+    <p>同じ加湿能力を持つ1台の加湿器であっても、気密性の違いによって対応できる広さが変わるため、2通りの基準が設けられています。</p>
+    <ul>
+      <li><strong>木造和室（数値が小さい方）：</strong>気密性が低く空気が入れ替わりやすい木造住宅や、襖・障子などで仕切られた和室を想定した基準です。一戸建ての木造住宅や、隙間風を感じやすい築年数の経った部屋にお住まいの場合は、こちらの畳数を基準に選びます。</li>
+      <li><strong>プレハブ洋室（数値が大きい方）：</strong>気密性が高く水蒸気が外へ逃げにくい住宅を想定した基準です。鉄筋コンクリート造（RC造）のマンションや、気密性・断熱性の高い現代の洋室にお住まいの場合は、こちらの畳数を目安にします。</li>
+    </ul>
+    <p>なお、<strong>「木造住宅の洋室」</strong>にお住まいの場合は、気密性が木造和室とプレハブ洋室の中間程度になるケースや建物の断熱仕様により差が出るケースがあるため、安全側を見て「木造和室」の表記を基準にするか、プレハブ洋室表記より余裕を持ったモデルを選ぶのが無難です。</p>
+
+    <div class="affiliate-slot" style="margin:24px 0;padding:14px 16px;border:1px solid #d8d8d8;border-radius:8px;background:#fafafa;"><p style="margin:0;font-size:0.9em;"><span style="color:#888;">【PR】</span> <a href="https://hb.afl.rakuten.co.jp/hgc/11e7c15e.43b4d992.11e7c15f.7b1e602a/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E5%8A%A0%E6%B9%BF%E5%99%A8%2F&link_type=text&ut=eyJwYWdlIjoidXJsIiwidHlwZSI6InRleHQiLCJjb2wiOjF9" target="_blank" rel="nofollow sponsored noopener">楽天市場で加湿器を探す</a></p></div>
+
+    <h2 id="capacity-range">2. 加湿量（mL/h）と部屋の広さの対応の考え方</h2>
+    <p>適用床面積の表記とあわせて確認したいのが、1時間あたりにどれだけの水分を空気中へ放出できるかを示す<strong>「定格加湿量（mL/h）」</strong>です。</p>
+    <p>JEM1426規格の前提（室温20℃・湿度30％）のもと、建物の構造（木造かプレハブ洋室か）によって同じ加湿量でも適用畳数は変わりますが、一般的な目安レンジの考え方としては次のように整理できます。</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>部屋の広さのイメージ</th>
+            <th>定格加湿量（mL/h）の一般的な目安レンジ</th>
+            <th>想定される設置空間の例・補足</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>パーソナルスペース（卓上）</strong></td>
+            <td>数十mL/h前後まで</td>
+            <td>部屋全体ではなくデスク周りや枕元など局所的なケアが前提（適用床面積の表記がない製品も多い）。</td>
+          </tr>
+          <tr>
+            <td><strong>〜6〜8畳前後の個室</strong></td>
+            <td>200〜350mL/h程度前後</td>
+            <td>一人暮らしのワンルームや寝室・書斎など（木造か鉄筋かで必要量は前後する）。</td>
+          </tr>
+          <tr>
+            <td><strong>8〜12畳前後の部屋</strong></td>
+            <td>300〜500mL/h程度前後</td>
+            <td>広めの寝室、ワンルーム〜1K、コンパクトなダイニングなど。</td>
+          </tr>
+          <tr>
+            <td><strong>14〜20畳以上の広い空間</strong></td>
+            <td>500〜800mL/h以上（またはそれ以上）</td>
+            <td>ファミリー向けのリビング・LDKなど。広い場合は複数台の併用も選択肢になる。</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>※上記の加湿量レンジはあくまで一般論としての幅を持った目安であり、実際の必要加湿量は<strong>建物の気密性・換気量・外気温・目標とする湿度</strong>や製品ごとの仕様（木造和室・プレハブ洋室の適用畳数）によって異なります。機種選定の際は、必ず対象製品の仕様欄に記載されている「適用床面積」と「定格加湿量」の双方をご確認ください。</p>
+
+    <h2 id="one-size-up">3. 迷ったら「ワンサイズ上の能力」を選ぶ理由</h2>
+    <p>実際の部屋が8畳だからといって「最大8畳対応」の機種をギリギリで選ぶと、目標の湿度（一般的に40〜60％程度が目安とされます）に届かないケースが少なくありません。部屋の広さより<strong>少し余裕のある「ワンサイズ上の適用床面積」</strong>が推奨される主な理由は以下のとおりです。</p>
+    <ul>
+      <li><strong>天井が高い・吹き抜けや階段とつながっている：</strong>適用床面積は標準的な天井高を前提としているため、吹き抜けやロフトがある部屋、リビング階段で上下階がつながっている間取りでは空間の体積が大きくなり、より多くの加湿量が必要になります。</li>
+      <li><strong>ドアの開閉や換気が多い：</strong>家族が出入りするリビングや、キッチンの換気扇・24時間換気システムが常時稼働している空間では、加湿した空気が外へ逃げやすくなります。</li>
+      <li><strong>静音運転（弱運転）で快適に使いたい：</strong>定格加湿量は「最大（強）運転時」の数値です。余裕のある機種を選べば、普段は音が静かな「静音・弱モード」や「エコ運転」でも十分な湿度を保ちやすくなり、結果として運転音や電気代（ハイブリッド式のヒーター稼働時間など）を抑えやすくなります。</li>
+    </ul>
+
+    <div class="affiliate-slot" style="margin:24px 0;padding:14px 16px;border:1px solid #d8d8d8;border-radius:8px;background:#fafafa;"><p style="margin:0;font-size:0.9em;"><span style="color:#888;">【PR】</span> <a href="https://hb.afl.rakuten.co.jp/hgc/11e7c15e.43b4d992.11e7c15f.7b1e602a/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E5%8A%A0%E6%B9%BF%E5%99%A8%2F&link_type=text&ut=eyJwYWdlIjoidXJsIiwidHlwZSI6InRleHQiLCJjb2wiOjF9" target="_blank" rel="nofollow sponsored noopener">部屋の広さに合う加湿器を探す</a></p></div>
+
+    <h2 id="room-types">4. 部屋タイプ別の選び方のポイント</h2>
+    <p>同じ畳数であっても、部屋の用途や過ごす時間帯によって優先すべき仕様は変わります。</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <h4>ワンルーム</h4>
+        <p>食事・作業・睡眠を同じ空間で行うため、<strong>省スペース性と静音性の両立</strong>がポイントになります。</p>
+        <ul>
+          <li>設置場所が限られる場合は、1台でホコリ・花粉対策もできる加湿空気清浄機やスリム型を検討しやすい。</li>
+          <li>就寝時に音が気にならないよう静音モードやLED消灯機能があるか確認する。</li>
+          <li>部屋の構造（木造アパートかRC造マンションか）に合わせて適用畳数を選ぶ。</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>寝室</h4>
+        <p>就寝中の環境を守るため、<strong>運転音の静かさと一晩持つタンク容量</strong>が最優先となります。</p>
+        <ul>
+          <li>過加湿や窓の結露を抑えやすい気化式や、自動湿度制御付きのハイブリッド式が扱いやすい。</li>
+          <li>6〜8時間以上の睡眠中に水切れしないタンク容量か確認する。</li>
+          <li>ベッドサイドの枕元だけを潤したい場合は卓上・小型も選択肢（部屋全体は加湿できない前提）。</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>リビング（LDK）</h4>
+        <p>面積が広く人の出入りや換気も多いため、<strong>ワンサイズ上の加湿量と給水の手間を減らす大容量タンク</strong>が重要です。</p>
+        <ul>
+          <li>キッチンや隣接する廊下まで空間がつながっている場合は、仕切り内の畳数より広めに対応できるモデルを選ぶ。</li>
+          <li>パワー重視ならスチーム式やハイブリッド式、電気代を抑えて長時間稼働させるなら大型の気化式が向いている。</li>
+          <li>エアコンの気流やサーキュレーターと併用して部屋全体へ湿度を循環させる。</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>子ども部屋</h4>
+        <p>学習や遊びで動く空間であるため、<strong>ヤケドや転倒による水こぼれへの安全性</strong>を重視します。</p>
+        <ul>
+          <li>吹き出し口が熱くならない気化式や、転倒時水漏れ防止構造・チャイルドロックを備えた機種を選ぶ。</li>
+          <li>スチーム式を設置する場合は、子どもの手が届かない安定した高い場所への配置やマグネットプラグの採用を確認する。</li>
+          <li>学習机のノートやタブレット等を濡らさない位置・吹き出し方向に配慮する。</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>用途・部屋別にさらに詳しく確認する</h3>
+    <p>寝室での具体的な静音性・タンク容量の計算や、デスク周りのパーソナルスペース向け製品の注意点、4つの加湿方式の基本比較については、以下の関連ページもあわせてご覧ください。</p>
+    <p>
+      <a href="index.html" class="btn-link">トップページ（4方式比較・選び方）へ戻る</a>
+      <a href="bedroom.html" class="btn-outline">寝室向け加湿器の解説（bedroom.html）</a>
+      <a href="desk.html" class="btn-outline">卓上・小型加湿器の解説（desk.html）</a>
+    </p>
+
+    <div class="affiliate-slot" style="margin:24px 0;padding:14px 16px;border:1px solid #d8d8d8;border-radius:8px;background:#fafafa;"><p style="margin:0;font-size:0.9em;"><span style="color:#888;">【PR】</span> <a href="https://hb.afl.rakuten.co.jp/hgc/11e7c15e.43b4d992.11e7c15f.7b1e602a/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E5%8A%A0%E6%B9%BF%E5%99%A8%2F&link_type=text&ut=eyJwYWdlIjoidXJsIiwidHlwZSI6InRleHQiLCJjb2wiOjF9" target="_blank" rel="nofollow sponsored noopener">加湿器の売れ筋を楽天市場で見る</a></p></div>
+
+    <div class="operator-notice">
+      <p>運営者情報は準備中です</p>
+    </div>
+  </main>
+
+  <footer class="container">
+    <p>&copy; 加湿器の選び方ナビ（仮）</p>
+  </footer>
+
+</body>
+</html>
