@@ -1,7 +1,7 @@
 /* ==========================================================================
    ふるさと納税 控除上限額・残り枠シミュレーター (html/assets/simulator.js)
    仕様書：site/02_simulator-spec.md / 基準データ：reference-log.md §2-2 完全準拠
-   ・総務省公表の早見表（300万〜800万円・25万円刻み×3区分）ルックアップ方式
+   ・令和8年分の税制に基づき当サイトが試算した早見表（300万〜800万円・25万円刻み×3区分）ルックアップ方式
    ・中間年収の線形補間・独自推計は一切行わず、直近下位行へ切り捨てスナップ
    ・外部通信一切なし（ブラウザ内クライアント側JavaScriptのみで完結）
    ========================================================================== */
@@ -10,20 +10,20 @@
 
   var LOOKUP_TABLE = {
     "300": { single_or_dual: 28000,  married_single_income: 19000,  dual_with_highschool_child: 19000 },
-    "325": { single_or_dual: 31000,  married_single_income: 23000,  dual_with_highschool_child: 23000 },
+    "325": { single_or_dual: 31000,  married_single_income: 22000,  dual_with_highschool_child: 22000 },
     "350": { single_or_dual: 34000,  married_single_income: 26000,  dual_with_highschool_child: 26000 },
     "375": { single_or_dual: 38000,  married_single_income: 29000,  dual_with_highschool_child: 29000 },
     "400": { single_or_dual: 42000,  married_single_income: 33000,  dual_with_highschool_child: 33000 },
-    "425": { single_or_dual: 45000,  married_single_income: 37000,  dual_with_highschool_child: 37000 },
-    "450": { single_or_dual: 52000,  married_single_income: 41000,  dual_with_highschool_child: 41000 },
-    "475": { single_or_dual: 56000,  married_single_income: 45000,  dual_with_highschool_child: 45000 },
-    "500": { single_or_dual: 61000,  married_single_income: 49000,  dual_with_highschool_child: 49000 },
-    "525": { single_or_dual: 65000,  married_single_income: 56000,  dual_with_highschool_child: 56000 },
-    "550": { single_or_dual: 69000,  married_single_income: 60000,  dual_with_highschool_child: 60000 },
-    "575": { single_or_dual: 73000,  married_single_income: 64000,  dual_with_highschool_child: 64000 },
+    "425": { single_or_dual: 46000,  married_single_income: 37000,  dual_with_highschool_child: 37000 },
+    "450": { single_or_dual: 49000,  married_single_income: 41000,  dual_with_highschool_child: 41000 },
+    "475": { single_or_dual: 53000,  married_single_income: 45000,  dual_with_highschool_child: 45000 },
+    "500": { single_or_dual: 58000,  married_single_income: 49000,  dual_with_highschool_child: 49000 },
+    "525": { single_or_dual: 61000,  married_single_income: 53000,  dual_with_highschool_child: 53000 },
+    "550": { single_or_dual: 69000,  married_single_income: 56000,  dual_with_highschool_child: 56000 },
+    "575": { single_or_dual: 74000,  married_single_income: 61000,  dual_with_highschool_child: 61000 },
     "600": { single_or_dual: 77000,  married_single_income: 69000,  dual_with_highschool_child: 69000 },
     "625": { single_or_dual: 81000,  married_single_income: 73000,  dual_with_highschool_child: 73000 },
-    "650": { single_or_dual: 97000,  married_single_income: 77000,  dual_with_highschool_child: 77000 },
+    "650": { single_or_dual: 86000,  married_single_income: 78000,  dual_with_highschool_child: 78000 },
     "675": { single_or_dual: 102000, married_single_income: 81000,  dual_with_highschool_child: 81000 },
     "700": { single_or_dual: 108000, married_single_income: 86000,  dual_with_highschool_child: 86000 },
     "725": { single_or_dual: 113000, married_single_income: 104000, dual_with_highschool_child: 104000 },
