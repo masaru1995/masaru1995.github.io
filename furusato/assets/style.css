@@ -2842,3 +2842,32 @@ a.pr-slot.pr-slot-sub:focus-visible {
   color: var(--cta, var(--accent-hover));
 }
 
+
+/* 2026-11-16 追加：注意ボックスとFAQセクション（生成ブロック用） */
+.notice-box {
+  border: 2px solid var(--line-strong);
+  background: var(--bg-subtle);
+  border-radius: 10px;
+  padding: 1em 1.2em;
+  margin: 1.5em 0;
+}
+.notice-box h2 {
+  margin-top: 0;
+  font-size: 1.15em;
+  color: var(--ink-strong);
+}
+.faq-section {
+  margin: 2em 0;
+}
+.faq-section .faq-item {
+  border-bottom: 1px solid var(--line);
+  padding: 0.8em 0;
+}
+.faq-section dt {
+  font-weight: 700;
+  color: var(--ink-strong);
+}
+.faq-section dd {
+  margin: 0.4em 0 0;
+  color: var(--sub);
+}
