@@ -38,10 +38,39 @@
     700, 725, 750, 775, 800
   ];
 
+
+  var LOOKUP_TABLE_WIDE = {
+    "300": { single_or_dual: 28000, married_single_income: 19000, married_with_highschool_child: 11000, married_with_two_children: 2000 },
+    "350": { single_or_dual: 34000, married_single_income: 26000, married_with_highschool_child: 17000, married_with_two_children: 5000 },
+    "400": { single_or_dual: 42000, married_single_income: 33000, married_with_highschool_child: 25000, married_with_two_children: 12000 },
+    "450": { single_or_dual: 49000, married_single_income: 41000, married_with_highschool_child: 33000, married_with_two_children: 20000 },
+    "500": { single_or_dual: 58000, married_single_income: 49000, married_with_highschool_child: 41000, married_with_two_children: 28000 },
+    "550": { single_or_dual: 69000, married_single_income: 56000, married_with_highschool_child: 48000, married_with_two_children: 35000 },
+    "600": { single_or_dual: 77000, married_single_income: 69000, married_with_highschool_child: 56000, married_with_two_children: 43000 },
+    "650": { single_or_dual: 86000, married_single_income: 78000, married_with_highschool_child: 69000, married_with_two_children: 52000 },
+    "700": { single_or_dual: 108000, married_single_income: 86000, married_with_highschool_child: 77000, married_with_two_children: 63000 },
+    "750": { single_or_dual: 119000, married_single_income: 110000, married_with_highschool_child: 87000, married_with_two_children: 74000 },
+    "800": { single_or_dual: 130000, married_single_income: 121000, married_with_highschool_child: 111000, married_with_two_children: 83000 },
+    "850": { single_or_dual: 143000, married_single_income: 133000, married_with_highschool_child: 124000, married_with_two_children: 108000 },
+    "900": { single_or_dual: 156000, married_single_income: 147000, married_with_highschool_child: 137000, married_with_two_children: 122000 },
+    "950": { single_or_dual: 170000, married_single_income: 160000, married_with_highschool_child: 151000, married_with_two_children: 136000 },
+    "1000": { single_or_dual: 183000, married_single_income: 174000, married_with_highschool_child: 164000, married_with_two_children: 150000 },
+    "1100": { single_or_dual: 220000, married_single_income: 204000, married_with_highschool_child: 194000, married_with_two_children: 181000 },
+    "1200": { single_or_dual: 249000, married_single_income: 249000, married_with_highschool_child: 239000, married_with_two_children: 225000 },
+    "1300": { single_or_dual: 277000, married_single_income: 277000, married_with_highschool_child: 267000, married_with_two_children: 253000 },
+    "1500": { single_or_dual: 394000, married_single_income: 394000, married_with_highschool_child: 382000, married_with_two_children: 366000 },
+    "1800": { single_or_dual: 497000, married_single_income: 497000, married_with_highschool_child: 485000, married_with_two_children: 469000 },
+    "2000": { single_or_dual: 568000, married_single_income: 568000, married_with_highschool_child: 556000, married_with_two_children: 540000 }
+  };
+
+  var WIDE_KEYS = [300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 950, 1000, 1100, 1200, 1300, 1500, 1800, 2000];
+
   var FAMILY_LABELS = {
     single_or_dual: "独身・共働き",
     married_single_income: "夫婦（配偶者控除あり）",
-    dual_with_highschool_child: "共働き＋子1人（高校生）"
+    dual_with_highschool_child: "共働き＋子1人（高校生）",
+    married_with_highschool_child: "夫婦＋子1人（高校生）",
+    married_with_two_children: "夫婦＋子2人（大学生・高校生）"
   };
 
   function toHalfWidth(str) {
@@ -117,16 +146,29 @@
       };
     }
 
-    var isOverMaxIncome = incomeNum > 800;
-    var clampedIncome = Math.min(800, Math.floor(incomeNum));
-    var matchedIncomeNum = Math.floor((clampedIncome - 300) / 25) * 25 + 300;
-    var matchedIncomeKey = String(matchedIncomeNum);
+    var useWide = incomeNum > 800 || safeFamily === "married_with_highschool_child" || safeFamily === "married_with_two_children";
+    var isOverMaxIncome = incomeNum > 2000;
+    var matchedIncomeNum, limitEstimate;
+    if (useWide) {
+      var capIncome = Math.min(2000, Math.floor(incomeNum));
+      matchedIncomeNum = WIDE_KEYS[0];
+      for (var wi = 0; wi < WIDE_KEYS.length; wi++) {
+        if (WIDE_KEYS[wi] <= capIncome) matchedIncomeNum = WIDE_KEYS[wi];
+      }
+      var wideFamily = safeFamily === "dual_with_highschool_child" ? "married_single_income" : safeFamily;
+      limitEstimate = LOOKUP_TABLE_WIDE[String(matchedIncomeNum)][wideFamily];
+    } else {
+      var clampedIncome = Math.min(800, Math.floor(incomeNum));
+      matchedIncomeNum = Math.floor((clampedIncome - 300) / 25) * 25 + 300;
+      limitEstimate = LOOKUP_TABLE[String(matchedIncomeNum)][safeFamily];
+    }
     var isFlooredIntermediate = !isOverMaxIncome && matchedIncomeNum !== incomeNum;
 
-    var limitEstimate = LOOKUP_TABLE[matchedIncomeKey][safeFamily];
     var remainingLimit = Math.max(0, limitEstimate - donatedAmount);
     var deductibleEstimateAtLimit = Math.max(0, limitEstimate - 2000);
     var exceededAmount = Math.max(0, donatedAmount - limitEstimate);
+    var safeLimit = Math.floor(limitEstimate * 0.9 / 1000) * 1000;
+    var safeRemaining = Math.max(0, safeLimit - donatedAmount);
 
     return {
       status: "OK",
@@ -137,6 +179,10 @@
       familyType: safeFamily,
       familyLabel: FAMILY_LABELS[safeFamily],
       limitEstimate: limitEstimate,
+      safeLimit: safeLimit,
+      safeRemaining: safeRemaining,
+      capIncomeMan: 2000,
+      isWideRange: useWide,
       donatedAmount: donatedAmount,
       remainingLimit: remainingLimit,
       selfBurden: 2000,
@@ -197,8 +243,16 @@
                 '<input type="radio" name="' + uid + '-family" value="dual_with_highschool_child">' +
                 '<span>共働き＋子1人（高校生）<span class="radio-sub">共働き（配偶者控除なし）で、高校生（16〜18歳）の扶養親族が1人いる場合</span></span>' +
               '</label>' +
+              '<label>' +
+                '<input type="radio" name="' + uid + '-family" value="married_with_highschool_child">' +
+                '<span>夫婦＋子1人（高校生）<span class="radio-sub">配偶者控除ありで、高校生（16〜18歳）の扶養親族が1人いる場合（拡張表で試算）</span></span>' +
+              '</label>' +
+              '<label>' +
+                '<input type="radio" name="' + uid + '-family" value="married_with_two_children">' +
+                '<span>夫婦＋子2人（大学生・高校生）<span class="radio-sub">配偶者控除ありで、大学生（19〜22歳）と高校生の扶養親族がいる場合（拡張表で試算）</span></span>' +
+              '</label>' +
             '</div>' +
-            '<p class="hint">※参考（給与収入300万円行のみ総務省公表値で確認済み）：「共働き＋子1人（大学生）：15,000円」「夫婦＋子1人（高校生）：11,000円」「共働き＋子2人（大学生と高校生）：7,000円」。他の年収行は個別の課税状況・最新公表資料での確認が必要となるため、プルダウン選択肢には含めていません。</p>' +
+            '<p class="hint">※「夫婦＋子1人（高校生）」「夫婦＋子2人（大学生・高校生）」と年収800万円超は、令和8年分の税制に基づく当サイト試算の拡張表（50万円刻み・2,000万円まで）から直近下位の行を表示します。16歳未満のお子さんは扶養控除の対象にならないため、その場合は「夫婦」（独身の方は「独身 または 共働き」）の区分をご覧ください。</p>' +
           '</div>' +
 
           '<div class="sim-field-box">' +
@@ -224,7 +278,7 @@
           '<div class="disclaimer">' +
             '<h3>前提条件・公的確認の必須注記</h3>' +
             '<ul>' +
-              '<li>※本シミュレーターの金額は総務省公表の早見表に基づく、<strong>給与収入のみ・他の控除（iDeCo・医療費控除・住宅ローン控除等）がない場合の目安</strong>です。</li>' +
+              '<li>※本シミュレーターの金額は、令和8年分（2026年分）の税制に基づき当サイトが試算した早見表に基づく、<strong>給与収入のみ・他の控除（iDeCo・医療費控除・住宅ローン控除等）がない場合の目安</strong>です（前提：東京都・協会けんぽ・39歳以下・賞与なし）。</li>' +
               '<li>※表にない中間の年収は補間せず<strong>直近下位の行の値</strong>を参照します。</li>' +
               '<li>※正確な控除限度額は、お手元の源泉徴収票・住民税決定通知書をご確認のうえ、お住まいの自治体にてご確認ください（計算式の詳細は「<a href="' + prefix + 'keisan/index.html">限度額の計算方法と源泉徴収票での確認</a>」へ）。</li>' +
               '<li>※個人事業主の方（「<a href="' + prefix + 'kojin-jigyo/index.html">個人事業主の限度額の考え方</a>」）、年金受給者の方（「<a href="' + prefix + 'nenkin/index.html">年金受給者の限度額の考え方</a>」）、iDeCoや住宅ローン控除等を併用される方（「<a href="' + prefix + 'ideco/index.html">iDeCo併用時の影響</a>」／「<a href="' + prefix + 'jutaku-loan/index.html">住宅ローン控除との併用</a>」）は計算条件が異なります。</li>' +
@@ -296,10 +350,10 @@
       var snapNoteHtml = "";
       if (res.isOverMaxIncome) {
         snapNoteHtml =
-          '<p class="sim-snap-note">※入力年収（' + formatYen(res.inputIncomeMan) + '万円）は本早見表の上限を超えるため、上限である<strong>800万円行</strong>の公表値を参考表示しています。800万円超の詳しい確認は「<a href="' + prefix + 'keisan/index.html">限度額の計算方法と源泉徴収票での確認</a>」をご参照ください。</p>';
+          '<p class="sim-snap-note">※入力年収（' + formatYen(res.inputIncomeMan) + '万円）は本早見表の上限を超えるため、上限である<strong>' + res.capIncomeMan + '万円行</strong>の試算値を参考表示しています。詳しい確認は「<a href="' + prefix + 'keisan/index.html">限度額の計算方法と源泉徴収票での確認</a>」をご参照ください。</p>';
       } else if (res.isFlooredIntermediate) {
         snapNoteHtml =
-          '<p class="sim-snap-note">※入力年収（' + formatYen(res.inputIncomeMan) + '万円）に対し、補間せず直近下位である<strong>' + res.matchedIncomeMan + '万円行</strong>の公表値を表示しています。</p>';
+          '<p class="sim-snap-note">※入力年収（' + formatYen(res.inputIncomeMan) + '万円）に対し、補間せず直近下位である<strong>' + res.matchedIncomeMan + '万円行</strong>の試算値を表示しています。</p>';
       }
 
       var donatedPct = res.limitEstimate > 0
@@ -315,6 +369,11 @@
             '<p style="margin:0;">寄附済み額が早見表の目安額を <strong>' + formatYen(res.exceededAmount) + ' 円</strong>上回っています。上限目安を超えた分も寄附金控除の対象にはなりますが、全額控除にはならず自己負担が2,000円を超えます。なお、限度額を超過した場合はワンストップ特例より確定申告の方が（所得税からも控除されるため）控除範囲が広くなります。詳しくは「<a href="' + prefix + 'kakutei/index.html">確定申告での控除の受け方と超過分の扱い</a>」をご確認ください。</p>' +
           '</div>';
       }
+
+      var safeHtml =
+        '<div class="sim-self-burden-box">' +
+          '<p><strong>安全圏の目安（上限の9割）：' + formatYen(res.safeLimit) + ' 円</strong>（あと ' + formatYen(res.safeRemaining) + ' 円まで）。年収見込みが年末に下振れすると上限額も下がります。寄附総額をこの水準までに抑えておくと、上限超過で自己負担が増えるリスクを抑えられます。</p>' +
+        '</div>';
 
       var splitPlanHtml = "";
       if (res.remainingLimit > 0) {
@@ -366,6 +425,7 @@
         '<div class="sim-self-burden-box">' +
           '<p>ふるさと納税では、年間の寄附合計額のうち<strong>2,000円が自己負担</strong>となり、2,000円を超える部分（上記の上限目安 <strong>' + formatYen(res.limitEstimate) + ' 円</strong>まで寄附した場合は <strong data-testid="deductible-estimate">' + formatYen(res.deductibleEstimateAtLimit) + ' 円</strong>）が所得税と住民税から原則として全額控除されます。自己負担2,000円は寄附1件ごとではなく、1年間（1月1日〜12月31日）の寄附合計に対する負担額です。</p>' +
         '</div>' +
+        safeHtml +
         splitPlanHtml;
     }
 
@@ -456,6 +516,7 @@
 
   var api = {
     LOOKUP_TABLE: LOOKUP_TABLE,
+    LOOKUP_TABLE_WIDE: LOOKUP_TABLE_WIDE,
     INCOME_KEYS: INCOME_KEYS,
     FAMILY_LABELS: FAMILY_LABELS,
     calculateFurusatoLimit: calculateFurusatoLimit,
