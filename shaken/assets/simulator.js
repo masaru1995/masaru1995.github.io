@@ -50,7 +50,7 @@
     var baseWeightTax = taxRow.under_13;
     var weightTaxSurchargeDiff = weightTax - baseWeightTax;
 
-    var jibaisekiFee = category === "kei" ? 17540 : 17650;
+    var jibaisekiFee = category === "kei" ? 18660 : 18560;
     var jibaiseki25m = category === "kei" ? 18040 : 18160;
     var inspectionFee = 1800;
     var legalFeeTotal = weightTax + jibaisekiFee + inspectionFee;
