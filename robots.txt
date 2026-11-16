@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kurashinavi.dpdns.org/sitemap.xml
