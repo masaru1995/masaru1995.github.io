@@ -5,6 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>車検費用シミュレーター｜車両区分・重量・経過年数から法定費用と総額目安を試算｜車検費用ナビ</title>
 <meta name="description" content="車検証の「自動車の種別（軽／普通）」「車両重量」「初度登録からの経過年数」の3項目を選ぶだけで、どこで受けても原則同額の法定費用合計（重量税・自賠責・検査手数料）と、基本料・整備費込みの車検総額目安レンジをリアルタイムに試算できます。">
+<link rel="canonical" href="https://kurashinavi.dpdns.org/shaken/simulator/">
+<meta property="og:title" content="車検費用シミュレーター｜車両区分・重量・経過年数から法定費用と総額目安を試算｜車検費用ナビ">
+<meta property="og:description" content="車検証の「自動車の種別（軽／普通）」「車両重量」「初度登録からの経過年数」の3項目を選ぶだけで、どこで受けても原則同額の法定費用合計（重量税・自賠責・検査手数料）と、基本料・整備費込みの車検総額目安レンジをリアルタイムに試算できます。">
+<meta property="og:url" content="https://kurashinavi.dpdns.org/shaken/simulator/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="車検費用ナビ">
 <link rel="stylesheet" href="../assets/style.css">
 <script type="application/ld+json">
 {
@@ -14,7 +20,7 @@
   "description": "車検証の「自動車の種別（軽／普通）」「車両重量」「初度登録からの経過年数」の3項目を選ぶだけで、どこで受けても原則同額の法定費用合計（重量税・自賠責・検査手数料）と、基本料・整備費込みの車検総額目安レンジをリアルタイムに試算できます。",
   "inLanguage": "ja",
   "datePublished": "2026-11-12",
-  "dateModified": "2026-11-12",
+  "dateModified": "2026-11-16",
   "author": {
     "@type": "Organization",
     "name": "車検費用ナビ編集部"
@@ -221,7 +227,7 @@
         <strong>【計算前提】</strong>
         <ul>
           <li><strong>対象</strong>：自家用乗用車の継続検査（車検2年分）・エコカー減税の適用なし</li>
-          <li><strong>自賠責保険料</strong>：24か月契約の基準額で計算（普通自動車 17,650円／軽自動車 17,540円・本土基準）</li>
+          <li><strong>自賠責保険料</strong>：24か月契約の基準額で計算（普通自動車 18,560円／軽自動車 18,660円・本土基準）</li>
           <li><strong>検査手数料（印紙代）</strong>：指定整備工場経由の目安である <strong>1,800円</strong> を採用（※認証工場・ユーザー車検では 2,200円前後 の場合があります）</li>
         </ul>
       </div>
@@ -235,7 +241,7 @@
           <div>
             <span class="rp-badge">① 確定基準額（非課税・公的負担）</span>
             <p class="rp-title">法定費用の合計</p>
-            <p class="rp-amount" id="res-legal-total">44,050円</p>
+            <p class="rp-amount" id="res-legal-total">44,960円</p>
           </div>
           <p class="rp-note">どの依頼先（ディーラー・専門店・整備工場・GS等）で受けても原則同額です（※検査手数料のみ工場の種別で数百円前後変わる場合があります）。</p>
         </div>
@@ -263,20 +269,20 @@
         <span class="l2">自賠責保険料＋検査手数料</span>
         <span class="l3">車検基本料＋整備・部品交換費（目安幅）</span>
       </div>
-      <p class="note-text" id="bar-caption" style="margin-top: 8px;">総額目安の中間値に対する構成イメージ（紺＝法定費用合計 44,050円 ／ オレンジ＝基本料＋整備費の目安幅）</p>
+      <p class="note-text" id="bar-caption" style="margin-top: 8px;">総額目安の中間値に対する構成イメージ（紺＝法定費用合計 44,960円 ／ オレンジ＝基本料＋整備費の目安幅）</p>
 
       <div class="breakdown">
         <div class="bd-item">
           <div class="row">
             <span class="name">① 法定費用の内訳明細（どの依頼先でも原則同額）</span>
-            <span class="amt" id="bd-legal-sum">44,050円</span>
+            <span class="amt" id="bd-legal-sum">44,960円</span>
           </div>
           <ul class="detail-lines">
             <li><span>自動車重量税（2年分・エコカー減税なし基準）</span><strong id="bd-tax">24,600円</strong></li>
-            <li><span>自賠責保険料（24か月契約）</span><strong id="bd-jibaiseki">17,650円</strong></li>
+            <li><span>自賠責保険料（24か月契約）</span><strong id="bd-jibaiseki">18,560円</strong></li>
             <li><span>検査手数料（印紙代・指定整備工場採用値）</span><strong id="bd-inspection">1,800円</strong></li>
           </ul>
-          <p class="basis" id="bd-jibaiseki-25m">※参考：25か月契約の場合は 18,160円（エコカー減税対象車は重量税が減税・免税になる場合があります）</p>
+          <p class="basis" id="bd-jibaiseki-25m">※参考：25か月契約の場合は 19,070円（エコカー減税対象車は重量税が減税・免税になる場合があります）</p>
         </div>
 
         <div class="bd-item bd-variable">
@@ -298,8 +304,8 @@
         <div class="pr-box-head"><span class="pr-badge">【#PR】</span>車検の見積もり比較・店舗検索のご案内</div>
         <ul>
           <li>車検基本料や整備・部品交換費用は依頼先や車両の状態によって変動するため、複数の事業者の見積もり条件を比較して検討するのが有効です。</li>
-          <li><span class="pr-slot">[PR導線：車検見積もり比較]</span> <span class="pr-slot">[PR導線：車検予約]</span></li>
-          <li>13年・18年経過車や高額な部品交換が見込まれ、車検継続と売却・乗り換えを比較したい場合（判断軸：<a href="../norikae/index.html">車検を通すか乗り換えるかの判断基準</a>）：<br><span class="pr-slot">[PR導線：車の査定・乗り換え比較]</span></li>
+          <li>見積もり比較や事前予約は、各事業者の公式サイトや電話窓口から行えます。車検基本料と整備内容の内訳を確認してから申し込みましょう。</li>
+          <li>13年・18年経過車や高額な部品交換が見込まれ、車検継続と売却・乗り換えを比較したい場合（判断軸：<a href="../norikae/index.html">車検を通すか乗り換えるかの判断基準</a>）：<br>査定サービス等で現在の車両価値を確認できます。</li>
         </ul>
       </aside>
     </section>
@@ -316,9 +322,9 @@
       <div class="disclaimer">
         <h3>更新日・出典メンテナンス管理メモ</h3>
         <ul>
-          <li><strong>最終更新日</strong>：2026年11月12日（執筆・編集：車検費用ナビ編集部）</li>
+          <li><strong>最終更新日</strong>：2026年11月16日（執筆・編集：車検費用ナビ編集部）</li>
           <li><strong>自動車重量税・検査手数料について</strong>：普通車「〜0.5t」の13年経過・18年経過税額、および申請方法・工場種別（指定整備工場1,800円前後／認証工場・ユーザー車検2,200円前後）による検査手数料の細区分は<code>[要出典確認：国土交通省「自動車重量税額について」「検査・登録手数料一覧」]</code>にて最新情報をご確認ください。</li>
-          <li><strong>自賠責保険料について</strong>：本土基準の24か月契約（普通17,650円／軽17,540円）を採用しています。沖縄県・離島等の一部地域では料率区分が異なる場合があります<code>[出典プレースホルダ：損害保険料率算出機構「自賠責保険基準料率表」]</code>。</li>
+          <li><strong>自賠責保険料について</strong>：本土基準の24か月契約（普通18,560円／軽18,660円）を採用しています。沖縄県・離島等の一部地域では料率区分が異なる場合があります（出典：損害保険料率算出機構「自賠責保険基準料率表」）。</li>
           <li><strong>車検総額の目安について</strong>：二次情報に基づく一般的な目安レンジ（軽6万〜9万円、普通車〜1.0t 8万〜12万円、〜1.5t 9万〜14万円、〜2.0t 10万〜16万円：<code>要出典確認</code>）であり、確定料金ではありません（詳細：<a href="../policy/verification/index.html">数値目安の算出基準・出典確認フロー</a>）。</li>
         </ul>
       </div>

@@ -2652,3 +2652,76 @@ a.pr-slot.pr-slot-sub:focus-visible {
   color: var(--cta, var(--accent-hover));
 }
 
+/* ---------- Checklist checkboxes & print (2026-11-16) ---------- */
+.check-col input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+ul.checklist input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+@media print {
+  .site-header,
+  .global-nav,
+  .site-footer,
+  .reading-progress,
+  .back-to-top,
+  .pr-notice-top,
+  .pr-box,
+  .sim-cta,
+  .toc-box,
+  .hub-grid,
+  .context-link-box,
+  .header-cta,
+  .skip-link {
+    display: none !important;
+  }
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 11pt;
+  }
+  .site-main,
+  .article-shell,
+  .article-body {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+  }
+  .table-wrap {
+    overflow: visible !important;
+  }
+  table {
+    width: 100% !important;
+    font-size: 9.5pt;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #999 !important;
+  }
+  a {
+    color: #000 !important;
+    text-decoration: none !important;
+  }
+  input[type="checkbox"] {
+    -webkit-appearance: checkbox !important;
+    appearance: auto !important;
+    width: 13px;
+    height: 13px;
+  }
+  h2, h3 {
+    page-break-after: avoid;
+  }
+  tr {
+    page-break-inside: avoid;
+  }
+}
