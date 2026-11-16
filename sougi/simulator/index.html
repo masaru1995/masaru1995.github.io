@@ -20,7 +20,7 @@
   "description": "葬儀の形式（直葬・一日葬・家族葬・一般葬）、参列者の規模、飲食・返礼品、宗教者への謝礼、火葬場種別を選ぶだけで、基本3項目小計と総支出の概算レンジをリアルタイムで試算できる葬儀費用シミュレーターです。",
   "inLanguage": "ja",
   "datePublished": "2026-11-12",
-  "dateModified": "2026-11-16",
+  "dateModified": "2026-11-17",
   "author": {
     "@type": "Organization",
     "name": "葬儀費用ナビ編集部"
@@ -350,7 +350,7 @@
     </div>
 
     <div class="survey-anchor-badge" id="res-survey-anchor">
-      <strong>全国調査との比較位置</strong>：鎌倉新書『第6回 お葬式に関する全国調査（2024年）』における<strong>家族葬</strong>の平均値（基本料金＋飲食＋返礼品）は <strong>105.7万円</strong>、最も回答が多い価格帯は <strong>60万〜80万円未満</strong> です（※全体平均は118.5万円。お布施等は調査総額に含まれず、価格帯には広い分布があるため平均は実態の中心とは限りません）。
+      <strong>全国調査との比較位置</strong>：鎌倉新書『【第7回】お葬式に関する全国調査（2026年）』における<strong>家族葬</strong>の中央値（基本料金＋飲食＋返礼品）は <strong>96.39万円</strong> です。参考として第6回調査（2024年）の平均値は <strong>105.7万円</strong>、最も回答が多い価格帯は <strong>60万〜80万円未満</strong> でした（※平均値と中央値は集計方法が異なるため単純比較はできません。お布施等は調査総額に含まれません）。<br>※本試算は第6回調査の平均・分布を参照点とする概算レンジです。
     </div>
 
     <!-- 内訳割合バー（中央値ベース比率） -->
@@ -688,6 +688,7 @@
       <p>※当サイトの記事にはプロモーション（#PR）が含まれます。</p>
     </div>
   </div>
+<nav class="kurashinavi-network" aria-label="くらしナビの他のガイド" style="margin:1.5em 0;padding:1em;border-top:1px solid #cbd5e1;font-size:0.9em;line-height:1.9;"><strong>くらしナビの他のガイド：</strong> <a href="https://kurashinavi.dpdns.org/hitori/">一人暮らしの初期費用</a> ｜ <a href="https://kurashinavi.dpdns.org/furusato/">ふるさと納税</a> ｜ <a href="https://kurashinavi.dpdns.org/shaken/">車検の費用</a> ｜ <a href="https://kurashinavi.dpdns.org/bousai/">防災・備蓄</a> ｜ <a href="https://kurashinavi.dpdns.org/kashitsuki/">加湿器の選び方</a> ｜ <a href="https://kurashinavi.dpdns.org/mattress/">マットレスの選び方</a></nav>
 </footer>
 
 <button type="button" class="back-to-top" id="back-to-top" aria-label="ページ上部へ戻る" data-design-added="true">
@@ -703,10 +704,10 @@
   // site/02_simulator-spec.md 準拠 計算テーブル定義（単位：万円）
   // =========================================================================
   var TABLE_A_BASIC = {
-    chokuso:     { label: "直葬・火葬式", min: 18, max: 32, surveyAvg: "42.8万円", surveyMode: "20万〜40万円未満" },
-    ichinichiso: { label: "一日葬",       min: 30, max: 55, surveyAvg: "87.5万円", surveyMode: "20万〜40万円未満" },
-    kazokuso:    { label: "家族葬",       min: 45, max: 75, surveyAvg: "105.7万円", surveyMode: "60万〜80万円未満" },
-    ippanso:     { label: "一般葬",       min: 65, max: 105, surveyAvg: "161.3万円", surveyMode: "120万〜140万円未満" }
+    chokuso:     { label: "直葬・火葬式", min: 18, max: 32, surveyAvg: "42.8万円", surveyMode: "20万〜40万円未満", surveyMedian: "49.56万円" },
+    ichinichiso: { label: "一日葬",       min: 30, max: 55, surveyAvg: "87.5万円", surveyMode: "20万〜40万円未満", surveyMedian: "74.43万円" },
+    kazokuso:    { label: "家族葬",       min: 45, max: 75, surveyAvg: "105.7万円", surveyMode: "60万〜80万円未満", surveyMedian: "96.39万円" },
+    ippanso:     { label: "一般葬",       min: 65, max: 105, surveyAvg: "161.3万円", surveyMode: "120万〜140万円未満", surveyMedian: "122.01万円" }
   };
 
   var TABLE_B_SCALE = {
@@ -935,10 +936,11 @@
 
     // 調査比較バッジ
     document.getElementById("res-survey-anchor").innerHTML =
-      "<strong>全国調査との比較位置</strong>：鎌倉新書『第6回 お葬式に関する全国調査（2024年）』における<strong>" + m.base.label +
-      "</strong>の平均値（基本料金＋飲食＋返礼品）は <strong>" + m.base.surveyAvg +
+      "<strong>全国調査との比較位置</strong>：鎌倉新書『【第7回】お葬式に関する全国調査（2026年）』における<strong>" + m.base.label +
+      "</strong>の中央値（基本料金＋飲食＋返礼品）は <strong>" + m.base.surveyMedian +
+      "</strong> です。参考として第6回調査（2024年）の平均値は <strong>" + m.base.surveyAvg +
       "</strong>、最も回答が多い価格帯は <strong>" + m.base.surveyMode +
-      "</strong> です（※全体平均は118.5万円。お布施等は調査総額に含まれず、価格帯には広い分布があるため平均は実態の中心とは限りません）。";
+      "</strong> でした（※平均値と中央値は集計方法が異なるため単純比較はできません。お布施等は調査総額に含まれません）。";
 
     // 内訳カード金額・根拠
     document.getElementById("amt-basic").textContent = fmtRange(r.basic, true);
