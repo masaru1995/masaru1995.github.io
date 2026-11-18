@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>加湿器の電気代シミュレーター｜方式と使い方から月額・シーズン額を試算｜加湿器の選び方ナビ</title>
+  <meta name="description" content="加湿器の電気代を無料で試算。方式（スチーム式・気化式・超音波式・ハイブリッド式）のプリセットや製品の消費電力（W）と使用時間から、1日・1か月・1シーズンの電気代と4方式の比較表を自動計算します。">
+  <style>
+:root {
+--primary: #0284c7;
+--primary-dark: #0369a1;
+--primary-light: #e0f2fe;
+--bg-body: #f8fafc;
+--bg-card: #ffffff;
+--text-main: #1e293b;
+--text-muted: #475569;
+--border: #e2e8f0;
+--accent: #0d9488;
+--warn-bg: #fff7ed;
+--warn-border: #fdba74;
+}
+
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+padding: 0;
+font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+line-height: 1.75;
+color: var(--text-main);
+background-color: var(--bg-body);
+-webkit-text-size-adjust: 100%;
+}
+
+a {
+color: var(--primary-dark);
+text-decoration: underline;
+}
+
+a:hover {
+color: var(--primary);
+text-decoration: none;
+}
+
+header {
+background-color: var(--bg-card);
+border-bottom: 1px solid var(--border);
+padding: 16px 0;
+}
+
+.container {
+width: 100%;
+max-width: 900px;
+margin: 0 auto;
+padding: 0 16px;
+}
+
+.site-title {
+margin: 0;
+font-size: 1.25rem;
+font-weight: 700;
+color: var(--primary-dark);
+}
+
+.site-title a {
+text-decoration: none;
+color: inherit;
+}
+
+.header-nav {
+margin-top: 12px;
+display: flex;
+flex-wrap: wrap;
+gap: 8px 16px;
+font-size: 0.9rem;
+}
+
+.header-nav a {
+text-decoration: none;
+color: var(--text-muted);
+font-weight: 500;
+padding: 4px 0;
+}
+
+.header-nav a:hover {
+color: var(--primary-dark);
+text-decoration: underline;
+}
+
+.breadcrumb {
+font-size: 0.85rem;
+color: var(--text-muted);
+margin-bottom: 16px;
+}
+
+.breadcrumb a {
+color: var(--text-muted);
+}
+
+main {
+background-color: var(--bg-card);
+margin: 20px auto;
+padding: 24px 20px;
+border-radius: 8px;
+border: 1px solid var(--border);
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+@media (min-width: 640px) {
+main {
+padding: 36px 40px;
+margin: 28px auto;
+}
+}
+
+h1 {
+font-size: 1.5rem;
+line-height: 1.4;
+margin-top: 0;
+margin-bottom: 20px;
+padding-bottom: 14px;
+border-bottom: 3px solid var(--primary);
+color: #0f172a;
+}
+
+@media (min-width: 640px) {
+h1 {
+font-size: 1.85rem;
+}
+}
+
+h2 {
+font-size: 1.3rem;
+line-height: 1.4;
+margin-top: 40px;
+margin-bottom: 16px;
+padding: 10px 14px;
+background-color: var(--primary-light);
+border-left: 5px solid var(--primary);
+border-radius: 0 4px 4px 0;
+color: #0f172a;
+}
+
+h3 {
+font-size: 1.1rem;
+line-height: 1.45;
+margin-top: 28px;
+margin-bottom: 12px;
+padding-bottom: 6px;
+border-bottom: 1px solid var(--border);
+color: var(--primary-dark);
+}
+
+p {
+margin-top: 0;
+margin-bottom: 16px;
+}
+
+ul, ol {
+margin-top: 0;
+margin-bottom: 18px;
+padding-left: 22px;
+}
+
+li {
+margin-bottom: 8px;
+}
+
+.toc {
+background-color: #f1f5f9;
+border: 1px solid var(--border);
+border-radius: 6px;
+padding: 16px 20px;
+margin: 24px 0;
+}
+
+.toc-title {
+font-weight: 700;
+margin-bottom: 10px;
+font-size: 1rem;
+color: #0f172a;
+}
+
+.toc ul {
+margin-bottom: 0;
+}
+
+.note-box {
+background-color: #f8fafc;
+border: 1px solid #cbd5e1;
+border-radius: 6px;
+padding: 16px 18px;
+margin: 18px 0;
+font-size: 0.95rem;
+}
+
+.note-box-title {
+font-weight: 700;
+color: var(--primary-dark);
+margin-bottom: 8px;
+display: block;
+}
+
+.formula-box {
+background-color: #f0fdfa;
+border: 1px solid #99f6e4;
+border-radius: 6px;
+padding: 16px 18px;
+margin: 18px 0;
+font-size: 0.96rem;
+}
+
+.formula-box-title {
+font-weight: 700;
+color: var(--accent);
+margin-bottom: 8px;
+display: block;
+}
+
+.table-wrap {
+width: 100%;
+overflow-x: auto;
+margin: 20px 0;
+-webkit-overflow-scrolling: touch;
+border: 1px solid var(--border);
+border-radius: 6px;
+}
+
+table {
+width: 100%;
+min-width: 640px;
+border-collapse: collapse;
+font-size: 0.91rem;
+background-color: #ffffff;
+}
+
+th, td {
+padding: 12px 10px;
+border-bottom: 1px solid var(--border);
+border-right: 1px solid var(--border);
+text-align: left;
+vertical-align: top;
+}
+
+th:last-child, td:last-child {
+border-right: none;
+}
+
+tr:last-child td {
+border-bottom: none;
+}
+
+th {
+background-color: #f1f5f9;
+font-weight: 700;
+color: #0f172a;
+}
+
+.btn-link {
+display: inline-block;
+background-color: var(--primary);
+color: #ffffff!important;
+text-decoration: none!important;
+padding: 10px 18px;
+border-radius: 5px;
+font-weight: 700;
+font-size: 0.92rem;
+margin-top: 6px;
+margin-right: 8px;
+}
+
+.btn-link:hover {
+background-color: var(--primary-dark);
+}
+
+.btn-outline {
+display: inline-block;
+background-color: #ffffff;
+color: var(--primary-dark)!important;
+border: 1px solid var(--primary);
+text-decoration: none!important;
+padding: 9px 16px;
+border-radius: 5px;
+font-weight: 700;
+font-size: 0.92rem;
+margin-top: 6px;
+margin-right: 8px;
+}
+
+.btn-outline:hover {
+background-color: var(--primary-light);
+}
+
+.operator-notice {
+margin-top: 40px;
+padding-top: 20px;
+border-top: 1px solid var(--border);
+font-size: 0.9rem;
+color: var(--text-muted);
+}
+
+footer {
+text-align: center;
+padding: 20px 16px 36px;
+font-size: 0.85rem;
+color: var(--text-muted);
+}
+
+    .sim-box { border: 2px solid var(--primary); border-radius: 10px; padding: 20px; margin: 20px 0; background: #f0f9ff; }
+    .sim-box h2 { margin-top: 0; }
+    .sim-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 20px; }
+    @media (max-width: 640px) { .sim-grid { grid-template-columns: 1fr; } }
+    .sim-field label { display: block; font-weight: 700; font-size: 0.92rem; margin-bottom: 4px; }
+    .sim-field input, .sim-field select { width: 100%; padding: 10px; font-size: 1rem; border: 1px solid var(--border); border-radius: 6px; background: #fff; }
+    .sim-result { margin-top: 18px; background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 16px; }
+    .sim-result .big { font-size: 1.7rem; font-weight: 800; color: var(--primary-dark); }
+    .sim-table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 0.95rem; }
+    .sim-table th, .sim-table td { border: 1px solid var(--border); padding: 8px 10px; text-align: right; }
+    .sim-table th { background: var(--primary-light); text-align: center; }
+    .sim-table td:first-child, .sim-table th:first-child { text-align: left; }
+</style>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "加湿器の電気代シミュレーター", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Web", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}, "description": "加湿器の消費電力と使用時間から、1日・1か月・1シーズンの電気代を試算する無料シミュレーター。スチーム式・気化式・超音波式・ハイブリッド式の比較表付き。", "url": "https://kurashinavi.dpdns.org/kashitsuki/denki-simulator.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "くらしナビ", "item": "https://kurashinavi.dpdns.org/"}, {"@type": "ListItem", "position": 2, "name": "加湿器の選び方ナビ", "item": "https://kurashinavi.dpdns.org/kashitsuki/"}, {"@type": "ListItem", "position": 3, "name": "加湿器の電気代シミュレーター", "item": "https://kurashinavi.dpdns.org/kashitsuki/denki-simulator.html"}]}</script>
+</head>
+<body>
+<header>
+<div class="container">
+<p class="site-title"><a href="index.html">加湿器の選び方ナビ</a></p>
+<nav class="header-nav" aria-label="メインナビゲーション">
+<a href="index.html">トップページ（選び方全般）</a>
+<a href="steam.html">スチーム式特集</a>
+<a href="kishiki.html">気化式特集</a>
+<a href="hybrid.html">ハイブリッド式特集</a>
+<a href="chouonpa.html">超音波式特集</a>
+<a href="desk.html">卓上・小型特集</a>
+<a href="air-purifier.html">空気清浄機付き特集</a>
+<a href="bedroom.html">寝室向け特集</a>
+<a href="care.html">手入れ簡単特集</a>
+<a href="denki.html">電気代まとめ</a>
+<a href="denki-simulator.html">電気代シミュレーター</a>
+</nav>
+</div>
+</header>
+
+<main class="container">
+<h1>加湿器の電気代シミュレーター｜方式と使い方から月額・シーズン額を試算</h1>
+<p>加湿器の電気代は「消費電力（W）× 使用時間 × 電気料金単価」で決まります。このシミュレーターでは、方式のプリセット（当サイトの<a href="denki.html">電気代まとめ</a>で使っている試算前提と同じ消費電力）か、お使いの製品の消費電力を入力すると、1日・1か月・1シーズンの電気代を自動計算します。</p>
+
+<div class="sim-box">
+<h2>電気代シミュレーター</h2>
+<div class="sim-grid">
+  <div class="sim-field">
+    <label for="preset">方式プリセット（消費電力の目安）</label>
+    <select id="preset">
+      <option value="200">スチーム式（200W）</option>
+      <option value="10">気化式（10W）</option>
+      <option value="25">超音波式（25W）</option>
+      <option value="300">ハイブリッド式・ヒーター併用時（300W）</option>
+      <option value="15">ハイブリッド式・気化のみ運転時（15W）</option>
+      <option value="custom">カスタム（下のW数を直接入力）</option>
+    </select>
+  </div>
+  <div class="sim-field">
+    <label for="watts">消費電力（W）</label>
+    <input type="number" id="watts" value="200" min="1" max="2000" step="1">
+  </div>
+  <div class="sim-field">
+    <label for="hours">1日の使用時間（時間）</label>
+    <input type="number" id="hours" value="8" min="0.5" max="24" step="0.5">
+  </div>
+  <div class="sim-field">
+    <label for="days">1か月の使用日数（日）</label>
+    <input type="number" id="days" value="30" min="1" max="31" step="1">
+  </div>
+  <div class="sim-field">
+    <label for="price">電気料金単価（円/kWh）</label>
+    <input type="number" id="price" value="31" min="1" max="100" step="0.1">
+  </div>
+  <div class="sim-field">
+    <label for="months">1シーズンの使用月数（か月）</label>
+    <input type="number" id="months" value="5" min="1" max="12" step="1">
+  </div>
+</div>
+<div class="sim-result" aria-live="polite">
+  <div>1か月の電気代：<span class="big" id="out-month">-</span></div>
+  <div>1日の電気代：<span id="out-day">-</span> ／ 1シーズン（<span id="out-months-label">5</span>か月）：<span id="out-season">-</span></div>
+  <div>1か月の消費電力量：<span id="out-kwh">-</span></div>
+</div>
+<p style="font-size:0.88rem;color:var(--text-muted);">計算式：消費電力（W）÷ 1,000 × 1日の使用時間 × 使用日数 × 電気料金単価（円/kWh）。電気料金単価の初期値31円/kWhは、全国家庭電気製品公正取引協議会の電力料金目安単価です。プリセットの消費電力は方式ごとの一般的な目安で、実際の製品ごとに異なります。お使いの製品の仕様（本体表示や取扱説明書の消費電力）で計算する場合は「カスタム」を選んでW数を入力してください。</p>
+</div>
+
+<h2>同じ条件で4方式を比べる</h2>
+<p>上の「1日の使用時間・使用日数・電気料金単価」を変えると、下の比較表も連動して変わります（消費電力は方式プリセットの値で固定）。</p>
+<table class="sim-table">
+<thead><tr><th>方式（消費電力）</th><th>1日</th><th>1か月</th><th>1シーズン</th></tr></thead>
+<tbody id="compare-body"></tbody>
+</table>
+<p>方式ごとの電気代の考え方や、フィルター等の消耗品を含めた総ランニングコストについては<a href="denki.html">加湿器の電気代まとめ</a>で詳しく解説しています。</p>
+
+<h2>方式別の解説ページ</h2>
+<p>
+<a href="steam.html" class="btn-outline">スチーム式の解説</a>
+<a href="kishiki.html" class="btn-outline">気化式の解説</a>
+<a href="hybrid.html" class="btn-outline">ハイブリッド式の解説</a>
+<a href="chouonpa.html" class="btn-outline">超音波式の解説</a>
+<a href="index.html" class="btn-link">トップページ（4方式比較・選び方）へ戻る</a>
+</p>
+
+<div class="operator-notice">
+<p>運営者情報は準備中です</p>
+</div>
+</main>
+
+<footer class="container">
+<p>&copy; 加湿器の選び方ナビ</p>
+<nav class="kurashinavi-network" aria-label="くらしナビの他のガイド" style="margin:1.5em 0;padding:1em;border-top:1px solid #cbd5e1;font-size:0.9em;line-height:1.9;"><strong>くらしナビの他のガイド：</strong> <a href="https://kurashinavi.dpdns.org/hitori/">一人暮らしの初期費用</a> ｜ <a href="https://kurashinavi.dpdns.org/sougi/">葬儀の費用と手続き</a> ｜ <a href="https://kurashinavi.dpdns.org/furusato/">ふるさと納税</a> ｜ <a href="https://kurashinavi.dpdns.org/shaken/">車検の費用</a> ｜ <a href="https://kurashinavi.dpdns.org/bousai/">防災・備蓄</a> ｜ <a href="https://kurashinavi.dpdns.org/mattress/">マットレスの選び方</a></nav>
+</footer>
+<script>
+(function () {
+  var PRESETS = [
+    { name: "スチーム式", w: 200 },
+    { name: "気化式", w: 10 },
+    { name: "超音波式", w: 25 },
+    { name: "ハイブリッド式（ヒーター併用）", w: 300 },
+    { name: "ハイブリッド式（気化のみ）", w: 15 }
+  ];
+  function yen(n) { return Math.round(n).toLocaleString("ja-JP") + "円"; }
+  function num(id) { var v = parseFloat(document.getElementById(id).value); return isNaN(v) || v < 0 ? 0 : v; }
+  function calc(w, hours, days, price) { return w / 1000 * hours * days * price; }
+  function render() {
+    var w = num("watts"), h = num("hours"), d = num("days"), p = num("price"), m = num("months");
+    var month = calc(w, h, d, p);
+    document.getElementById("out-month").textContent = "約" + yen(month);
+    document.getElementById("out-day").textContent = "約" + (Math.round(month / (d || 1) * 10) / 10).toLocaleString("ja-JP") + "円";
+    document.getElementById("out-season").textContent = "約" + yen(month * m);
+    document.getElementById("out-months-label").textContent = m;
+    document.getElementById("out-kwh").textContent = (Math.round(w / 1000 * h * d * 10) / 10).toLocaleString("ja-JP") + " kWh";
+    var rows = "";
+    PRESETS.forEach(function (pr) {
+      var mm = calc(pr.w, h, d, p);
+      rows += "<tr><td>" + pr.name + "（" + pr.w + "W）</td><td>約" + (Math.round(mm / (d || 1) * 10) / 10).toLocaleString("ja-JP") + "円</td><td>約" + yen(mm) + "</td><td>約" + yen(mm * m) + "</td></tr>";
+    });
+    document.getElementById("compare-body").innerHTML = rows;
+  }
+  document.getElementById("preset").addEventListener("change", function () {
+    if (this.value !== "custom") { document.getElementById("watts").value = this.value; }
+    render();
+  });
+  ["watts", "hours", "days", "price", "months"].forEach(function (id) {
+    document.getElementById(id).addEventListener("input", render);
+  });
+  render();
+})();
+</script>
+</body>
+</html>
