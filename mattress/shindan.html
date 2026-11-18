@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>マットレス タイプ診断｜4つの質問でわかる素材の目安｜マットレスの選び方ナビ</title>
+<meta name="description" content="寝姿勢・体重・悩み・設置環境の4つの質問で、ポケットコイル／高反発／低反発／ファイバー系のうち合いやすいマットレスのタイプの目安がわかる無料診断です。">
+<style>
+:root {
+--navy: #16264d;
+--navy-light: #25406f;
+--navy-pale: #f2f5f9;
+--border: #d7e0ea;
+--text-main: #1e293b;
+--text-muted: #4b5563;
+--bg: #ffffff;
+--bg-light: #f6f8fb;
+}
+* {
+box-sizing: border-box;
+}
+body {
+margin: 0;
+padding: 0;
+font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+line-height: 1.8;
+color: var(--text-main);
+background-color: var(--bg);
+font-size: 16px;
+}
+a {
+color: var(--navy-light);
+text-decoration: underline;
+}
+a:hover {
+color: var(--navy);
+}
+header {
+background-color: var(--navy);
+color: #ffffff;
+padding: 16px 20px;
+}
+.header-inner {
+max-width: 940px;
+margin: 0 auto;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+gap: 12px;
+}
+.site-title {
+font-size: 1.1rem;
+font-weight: bold;
+margin: 0;
+}
+.site-title a {
+color: #ffffff;
+text-decoration: none;
+}
+nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+flex-wrap: wrap;
+gap: 14px;
+font-size: 0.9rem;
+}
+nav a {
+color: #dbe4f0;
+text-decoration: none;
+}
+nav a:hover {
+color: #ffffff;
+text-decoration: underline;
+}
+main {
+max-width: 940px;
+margin: 0 auto;
+padding: 28px 20px 48px;
+}
+.breadcrumb {
+font-size: 0.85rem;
+color: var(--text-muted);
+margin-bottom: 16px;
+}
+h1 {
+font-size: 1.65rem;
+line-height: 1.45;
+color: var(--navy);
+border-bottom: 3px solid var(--navy);
+padding-bottom: 10px;
+margin-top: 0;
+margin-bottom: 20px;
+}
+h2 {
+font-size: 1.35rem;
+color: var(--navy);
+background-color: var(--navy-pale);
+border-left: 5px solid var(--navy);
+padding: 10px 14px;
+margin-top: 36px;
+margin-bottom: 16px;
+}
+h3 {
+font-size: 1.12rem;
+color: var(--navy-light);
+border-bottom: 1px solid var(--border);
+padding-bottom: 4px;
+margin-top: 24px;
+margin-bottom: 10px;
+}
+p {
+margin: 0 0 16px;
+}
+ul {
+padding-left: 22px;
+margin: 0 0 18px;
+}
+li {
+margin-bottom: 6px;
+}
+.lead-box {
+background-color: var(--bg-light);
+border: 1px solid var(--border);
+border-radius: 6px;
+padding: 18px 20px;
+margin-bottom: 24px;
+}
+.table-wrap {
+overflow-x: auto;
+margin: 20px 0;
+border: 1px solid var(--border);
+border-radius: 4px;
+}
+table {
+width: 100%;
+border-collapse: collapse;
+min-width: 620px;
+font-size: 0.95rem;
+}
+th, td {
+border: 1px solid var(--border);
+padding: 12px 14px;
+text-align: left;
+vertical-align: top;
+}
+th {
+background-color: var(--navy);
+color: #ffffff;
+font-weight: bold;
+}
+tbody th {
+background-color: var(--navy-pale);
+color: var(--navy);
+width: 24%;
+}
+.note {
+font-size: 0.88rem;
+color: var(--text-muted);
+margin-top: -8px;
+margin-bottom: 20px;
+}
+.box {
+background-color: var(--navy-pale);
+border: 1px solid var(--border);
+border-radius: 6px;
+padding: 18px 20px;
+margin: 24px 0;
+}
+.box-title {
+font-weight: bold;
+color: var(--navy);
+margin-bottom: 8px;
+}
+.related-links {
+margin-top: 40px;
+padding-top: 20px;
+border-top: 1px solid var(--border);
+}
+footer {
+background-color: var(--navy);
+color: #e2e8f0;
+text-align: center;
+padding: 24px 20px;
+font-size: 0.9rem;
+}
+footer p {
+margin: 6px 0;
+}
+@media (max-width: 600px) {
+h1 {
+font-size: 1.4rem;
+}
+h2 {
+font-size: 1.2rem;
+}
+main {
+padding: 20px 16px 36px;
+}
+th, td {
+padding: 10px;
+}
+}
+
+.q-block { margin: 26px 0; }
+.q-title { font-weight: bold; color: var(--navy); margin-bottom: 10px; }
+.q-opts { display: flex; flex-wrap: wrap; gap: 10px; }
+.q-opt { border: 2px solid var(--border); background: var(--bg-light); border-radius: 10px; padding: 10px 16px; cursor: pointer; font-size: 0.98rem; }
+.q-opt.selected { border-color: var(--navy); background: var(--navy-pale); font-weight: bold; }
+#diagnose-btn { background: var(--navy); color: #fff; border: none; border-radius: 10px; padding: 14px 34px; font-size: 1.05rem; font-weight: bold; cursor: pointer; margin-top: 8px; }
+#diagnose-btn:disabled { background: #94a3b8; cursor: not-allowed; }
+#result { display: none; margin-top: 30px; border: 2px solid var(--navy); border-radius: 12px; padding: 22px; background: var(--navy-pale); }
+#result h2 { margin-top: 0; }
+.result-type { font-size: 1.3rem; font-weight: bold; color: var(--navy); }
+table.quick { border-collapse: collapse; width: 100%; margin: 14px 0; }
+table.quick th, table.quick td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; font-size: 0.95rem; }
+table.quick th { background: var(--navy-pale); }
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"マットレス タイプ診断","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"JPY"},"inLanguage":"ja","isPartOf":{"@type":"WebSite","name":"マットレスの選び方ナビ","url":"https://kurashinavi.dpdns.org/mattress/"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://kurashinavi.dpdns.org/mattress/"},{"@type":"ListItem","position":2,"name":"マットレス タイプ診断","item":"https://kurashinavi.dpdns.org/mattress/shindan.html"}]}
+</script>
+</head>
+<body>
+<header>
+<div class="header-inner">
+<p class="site-title"><a href="index.html">マットレスの選び方ナビ</a></p>
+<nav aria-label="メインナビゲーション">
+<ul>
+<li><a href="index.html">トップ</a></li>
+<li><a href="coil.html">コイル系</a></li>
+<li><a href="urethane.html">ウレタン系</a></li>
+<li><a href="fiber.html">ファイバー系</a></li>
+<li><a href="hardness.html">硬さ</a></li>
+<li><a href="care.html">お手入れ</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main>
+<div class="breadcrumb">
+<a href="index.html">トップ</a> &gt; マットレス タイプ診断
+</div>
+
+<h1>マットレス タイプ診断｜4つの質問でわかる素材の目安</h1>
+<p class="updated-date" style="font-size:0.85em;color:#64748b;margin:0.5em 0;">最終更新日：2026年11月18日</p>
+
+<div class="lead-box">
+<p>マットレスは素材ごとに「体の支え方」が大きく異なります。この診断では、寝姿勢・体重・気になる悩み・設置環境の4つの質問から、ポケットコイル／高反発ウレタン／低反発ウレタン／ファイバー系のうち、あなたに合いやすいタイプの目安を表示します。</p>
+<p style="margin-bottom:0;">診断結果は一般的な選び方の目安です。実際の寝心地は製品ごとの硬さや厚みでも変わるため、購入前には<a href="hardness.html">硬さの選び方</a>や返品・お試し条件もあわせてご確認ください。腰痛などの症状がある場合の医療的な助言は行いません。</p>
+</div>
+
+<h2>質問に答える</h2>
+
+<div class="q-block" data-q="posture">
+<p class="q-title">Q1. 普段の寝姿勢は？</p>
+<div class="q-opts">
+<button type="button" class="q-opt" data-v="back">仰向けが多い</button>
+<button type="button" class="q-opt" data-v="side">横向きが多い</button>
+<button type="button" class="q-opt" data-v="prone">うつ伏せが多い</button>
+<button type="button" class="q-opt" data-v="mixed">よく変わる</button>
+</div>
+</div>
+
+<div class="q-block" data-q="weight">
+<p class="q-title">Q2. 体重の目安は？</p>
+<div class="q-opts">
+<button type="button" class="q-opt" data-v="w1">55kg未満</button>
+<button type="button" class="q-opt" data-v="w2">55〜70kg</button>
+<button type="button" class="q-opt" data-v="w3">70〜85kg</button>
+<button type="button" class="q-opt" data-v="w4">85kg以上</button>
+</div>
+</div>
+
+<div class="q-block" data-q="concern">
+<p class="q-title">Q3. 一番気になるのは？</p>
+<div class="q-opts">
+<button type="button" class="q-opt" data-v="waist">腰への負担</button>
+<button type="button" class="q-opt" data-v="shoulder">肩・腕の圧迫感</button>
+<button type="button" class="q-opt" data-v="heat">暑さ・蒸し暑さ</button>
+<button type="button" class="q-opt" data-v="turn">寝返りのしにくさ</button>
+</div>
+</div>
+
+<div class="q-block" data-q="place">
+<p class="q-title">Q4. 置き場所・環境は？</p>
+<div class="q-opts">
+<button type="button" class="q-opt" data-v="frame">ベッドフレームに置く</button>
+<button type="button" class="q-opt" data-v="floor">床・畳に直置き</button>
+<button type="button" class="q-opt" data-v="small">一人暮らしで搬入が不安</button>
+</div>
+</div>
+
+<button type="button" id="diagnose-btn" disabled>診断する（あと4問）</button>
+
+<div id="result" aria-live="polite">
+<h2>診断結果</h2>
+<p>あなたに合いやすいタイプは…</p>
+<p class="result-type" id="result-type"></p>
+<p id="result-sub"></p>
+<h3>このタイプが挙がった理由</h3>
+<ul id="result-reasons"></ul>
+<h3>次に確認したいページ</h3>
+<ul id="result-links"></ul>
+<p style="font-size:0.9em;color:var(--text-muted);">※この診断は素材選びの目安です。同じタイプでも製品によって硬さ・厚み・価格帯は大きく異なります。最終的には硬さの表記（ニュートン値など）と、お試し期間・返品条件を確認して選んでください。</p>
+</div>
+
+<h2>タイプ別の早見表</h2>
+<table class="quick">
+<tr><th>タイプ</th><th>支え方の特徴</th><th>合いやすい人の傾向</th></tr>
+<tr><td><a href="coil.html">ポケットコイル</a></td><td>コイルが点で支え、体圧を分散しやすい</td><td>寝姿勢がさまざま／体重が重め／二人で寝る</td></tr>
+<tr><td><a href="urethane.html">高反発ウレタン</a></td><td>反発力で沈み込みを抑え、寝返りを助ける</td><td>腰への負担が気になる／寝返りが多い</td></tr>
+<tr><td><a href="urethane.html">低反発ウレタン</a></td><td>体に沿って沈み、接する面で圧力を分散する</td><td>横向きで肩が圧迫される／体重が軽め</td></tr>
+<tr><td><a href="fiber.html">ファイバー系</a></td><td>網目構造で通気性が高く、水洗いできる製品が多い</td><td>暑さ・湿気が気になる／直置きしたい</td></tr>
+</table>
+<p>素材の前にサイズで失敗しないことも大切です。<a href="size.html">サイズの選び方</a>と<a href="life.html">寿命・買い替えの目安</a>もあわせてご覧ください。</p>
+
+</main>
+
+<footer>
+<p>マットレスの選び方ナビ</p>
+<p>運営者情報は準備中です</p>
+<nav class="kurashinavi-network" aria-label="くらしナビの他のガイド" style="margin:1.5em 0;padding:1em;border-top:1px solid #cbd5e1;font-size:0.9em;line-height:1.9;"><strong>くらしナビの他のガイド：</strong> <a href="https://kurashinavi.dpdns.org/hitori/">一人暮らしの初期費用</a> ｜ <a href="https://kurashinavi.dpdns.org/sougi/">葬儀の費用と手続き</a> ｜ <a href="https://kurashinavi.dpdns.org/furusato/">ふるさと納税</a> ｜ <a href="https://kurashinavi.dpdns.org/shaken/">車検の費用</a> ｜ <a href="https://kurashinavi.dpdns.org/bousai/">防災・備蓄</a> ｜ <a href="https://kurashinavi.dpdns.org/kashitsuki/">加湿器の選び方</a></nav>
+</footer>
+<script>
+(function () {
+  var answers = {};
+  var total = 4;
+  var btn = document.getElementById('diagnose-btn');
+  document.querySelectorAll('.q-block').forEach(function (block) {
+    var q = block.getAttribute('data-q');
+    block.querySelectorAll('.q-opt').forEach(function (opt) {
+      opt.addEventListener('click', function () {
+        block.querySelectorAll('.q-opt').forEach(function (o) { o.classList.remove('selected'); });
+        opt.classList.add('selected');
+        answers[q] = opt.getAttribute('data-v');
+        var n = Object.keys(answers).length;
+        btn.disabled = n < total;
+        btn.textContent = n < total ? '診断する（あと' + (total - n) + '問）' : '診断する';
+      });
+    });
+  });
+
+  var TYPES = {
+    coil:  { name: 'ポケットコイル', page: 'coil.html', pageName: 'コイル系マットレスの選び方' },
+    high:  { name: '高反発ウレタン', page: 'urethane.html', pageName: '高反発と低反発の違い' },
+    low:   { name: '低反発ウレタン', page: 'urethane.html', pageName: '高反発と低反発の違い' },
+    fiber: { name: 'ファイバー系', page: 'fiber.html', pageName: 'ファイバー系マットレスの特徴' }
+  };
+
+  function diagnose() {
+    var score = { coil: 0, high: 0, low: 0, fiber: 0 };
+    var reasons = [];
+    var a = answers;
+
+    if (a.posture === 'back') { score.high += 2; score.coil += 2; reasons.push('仰向けでは、腰が沈み込みすぎない支えが大切です'); }
+    if (a.posture === 'side') { score.low += 2; score.coil += 2; reasons.push('横向きでは、肩や腰の出っ張りに沿う体圧分散が大切です'); }
+    if (a.posture === 'prone') { score.high += 2; score.fiber += 1; reasons.push('うつ伏せでは、腰が反りすぎないよう沈み込みの少ない支えが向きます'); }
+    if (a.posture === 'mixed') { score.high += 2; score.coil += 1; reasons.push('寝姿勢がよく変わる場合は、寝返りを助ける反発力があると動きやすくなります'); }
+
+    if (a.weight === 'w1') { score.low += 2; score.coil += 1; reasons.push('体重が軽めの場合、硬すぎる素材では体が沈まず圧力が集中しやすくなります'); }
+    if (a.weight === 'w2') { score.coil += 2; score.high += 1; score.low += 1; }
+    if (a.weight === 'w3') { score.coil += 2; score.high += 2; reasons.push('体重が重めの場合、底付き感を避けるために支える力のある素材が向きます'); }
+    if (a.weight === 'w4') { score.coil += 3; score.high += 2; score.low -= 3; reasons.push('体重が重めの場合、低反発は沈み込みが深くなりやすいため候補から外れやすくなります'); }
+
+    if (a.concern === 'waist') { score.high += 3; score.coil += 2; reasons.push('腰への負担が気になる場合は、沈み込みを抑えて寝姿勢を保ちやすいタイプが候補になります'); }
+    if (a.concern === 'shoulder') { score.low += 3; score.coil += 2; reasons.push('肩・腕の圧迫感が気になる場合は、点で支える・体に沿うタイプが候補になります'); }
+    if (a.concern === 'heat') { score.fiber += 4; reasons.push('暑さ・蒸し暑さが気になる場合は、通気性の高い構造の素材が候補になります'); }
+    if (a.concern === 'turn') { score.high += 3; score.fiber += 1; reasons.push('寝返りのしにくさが気になる場合は、反発力のある素材が候補になります'); }
+
+    if (a.place === 'floor') { score.fiber += 2; score.high += 1; reasons.push('直置きは湿気がこもりやすいため、通気性とお手入れのしやすさも重視しました'); }
+    if (a.place === 'small') { score.high += 1; score.fiber += 1; reasons.push('搬入のしやすさでは、軽量で折りたたみ・圧縮梱包に対応しやすいタイプが扱いやすくなります'); }
+    if (a.place === 'frame') { score.coil += 1; }
+
+    var order = Object.keys(score).sort(function (x, y) { return score[y] - score[x]; });
+    var top = order[0], second = order[1];
+
+    document.getElementById('result-type').textContent = TYPES[top].name;
+    var sub = '';
+    if (score[second] >= score[top] - 2 && score[second] > 0) {
+      sub = '次点は「' + TYPES[second].name + '」です。寝心地の好みで比べるとよいでしょう。';
+    }
+    document.getElementById('result-sub').textContent = sub;
+
+    var ul = document.getElementById('result-reasons');
+    ul.innerHTML = '';
+    reasons.slice(0, 4).forEach(function (r) {
+      var li = document.createElement('li'); li.textContent = r; ul.appendChild(li);
+    });
+
+    var links = [
+      [TYPES[top].page, TYPES[top].pageName + '（このタイプの詳細）'],
+      ['hardness.html', 'マットレスの硬さの選び方（体重・寝姿勢別の目安）']
+    ];
+    if (a.concern === 'waist') links.push(['koshi.html', '腰への負担を考えたマットレス選び']);
+    if (a.place === 'floor') links.push(['care.html', 'お手入れ方法（湿気・カビ対策）']);
+    if (a.place === 'small') links.push(['hitori.html', '一人暮らし向けマットレスの選び方']);
+    links.push(['size.html', 'マットレスのサイズの選び方']);
+
+    var lu = document.getElementById('result-links');
+    lu.innerHTML = '';
+    links.forEach(function (l) {
+      var li = document.createElement('li');
+      var anc = document.createElement('a'); anc.href = l[0]; anc.textContent = l[1];
+      li.appendChild(anc); lu.appendChild(li);
+    });
+
+    var res = document.getElementById('result');
+    res.style.display = 'block';
+    res.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  btn.addEventListener('click', diagnose);
+})();
+</script>
+</body>
+</html>
