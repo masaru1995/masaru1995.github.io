@@ -19,4 +19,5 @@
 - 最新情報（NEWS）：公式発表ベースの更新履歴
 - 『GTA6』基本情報（SPEC）
 - 発信方針（POLICY）
+- GTA6を始める前の準備（prepare.html）：対応機種・日本語対応・購入方法など公式発表ベースの基本情報とFAQ
 - 免責：当サイトは非公式ファンメディアであり、Rockstar Games／Take-Two Interactiveとは無関係
