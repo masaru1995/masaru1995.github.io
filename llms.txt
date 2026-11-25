@@ -1,5 +1,5 @@
 # くらしナビ（kurashinavi）
-> 一人暮らし・葬儀・ふるさと納税・車検・防災・加湿器・マットレス・車買取の8テーマについて、公的機関や公式調査の一次数値に基づいて費用と手続きを解説する情報サイト群。運営：くらしナビ編集部。
+> 一人暮らし・葬儀・ふるさと納税・車検・防災・加湿器・マットレス・車買取・不用品回収・遺品整理・生前整理・相続相談・訪問マッサージの12テーマについて、公的機関や公式調査の一次数値に基づいて費用と手続きを解説する情報サイト群。運営：くらしナビ編集部。
 
 ## サイト一覧
 - [一人暮らしの初期費用と暮らし最適化](https://kurashinavi.dpdns.org/hitori/)
@@ -10,3 +10,7 @@
 - [加湿器の選び方ナビ](https://kurashinavi.dpdns.org/kashitsuki/)
 - [マットレスの選び方ナビ](https://kurashinavi.dpdns.org/mattress/)
 - [車買取の選び方ナビ](https://kurashinavi.dpdns.org/kaitori/)
+- [不用品回収の選び方ナビ](https://kurashinavi.dpdns.org/fuyouhin/)
+- [遺品整理・生前整理ナビ](https://kurashinavi.dpdns.org/ihin/)
+- [相続相談ナビ](https://kurashinavi.dpdns.org/souzoku/)
+- [訪問マッサージ・リハビリデイサービス](https://kurashinavi.dpdns.org/houmon/)
