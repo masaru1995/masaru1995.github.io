@@ -13,11 +13,12 @@
 - X: https://x.com/gta6lab_jp
 - Instagram: https://www.instagram.com/gta6lab_jp/
 - Threads: https://www.threads.com/@gta6lab_jp
-- TikTok: 近日公開
+- TikTok: https://www.tiktok.com/@gta6lab_jp
 
 ## ページ構成
 - 最新情報（NEWS）：公式発表ベースの更新履歴
 - 『GTA6』基本情報（SPEC）
 - 発信方針（POLICY）
 - GTA6を始める前の準備（prepare.html）：対応機種・日本語対応・購入方法など公式発表ベースの基本情報とFAQ
+- 隠し車両・レア車両まとめ（hidden-vehicles.html）：海外クリップで話題の隠し車両・レア車両を出典つきで整理したまとめ。クリップベースの情報は「未確認情報」の区分で明示し、確認が取れたものから更新
 - 免責：当サイトは非公式ファンメディアであり、Rockstar Games／Take-Two Interactiveとは無関係
