@@ -15,3 +15,4 @@
 - [相続相談ナビ](https://kurashinavi.dpdns.org/souzoku/)
 - [訪問マッサージ・リハビリデイサービス](https://kurashinavi.dpdns.org/houmon/)
 - [くらし防犯ナビ](https://kurashinavi.dpdns.org/bouhan/)
+- [くらしナビ 確定申告ガイド](https://kurashinavi.dpdns.org/kakutei/): 2026年分（令和8年分）の確定申告ガイド。副業の確定申告（20万円の基準）、医療費控除、必要書類チェックリスト、e-Tax・スマホ申告、会計ソフト比較。国税庁の公式情報を出典に整理。
